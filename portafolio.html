@@ -17,20 +17,20 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Zenio Digital","description":"Agencia de diseño web en todo México especializada en sitios profesionales que convierten visitas en clientes.","url":"https://zeniodigital.com","telephone":"+528110496588","email":"hola@zeniodigital.com","address":{"@type":"PostalAddress","addressLocality":"México","addressRegion":"Nuevo León","addressCountry":"MX"},"areaServed":["México","San Pedro Garza García","San Nicolás","Guadalupe","Nuevo León","México"],"priceRange":"$$","openingHours":"Mo-Sa 09:00-20:00","sameAs":["https://wa.me/528110496588"]}
 </script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#060606;
-  --s1:#0b0b0b;--s2:#0f0f0f;--s3:#131313;
-  --bd:rgba(255,255,255,.06);--bd2:rgba(255,255,255,.1);
-  --tx:#ede9e4;--mu:rgba(237,233,228,.42);--mu2:rgba(237,233,228,.2);--mu3:rgba(237,233,228,.1);
-  --or:#e05c00;--or2:rgba(224,92,0,.08);--or3:rgba(224,92,0,.15);
+  --bg:#0f0f0f;
+  --s1:#141414;--s2:#1a1a1a;--s3:#111111;
+  --bd:rgba(255,255,255,.07);--bd2:rgba(255,255,255,.12);
+  --tx:#EAEAEA;--mu:rgba(234,234,234,.5);--mu2:rgba(234,234,234,.26);--mu3:rgba(234,234,234,.1);
+  --or:#E8621A;--or2:rgba(232,98,26,.09);--or3:rgba(232,98,26,.18);
   --rad:2px;
 }
 html{scroll-behavior:smooth}
 section[id]{scroll-margin-top:80px}
-body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);overflow-x:hidden;line-height:1.65;cursor:none}
+body{font-family:'DM Sans',sans-serif;font-size:1.0625rem;background:var(--bg);color:var(--tx);overflow-x:hidden;line-height:1.65;cursor:none}
 ::-webkit-scrollbar{width:2px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--or);border-radius:2px}
 
 /* CURSOR */
@@ -45,9 +45,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);overf
 @keyframes orba{0%,100%{transform:translate(0,0)}50%{transform:translate(20px,-25px)}}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:72px;background:rgba(6,6,6,.85);backdrop-filter:blur(24px);border-bottom:1px solid var(--bd);transition:background .3s;gap:2rem}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:80px;background:rgba(6,6,6,.85);backdrop-filter:blur(24px);border-bottom:1px solid var(--bd);transition:background .3s;gap:2rem}
 nav.scrolled{background:rgba(6,6,6,.97)}
-.nlogo{font-family:'DM Serif Display',serif;font-size:1.15rem;font-weight:400;color:var(--tx);text-decoration:none;display:flex;align-items:center;gap:8px;letter-spacing:0;white-space:nowrap;flex-shrink:0}
+.nlogo{font-family:'Cabinet Grotesk',sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-.02em;color:var(--tx);text-decoration:none;display:flex;align-items:center;gap:8px;letter-spacing:0;white-space:nowrap;flex-shrink:0}
 .nmark{width:22px;height:22px;background:var(--or);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);flex-shrink:0}
 .nlinks{display:flex;gap:1.8rem;list-style:none;flex-shrink:1}
 .nlinks a{font-size:.78rem;font-weight:400;letter-spacing:.05em;color:var(--mu);text-decoration:none;transition:color .2s}
@@ -59,7 +59,7 @@ nav.scrolled{background:rgba(6,6,6,.97)}
 .nwa:hover{background:#f06a00;transform:translateY(-1px)}
 .nhm{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
 .nhm span{width:20px;height:1.5px;background:var(--mu);transition:all .3s}
-.nmob{display:none;position:fixed;top:72px;left:0;right:0;background:rgba(6,6,6,.98);backdrop-filter:blur(24px);border-bottom:1px solid var(--bd);padding:1.5rem 2rem;z-index:199;flex-direction:column;gap:1rem}
+.nmob{display:none;position:fixed;top:80px;left:0;right:0;background:rgba(6,6,6,.98);backdrop-filter:blur(24px);border-bottom:1px solid var(--bd);padding:1.5rem 2rem;z-index:199;flex-direction:column;gap:1rem}
 .nmob a{font-size:.88rem;color:var(--mu);text-decoration:none;padding:.5rem 0;border-bottom:1px solid var(--bd);transition:color .2s}
 .nmob a:hover{color:var(--tx)}
 .nmob .nwa{margin-top:.5rem;justify-content:center}
@@ -449,135 +449,378 @@ function filtrar(cat){
   </a>
   <ul class="nlinks">
     <li><a href="index.html">Inicio</a></li>
-    <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="index.html#servicios">Servicios</a></li>
     <li><a href="portafolio.html" style="color:var(--or)">Portafolio</a></li>
-    <li><a href="contacto.html">Nosotros</a></li>
+    <li><a href="index.html#nosotros">Nosotros</a></li>
     <li><a href="https://wa.me/528110496588" target="_blank" class="ncta">Cotizar →</a></li>
   </ul>
   <div class="nhm" id="hm" onclick="toggleMenu()"><span></span><span></span><span></span></div>
 </nav>
 <div class="nmob" id="nm">
   <a href="index.html">Inicio</a>
-  <a href="servicios.html">Servicios</a>
+  <a href="index.html#servicios">Servicios</a>
   <a href="portafolio.html" style="color:var(--or)">Portafolio</a>
-  <a href="contacto.html">Nosotros</a>
+  <a href="index.html#nosotros">Nosotros</a>
   <a href="https://wa.me/528110496588" target="_blank">Cotizar →</a>
 </div>
 
-<!-- VIDEO BANNER PORTAFOLIO -->
-<div style="position:relative;height:480px;overflow:hidden;margin-top:72px;border-bottom:1px solid var(--bd);">
-  <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.45;">
-    <source src="portafolio_video1.mp4" type="video/mp4">
-  </video>
-  <div style="position:absolute;inset:0;background:rgba(6,6,6,.72);display:flex;align-items:center;justify-content:center;text-align:center;">
-    <div>
-      <div style="font-size:.65rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--or);margin-bottom:1rem;">Nuestro trabajo</div>
-      <div style="font-family:'DM Serif Display',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:400;color:#ede9e4;line-height:1.05;text-shadow:0 2px 20px rgba(0,0,0,.8);">
-        Sitios que ya están<br><span style="font-style:italic;color:var(--or);">generando <span style="font-style:italic;color:var(--or);">resultados.</span></span>
-      </div>
+<!-- HERO PORTAFOLIO -->
+<style>
+.port-hero{margin-top:80px;padding:7rem 2.5rem 5rem;text-align:center;border-bottom:1px solid var(--bd);position:relative;overflow:hidden;}
+.port-hero-bg{position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 90% 80% at 50% 50%,black,transparent);}
+.port-hero-orb{position:absolute;width:600px;height:600px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(224,92,0,.08) 0%,transparent 65%);border-radius:50%;filter:blur(60px);z-index:0;animation:orba 9s ease-in-out infinite;}
+.port-hero-in{position:relative;z-index:1;max-width:800px;margin:0 auto;}
+.port-count{display:inline-flex;align-items:center;gap:10px;font-size:.62rem;font-weight:400;letter-spacing:.2em;color:var(--mu);text-transform:uppercase;margin-bottom:2rem;border:1px solid var(--bd2);padding:.45rem 1.2rem;border-radius:100px;background:rgba(255,255,255,.02);}
+.port-count-dot{width:5px;height:5px;border-radius:50%;background:var(--or);box-shadow:0 0 8px var(--or);animation:pulse 2s infinite;}
+.port-hero h1{font-family:'Cabinet Grotesk',sans-serif;font-size:clamp(3.2rem,7vw,6.5rem);font-weight:900;letter-spacing:-.04em;color:var(--tx);line-height:.93;margin-bottom:1.5rem;}
+.port-hero h1 em{font-style:italic;color:var(--or);}
+.port-hero p{font-size:1rem;font-weight:300;color:var(--mu);line-height:1.8;max-width:420px;margin:0 auto;}
+.filtros-wrap{max-width:1100px;margin:0 auto;padding:3.5rem 2.5rem 2rem;}
+.filtro-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+.filtro-label{font-size:.58rem;font-weight:500;letter-spacing:.16em;color:var(--mu2);text-transform:uppercase;margin-right:.5rem;}
+.filtro-btn{background:transparent;border:1px solid var(--bd);color:var(--mu);font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:7px 16px;cursor:pointer;transition:.2s;border-radius:2px;}
+.filtro-btn:hover{border-color:rgba(255,255,255,.15);color:var(--tx);}
+.filtro-active{background:var(--or)!important;border-color:var(--or)!important;color:#fff!important;}
+.demos-wrap{max-width:1100px;margin:0 auto;padding:0 2.5rem;}
+#demos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--bd);border:1px solid var(--bd2);}
+.demo-card{background:var(--s1);overflow:hidden;transition:background .3s;cursor:pointer;display:flex;flex-direction:column;}
+.demo-card.hidden{display:none;}
+.demo-card:hover{background:var(--s2);}
+.demo-thumb{aspect-ratio:16/9;position:relative;overflow:hidden;}
+.demo-thumb-bg{position:absolute;inset:0;transition:transform .6s cubic-bezier(.22,1,.36,1);}
+.demo-card:hover .demo-thumb-bg{transform:scale(1.04);}
+.demo-thumb-overlay{position:absolute;inset:0;background:rgba(6,6,6,.35);transition:background .4s;}
+.demo-card:hover .demo-thumb-overlay{background:rgba(6,6,6,.15);}
+.demo-nivel{position:absolute;top:12px;left:12px;font-size:.55rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:1px;}
+.demo-live{position:absolute;top:12px;right:12px;display:flex;align-items:center;gap:5px;font-size:.55rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7);background:rgba(0,0,0,.5);padding:4px 10px;backdrop-filter:blur(8px);}
+.demo-live-dot{width:5px;height:5px;border-radius:50%;background:#4ade80;box-shadow:0 0 6px #4ade80;animation:pulse 2s infinite;}
+.demo-thumb-icon{position:absolute;bottom:14px;right:14px;width:34px;height:34px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s;backdrop-filter:blur(8px);}
+.demo-thumb-icon svg{width:14px;height:14px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.demo-card:hover .demo-thumb-icon{opacity:1;}
+.demo-info{padding:1.6rem 1.8rem 1.8rem;flex:1;display:flex;flex-direction:column;}
+.demo-cat{font-size:.6rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--or);margin-bottom:.5rem;display:flex;align-items:center;gap:6px;}
+.demo-cat::before{content:'';width:12px;height:1px;background:var(--or);}
+.demo-title{font-family:'Cabinet Grotesk',sans-serif;font-size:1.1rem;font-weight:800;color:var(--tx);margin-bottom:.5rem;line-height:1.15;}
+.demo-desc{font-size:.78rem;font-weight:300;color:var(--mu);line-height:1.65;margin-bottom:1.2rem;flex:1;}
+.demo-link{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--or);text-decoration:none;transition:gap .2s;}
+.demo-link:hover{gap:10px;}
+.port-stats{max-width:1100px;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd2);border-top:none;}
+.pst{background:var(--s1);padding:2rem;text-align:center;}
+.pst-n{font-family:'Cabinet Grotesk',sans-serif;font-size:2.4rem;font-weight:900;color:var(--tx);letter-spacing:-.04em;line-height:1;margin-bottom:.4rem;}
+.pst-n span{color:var(--or);}
+.pst-l{font-size:.7rem;font-weight:300;color:var(--mu);}
+.port-cta{text-align:center;padding:6rem 2.5rem;border-top:1px solid var(--bd);}
+.port-cta p{font-size:1rem;font-weight:300;color:var(--mu);margin-bottom:1.8rem;}
+@media(max-width:900px){#demos-grid{grid-template-columns:1fr 1fr;}.port-stats{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){#demos-grid{grid-template-columns:1fr;}.port-stats{grid-template-columns:1fr 1fr;}.demos-wrap,.filtros-wrap{padding-left:1.5rem;padding-right:1.5rem;}.port-hero{padding:5rem 1.5rem 3.5rem;}}
+@media(max-width:600px){
+  body{cursor:auto}
+  #cring,#cdot{display:none}
+  .o1,.o2{display:none}
+  .scroll-hint{display:none}
+  .sec{padding:4rem 1.5rem}
+  .port-hero{padding:5rem 1.5rem 3rem!important}
+}
+</style>
+
+<div class="port-hero rv">
+  <div class="port-hero-bg"></div>
+  <div class="port-hero-orb"></div>
+  <div class="port-hero-in">
+    <div class="port-count"><span class="port-count-dot"></span>11 demos live · 2 clientes activos</div>
+    <h1>Trabajo real,<br><em>resultados reales.</em></h1>
+    <p>Cada demo es un sitio funcional listo para adaptar a tu negocio en 72 horas.</p>
+  </div>
+</div>
+
+<section id="portafolio">
+  
+<div style="max-width:1100px;margin:0 auto;padding:0 2.5rem">
+  <div style="padding:2.5rem 0 1rem;display:flex;align-items:center;gap:10px">
+    <span style="font-size:.6rem;font-weight:600;letter-spacing:.2em;color:var(--or);text-transform:uppercase;white-space:nowrap;font-family:'Cabinet Grotesk',sans-serif">Clientes activos</span>
+    <span style="flex:1;height:1px;background:var(--bd)"></span>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--bd);border:1px solid var(--bd2)">
+    <div style="background:var(--s1);padding:2rem 2.2rem;cursor:pointer;transition:background .3s" onclick="window.open('https://grmcollision.com','_blank')" onmouseenter="this.style.background='var(--s2)'" onmouseleave="this.style.background='var(--s1)'">
+      <div style="font-size:.58rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:.5rem;font-family:'Cabinet Grotesk',sans-serif">Automotriz · Colisión · Monterrey</div>
+      <div style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.3rem;font-weight:900;color:var(--tx);letter-spacing:-.025em;margin-bottom:.4rem">GRM Collision</div>
+      <div style="font-size:.8rem;font-weight:300;color:var(--mu);line-height:1.7;margin-bottom:1rem">Dark UI cinematográfica, videos 4K, cursor de mira y 3 sucursales con WhatsApp individual.</div>
+      <span style="font-size:.54rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;background:rgba(212,0,26,.12);color:#D4001A;border:1px solid rgba(212,0,26,.3)">Premium N2 · Live ↗</span>
+    </div>
+    <div style="background:var(--s1);padding:2rem 2.2rem;cursor:pointer;transition:background .3s" onclick="window.open('https://backnetmx.com','_blank')" onmouseenter="this.style.background='var(--s2)'" onmouseleave="this.style.background='var(--s1)'">
+      <div style="font-size:.58rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:.5rem;font-family:'Cabinet Grotesk',sans-serif">Telecomunicaciones · Redes · NL</div>
+      <div style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.3rem;font-weight:900;color:var(--tx);letter-spacing:-.025em;margin-bottom:.4rem">Backnet</div>
+      <div style="font-size:.8rem;font-weight:300;color:var(--mu);line-height:1.7;margin-bottom:1rem">Redes corporativas, cableado estructurado y soluciones para industria y gobierno en Nuevo León.</div>
+      <span style="font-size:.54rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;background:rgba(59,130,246,.1);color:#3b82f6;border:1px solid rgba(59,130,246,.25)">Premium N2 · Live ↗</span>
+    </div>
+    <div style="background:var(--s1);padding:2rem 2.2rem;cursor:pointer;transition:background .3s" onclick="window.open('https://zeniovision.com','_blank')" onmouseenter="this.style.background='var(--s2)'" onmouseleave="this.style.background='var(--s1)'">
+      <div style="font-size:.58rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:.5rem;font-family:'Cabinet Grotesk',sans-serif">Tecnología · Drones · México</div>
+      <div style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.3rem;font-weight:900;color:var(--tx);letter-spacing:-.025em;margin-bottom:.4rem">Zenio Vision</div>
+      <div style="font-size:.8rem;font-weight:300;color:var(--mu);line-height:1.7;margin-bottom:1rem">Fotografía y video aéreo con drones para eventos corporativos y bienes raíces en todo México.</div>
+      <span style="font-size:.54rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;background:rgba(99,102,241,.1);color:#818cf8;border:1px solid rgba(99,102,241,.25)">Premium N2 · Live ↗</span>
     </div>
   </div>
 </div>
-<!-- PORTAFOLIO -->
-<section id="portafolio" style="padding-top:60px;">
-  <div style="max-width:1100px;margin:0 auto;padding:0 3rem;">
-    <div class="reveal">
-      <div class="section-eyebrow">Nuestro trabajo</div>
-      <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3.5rem;flex-wrap:wrap;gap:2rem;">
-        <h2 class="section-headline">Demos que <em style="color:var(--or);">cierran</em><br>contratos.</h2>
-        <p style="font-size:.85rem;color:var(--muted);max-width:280px;text-align:right;line-height:1.7;">Cada demo es un sitio real, funcional, listo para adaptar a tu negocio en 72 horas.</p>
-      </div>
-    </div>
-    <!-- Filtros -->
-    <div class="reveal" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:3rem;" id="filtros">
+
+<div class="filtros-wrap rv">
+    <div class="filtro-row">
+      <span class="filtro-label">Filtrar</span>
       <button onclick="filtrar('todos')" class="filtro-btn filtro-active" data-cat="todos">Todos</button>
       <button onclick="filtrar('automotriz')" class="filtro-btn" data-cat="automotriz">Automotriz</button>
-      <button onclick="filtrar('restaurante')" class="filtro-btn" data-cat="restaurante">Restaurante</button>
       <button onclick="filtrar('salud')" class="filtro-btn" data-cat="salud">Salud</button>
-      <button onclick="filtrar('inmobiliaria')" class="filtro-btn" data-cat="inmobiliaria">Inmobiliaria</button>
+      <button onclick="filtrar('restaurante')" class="filtro-btn" data-cat="restaurante">Restaurante</button>
+      <button onclick="filtrar('hospitalidad')" class="filtro-btn" data-cat="hospitalidad">Hospitalidad</button>
+      <button onclick="filtrar('servicios')" class="filtro-btn" data-cat="servicios">Servicios</button>
       <button onclick="filtrar('empresa')" class="filtro-btn" data-cat="empresa">Empresa</button>
-      <button onclick="filtrar('otros')" class="filtro-btn" data-cat="otros">Otros</button>
+      <button onclick="filtrar('lifestyle')" class="filtro-btn" data-cat="lifestyle">Lifestyle</button>
     </div>
-    <!-- Grid demos -->
-    <div class="reveal" id="demos-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;">
-      <div class="demo-card" data-cat="automotriz">
-        <div class="demo-thumb" style="background:linear-gradient(135deg,#0a0000,#1a0005);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
-          <span style="font-size:3rem;">🚗</span>
-          <div style="position:absolute;top:12px;left:12px;background:#D4001A;color:#fff;font-size:.6rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;">N2 Premium</div>
+  </div>
+  <div class="demos-wrap">
+    <div id="demos-grid">
+
+      <div class="demo-card rv" data-cat="restaurante">
+        <div class="demo-thumb">
+          <div class="demo-thumb-bg" style="background-image:url(https://pub-d0b77f73cd394f708339c01c60125e30.r2.dev/Demos%20Mini%20Zenio/SCR-20260525-ojmg.jpeg);background-size:cover;background-position:center top"></div>
+          <div class="demo-thumb-overlay"></div>
+          <div class="demo-nivel" style="background:#c4687a;color:#fff;">N2 Premium</div>
+          <div class="demo-live"><span class="demo-live-dot"></span>Live</div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:.25;">
+              <ellipse cx="26" cy="46" rx="18" ry="3" fill="white"/>
+              <rect x="8" y="32" width="36" height="14" rx="3" fill="white"/>
+              <rect x="13" y="20" width="26" height="13" rx="2.5" fill="white" opacity=".85"/>
+              <rect x="18" y="10" width="16" height="11" rx="2" fill="white" opacity=".7"/>
+              <rect x="24.5" y="4" width="3" height="7" rx="1.5" fill="white" opacity=".5"/>
+              <ellipse cx="26" cy="3.5" rx="2.2" ry="3" fill="#f5a623"/>
+            </svg>
+          </div>
+          <div class="demo-thumb-icon"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
         </div>
         <div class="demo-info">
-          <div class="demo-cat">Automotriz · Colisión</div>
-          <h3 class="demo-title">GRM Collision</h3>
-          <p class="demo-desc">Taller de colisión premium. Dark UI cinematográfica, videos 4K, cursor de mira.</p>
-          <a href="https://grmcollision.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
+          <div class="demo-cat">Lifestyle · Pastelería</div>
+          <h3 class="demo-title">Demo Pastelería</h3>
+          <p class="demo-desc">Pastelería artesanal premium. Video hero, galería de creaciones, paquetes y proceso de pedido.</p>
+          <a href="https://zenio-demo-pasteleria.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
         </div>
       </div>
-      <div class="demo-card" data-cat="empresa">
-        <div class="demo-thumb" style="background:linear-gradient(135deg,#0d1f35,#1a3a5c);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
-          <span style="font-size:3rem;">📡</span>
-          <div style="position:absolute;top:12px;left:12px;background:#3b82f6;color:#fff;font-size:.6rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;">N2 Premium</div>
+
+      <div class="demo-card rv" data-cat="restaurante">
+        <div class="demo-thumb">
+          <div class="demo-thumb-bg" style="background-image:url(https://pub-d0b77f73cd394f708339c01c60125e30.r2.dev/Demos%20Mini%20Zenio/SCR-20260519-imwi.jpeg);background-size:cover;background-position:center top"></div>
+          <div class="demo-thumb-overlay"></div>
+          <div class="demo-nivel" style="background:#c8510a;color:#fff;">N2 Premium</div>
+          <div class="demo-live"><span class="demo-live-dot"></span>Live</div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:.18;"><path d="M10 6v16c0 6 4 10 10 10s10-4 10-10V6" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="20" y1="32" x2="20" y2="46" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M36 6c0 0 6 4 6 14s-6 14-6 14" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="36" y1="34" x2="36" y2="46" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <div class="demo-thumb-icon"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
         </div>
         <div class="demo-info">
-          <div class="demo-cat">Telecomunicaciones</div>
-          <h3 class="demo-title">Backnet</h3>
-          <p class="demo-desc">Empresa de redes e infraestructura. Azul corporativo, animaciones técnicas.</p>
-          <a href="#" target="_blank" class="demo-link">Próximamente →</a>
+          <div class="demo-cat">Restaurante · Gastronomía</div>
+          <h3 class="demo-title">Demo Restaurante</h3>
+          <p class="demo-desc">Paleta cálida, menú interactivo, reservaciones. Ideal para cualquier concepto culinario.</p>
+          <a href="https://zenio-demo-restaurante.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
         </div>
       </div>
-      <div class="demo-card" data-cat="salud">
-        <div class="demo-thumb" style="background:linear-gradient(135deg,#f8f5f0,#e8ddd0);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
-          <span style="font-size:3rem;">🏥</span>
-          <div style="position:absolute;top:12px;left:12px;background:#866445;color:#fff;font-size:.6rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;">N1 Corporativo</div>
+
+      <div class="demo-card rv" data-cat="salud">
+        <div class="demo-thumb">
+          <div class="demo-thumb-bg" style="background-image:url(https://pub-d0b77f73cd394f708339c01c60125e30.r2.dev/Demos%20Mini%20Zenio/SCR-20260519-inaz.jpeg);background-size:cover;background-position:center top"></div>
+          <div class="demo-thumb-overlay"></div>
+          <div class="demo-nivel" style="background:#1a6fa8;color:#fff;">N1 Corporativo</div>
+          <div class="demo-live"><span class="demo-live-dot"></span>Live</div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:.18;"><rect x="8" y="8" width="36" height="36" rx="4" stroke="white" stroke-width="1.5"/><line x1="26" y1="18" x2="26" y2="34" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="18" y1="26" x2="34" y2="26" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <div class="demo-thumb-icon"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
         </div>
         <div class="demo-info">
           <div class="demo-cat">Salud · Clínica</div>
-          <h3 class="demo-title">BICSA</h3>
-          <p class="demo-desc">Clínica médica. Paleta cálida café-beige, slider de imágenes, diseño limpio.</p>
-          <a href="#" target="_blank" class="demo-link">Próximamente →</a>
+          <h3 class="demo-title">Demo Clínica</h3>
+          <p class="demo-desc">Diseño limpio y confiable. Citas en línea, equipo médico, servicios destacados.</p>
+          <a href="https://zenio-demo-clinica.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
         </div>
       </div>
-      <div class="demo-card" data-cat="otros">
-        <div class="demo-thumb" style="background:linear-gradient(135deg,#1a1a2e,#16213e);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
-          <span style="font-size:3rem;">🎸</span>
-          <div style="position:absolute;top:12px;left:12px;background:var(--orange);color:#fff;font-size:.6rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;">Próximo</div>
+
+      <div class="demo-card rv" data-cat="automotriz">
+        <div class="demo-thumb">
+          <div class="demo-thumb-bg" style="background-image:url(https://pub-d0b77f73cd394f708339c01c60125e30.r2.dev/Demos%20Mini%20Zenio/SCR-20260519-inea.jpeg);background-size:cover;background-position:center top"></div>
+          <div class="demo-thumb-overlay"></div>
+          <div class="demo-nivel" style="background:#555;color:#fff;">N2 Premium</div>
+          <div class="demo-live"><span class="demo-live-dot"></span>Live</div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" style="opacity:.18;"><path d="M6 28L14 14h28l8 14" stroke="white" stroke-width="1.5" stroke-linecap="round"/><rect x="4" y="26" width="48" height="16" rx="3" stroke="white" stroke-width="1.5"/><circle cx="14" cy="46" r="5" stroke="white" stroke-width="1.5"/><circle cx="42" cy="46" r="5" stroke="white" stroke-width="1.5"/></svg></div>
+          <div class="demo-thumb-icon"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
         </div>
         <div class="demo-info">
-          <div class="demo-cat">Entretenimiento · Música</div>
-          <h3 class="demo-title">Agencia Artística</h3>
-          <p class="demo-desc">Manager de grupos y artistas. Dark, dramático, cinematográfico.</p>
-          <a href="#" class="demo-link" style="opacity:.5;pointer-events:none;">En desarrollo →</a>
+          <div class="demo-cat">Automotriz · Agencia</div>
+          <h3 class="demo-title">Demo Autos</h3>
+          <p class="demo-desc">Catálogo de vehículos con filtros, fichas técnicas y contacto directo por WhatsApp.</p>
+          <a href="https://zenio-demo-autos.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
         </div>
       </div>
-      <div class="demo-card" data-cat="restaurante">
-        <div class="demo-thumb" style="background:linear-gradient(135deg,#1a0f00,#2d1a00);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
-          <span style="font-size:3rem;">☕</span>
-          <div style="position:absolute;top:12px;left:12px;background:var(--orange);color:#fff;font-size:.6rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;">Próximo</div>
+
+      <div class="demo-card rv" data-cat="hospitalidad">
+        <div class="demo-thumb">
+          <div class="demo-thumb-bg" style="background-image:url(https://pub-d0b77f73cd394f708339c01c60125e30.r2.dev/Demos%20Mini%20Zenio/SCR-20260519-inic.jpeg);background-size:cover;background-position:center top"></div>
+          <div class="demo-thumb-overlay"></div>
+          <div class="demo-nivel" style="background:#8a6900;color:#fff;">N2 Premium</div>
+          <div class="demo-live"><span class="demo-live-dot"></span>Live</div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:.18;"><rect x="8" y="16" width="36" height="28" rx="2" stroke="white" stroke-width="1.5"/><path d="M16 44V20M36 44V20" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M8 28h36" stroke="white" stroke-width="1.5"/><path d="M20 8l6-4 6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="demo-thumb-icon"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
         </div>
         <div class="demo-info">
-          <div class="demo-cat">Restaurante · Café</div>
-          <h3 class="demo-title">Vintage Coffee Shop</h3>
-          <p class="demo-desc">Café de especialidad con estética retro. Cálido, editorial, con carácter.</p>
-          <a href="#" class="demo-link" style="opacity:.5;pointer-events:none;">En desarrollo →</a>
+          <div class="demo-cat">Hospitalidad · Hotel</div>
+          <h3 class="demo-title">Demo Hotel</h3>
+          <p class="demo-desc">Galería inmersiva, habitaciones con tarifas, reservaciones y experiencia premium.</p>
+          <a href="https://zenio-demo-hotel.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
         </div>
       </div>
-      <div class="demo-card" data-cat="otros">
-        <div class="demo-thumb" style="background:linear-gradient(135deg,#0d0d0d,#1a1a1a);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
-          <span style="font-size:3rem;">👗</span>
-          <div style="position:absolute;top:12px;left:12px;background:var(--orange);color:#fff;font-size:.6rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;">Próximo</div>
+
+      <div class="demo-card rv" data-cat="lifestyle">
+        <div class="demo-thumb">
+          <div class="demo-thumb-bg" style="background-image:url(https://pub-d0b77f73cd394f708339c01c60125e30.r2.dev/Demos%20Mini%20Zenio/SCR-20260519-inrp.jpeg);background-size:cover;background-position:center top"></div>
+          <div class="demo-thumb-overlay"></div>
+          <div class="demo-nivel" style="background:#8b2fc9;color:#fff;">N2 Premium</div>
+          <div class="demo-live"><span class="demo-live-dot"></span>Live</div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:.18;"><circle cx="26" cy="20" r="8" stroke="white" stroke-width="1.5"/><path d="M26 28v16" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M18 16c-4-6-10-4-10 2s6 8 18 2" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M34 16c4-6 10-4 10 2s-6 8-18 2" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <div class="demo-thumb-icon"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
         </div>
         <div class="demo-info">
-          <div class="demo-cat">Moda · Modelos</div>
-          <h3 class="demo-title">Agencia de Modelos</h3>
-          <p class="demo-desc">Agencia premium. Minimalismo editorial, fotografía dominante, elegancia.</p>
-          <a href="#" class="demo-link" style="opacity:.5;pointer-events:none;">En desarrollo →</a>
+          <div class="demo-cat">Lifestyle · Floristería</div>
+          <h3 class="demo-title">Demo Flores</h3>
+          <p class="demo-desc">Catálogo de arreglos, pedidos express por WhatsApp y galería de ocasiones especiales.</p>
+          <a href="https://zenio-demo-flores.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
         </div>
       </div>
+
+      <div class="demo-card rv" data-cat="empresa">
+        <div class="demo-thumb">
+          <div class="demo-thumb-bg" style="background-image:url(https://pub-d0b77f73cd394f708339c01c60125e30.r2.dev/Demos%20Mini%20Zenio/SCR-20260519-inug.jpeg);background-size:cover;background-position:center top"></div>
+          <div class="demo-thumb-overlay"></div>
+          <div class="demo-nivel" style="background:#3a3a5c;color:#fff;">N1 Corporativo</div>
+          <div class="demo-live"><span class="demo-live-dot"></span>Live</div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:.18;"><rect x="8" y="8" width="36" height="36" rx="2" stroke="white" stroke-width="1.5"/><path d="M16 20h20M16 26h20M16 32h12" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <div class="demo-thumb-icon"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+        </div>
+        <div class="demo-info">
+          <div class="demo-cat">Empresa · Legal / Consultoría</div>
+          <h3 class="demo-title">Demo Despacho</h3>
+          <p class="demo-desc">Despacho profesional. Sobrio, confiable, con áreas de práctica y formulario de contacto.</p>
+          <a href="https://zenio-demo-despacho.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
+        </div>
+      </div>
+
+      <div class="demo-card rv" data-cat="servicios">
+        <div class="demo-thumb">
+          <div class="demo-thumb-bg" style="background-image:url(https://pub-d0b77f73cd394f708339c01c60125e30.r2.dev/Demos%20Mini%20Zenio/SCR-20260519-inwx.png);background-size:cover;background-position:center top"></div>
+          <div class="demo-thumb-overlay"></div>
+          <div class="demo-nivel" style="background:#b87a00;color:#fff;">N2 Premium</div>
+          <div class="demo-live"><span class="demo-live-dot"></span>Live</div>
+          <div class="demo-thumb-icon"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+        </div>
+        <div class="demo-info">
+          <div class="demo-cat">Servicios · Construcción</div>
+          <h3 class="demo-title">Demo Construcción</h3>
+          <p class="demo-desc">Constructora / contratista. Proyectos, materiales, presupuestos y formulario de obra.</p>
+          <a href="https://zenio-demo-contruccion.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
+        </div>
+      </div>
+
+      <div class="demo-card rv" data-cat="servicios">
+        <div class="demo-thumb">
+          <div class="demo-thumb-bg" style="background-image:url(https://pub-d0b77f73cd394f708339c01c60125e30.r2.dev/Demos%20Mini%20Zenio/SCR-20260519-ioae.jpeg);background-size:cover;background-position:center top"></div>
+          <div class="demo-thumb-overlay"></div>
+          <div class="demo-nivel" style="background:#166534;color:#fff;">N1 Corporativo</div>
+          <div class="demo-live"><span class="demo-live-dot"></span>Live</div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:.18;"><path d="M14 38c0-8 8-14 16-10" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M24 18h8v6h-8z" stroke="white" stroke-width="1.5"/><path d="M28 24v10" stroke="white" stroke-width="1.5" stroke-linecap="round"/><circle cx="28" cy="36" r="2" stroke="white" stroke-width="1.5"/></svg></div>
+          <div class="demo-thumb-icon"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+        </div>
+        <div class="demo-info">
+          <div class="demo-cat">Servicios · Fumigación</div>
+          <h3 class="demo-title">Demo Fumigación</h3>
+          <p class="demo-desc">Control de plagas residencial y comercial. Cotización rápida por WhatsApp.</p>
+          <a href="https://zenio-demo-fumiga.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
+        </div>
+      </div>
+
+      <div class="demo-card rv" data-cat="automotriz">
+        <div class="demo-thumb">
+          <div class="demo-thumb-bg" style="background-image:url(https://pub-d0b77f73cd394f708339c01c60125e30.r2.dev/Demos%20Mini%20Zenio/SCR-20260519-iodf.jpeg);background-size:cover;background-position:center top"></div>
+          <div class="demo-thumb-overlay"></div>
+          <div class="demo-nivel" style="background:#4a7c00;color:#fff;">N3 Autor</div>
+          <div class="demo-live"><span class="demo-live-dot"></span>Live</div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" style="opacity:.18;"><rect x="8" y="18" width="40" height="24" rx="2" stroke="white" stroke-width="1.5"/><path d="M12 18V12h32v6" stroke="white" stroke-width="1.5" stroke-linecap="round"/><circle cx="16" cy="46" r="5" stroke="white" stroke-width="1.5"/><circle cx="40" cy="46" r="5" stroke="white" stroke-width="1.5"/><path d="M8 30h40" stroke="white" stroke-width="1.5"/></svg></div>
+          <div class="demo-thumb-icon"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+        </div>
+        <div class="demo-info">
+          <div class="demo-cat">Automotriz · Off-Road</div>
+          <h3 class="demo-title">Demo Jeep</h3>
+          <p class="demo-desc">Marca de aventura. Full-screen, scroll storytelling, accesorios y configurador.</p>
+          <a href="https://zenio-demo-jeep.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
+        </div>
+      </div>
+
+      <div class="demo-card rv" data-cat="lifestyle">
+        <div class="demo-thumb">
+          <div class="demo-thumb-bg" style="background-image:url(https://pub-d0b77f73cd394f708339c01c60125e30.r2.dev/Demos%20Mini%20Zenio/SCR-20260519-ioge.jpeg);background-size:cover;background-position:center top"></div>
+          <div class="demo-thumb-overlay"></div>
+          <div class="demo-nivel" style="background:#8a6900;color:#d4aa40;">N3 Autor</div>
+          <div class="demo-live"><span class="demo-live-dot"></span>Live</div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:.18;"><path d="M10 22L26 8l16 14-16 28L10 22z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 22h32" stroke="white" stroke-width="1.5"/></svg></div>
+          <div class="demo-thumb-icon"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+        </div>
+        <div class="demo-info">
+          <div class="demo-cat">Lifestyle · Joyería</div>
+          <h3 class="demo-title">Demo Joyería</h3>
+          <p class="demo-desc">Lujo editorial. Colecciones con luz dramática, materiales nobles y atención personalizada.</p>
+          <a href="https://zenio-demo-joyeria.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
+        </div>
+      </div>
+
+      <div class="demo-card rv" data-cat="salud">
+        <div class="demo-thumb">
+          <div class="demo-thumb-bg" style="background-image:url(https://pub-d0b77f73cd394f708339c01c60125e30.r2.dev/Demos%20Mini%20Zenio/SCR-20260519-iojb.jpeg);background-size:cover;background-position:center top"></div>
+          <div class="demo-thumb-overlay"></div>
+          <div class="demo-nivel" style="background:#0e6e8c;color:#fff;">N1 Corporativo</div>
+          <div class="demo-live"><span class="demo-live-dot"></span>Live</div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><svg width="52" height="52" viewBox="0 0 52 52" fill="none" style="opacity:.18;"><path d="M26 10c-8 0-14 6-14 14 0 10 14 20 14 20s14-10 14-20c0-8-6-14-14-14z" stroke="white" stroke-width="1.5"/><path d="M20 24h12M26 18v12" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <div class="demo-thumb-icon"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+        </div>
+        <div class="demo-info">
+          <div class="demo-cat">Salud · Veterinaria</div>
+          <h3 class="demo-title">Demo Veterinaria</h3>
+          <p class="demo-desc">Clínica veterinaria. Servicios, citas en línea, equipo médico y emergencias 24h.</p>
+          <a href="https://zenio-demo-vet.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
+        </div>
+      </div>
+
+      <div class="demo-card rv" data-cat="moda">
+        <div class="demo-thumb">
+          <div class="demo-thumb-bg" style="background-image:url(https://pub-d0b77f73cd394f708339c01c60125e30.r2.dev/Demos%20Mini%20Zenio/SCR-20260525-oknl.jpeg);background-size:cover;background-position:center top"></div>
+          <div class="demo-thumb-overlay"></div>
+          <div class="demo-nivel" style="background:#1a1a1a;color:#c9a96e;border:1px solid rgba(201,169,110,0.5);">N3 Luxury</div>
+          <div class="demo-live"><span class="demo-live-dot"></span>Live</div>
+          <div class="demo-thumb-icon"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+        </div>
+        <div class="demo-info">
+          <div class="demo-cat">Moda · Agencia de Modelos</div>
+          <h3 class="demo-title">Ember Fashion</h3>
+          <p class="demo-desc">Agencia de modelos de lujo. Layout editorial, galería dinámica, video hero y short cinematográfico con modelos AI.</p>
+          <a href="https://ember-fashion.pages.dev" target="_blank" class="demo-link">Ver demo →</a>
+        </div>
+      </div>
+
     </div>
-    <!-- CTA portafolio -->
-    <div class="reveal" style="text-align:center;padding:5rem 0 3rem;">
-      <p style="font-size:1rem;color:var(--muted);margin-bottom:1.5rem;">¿Tu negocio no aparece aquí? Lo creamos para ti.</p>
-      <a href="https://wa.me/528110496588" target="_blank" class="btn-primary">Cotizar mi sitio →</a>
+  </div>
+
+  <div class="demos-wrap">
+    <div class="port-stats rv">
+      <div class="pst"><div class="pst-n"><span class="counter" data-target="11">0</span><span>+</span></div><div class="pst-l">Demos live</div></div>
+      <div class="pst"><div class="pst-n"><span class="counter" data-target="7">0</span></div><div class="pst-l">Industrias cubiertas</div></div>
+      <div class="pst"><div class="pst-n"><span class="counter" data-target="72">0</span><span>h</span></div><div class="pst-l">Tiempo de entrega</div></div>
+      <div class="pst"><div class="pst-n"><span>$</span><span class="counter" data-target="7500">0</span></div><div class="pst-l">Desde MXN</div></div>
     </div>
+  </div>
+
+  <div class="port-cta rv">
+    <p>¿Tu giro no aparece aquí? Lo creamos para ti.</p>
+    <a href="https://wa.me/528110496588?text=Hola,%20quiero%20cotizar%20mi%20p%C3%A1gina%20web" target="_blank" class="bwa2">Cotizar mi sitio →</a>
   </div>
 </section>
 <footer>

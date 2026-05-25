@@ -1,797 +1,1240 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Zenio Digital — Agencia de diseño web en todo México. Sitios profesionales, rápidos y construidos para convertir. Entrega en 7 días desde $7,500 MXN.">
-<meta name="keywords" content="páginas web México, diseño web profesional México, agencia web México, sitio web empresas México, desarrollo web México">
+<meta name="description" content="Zenio Digital — Agencia de diseño web en Monterrey. Sitios profesionales que convierten. Entrega en 7 días desde $7,500 MXN.">
+<meta name="keywords" content="diseño web Monterrey, agencia web Nuevo León, páginas web profesionales México, desarrollo web PyMEs Monterrey">
 <meta name="author" content="Zenio Digital">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Zenio Digital — Tu negocio merece una web que venda">
-<meta property="og:description" content="Diseño web profesional en México. Sitios que generan confianza, atraen clientes y cargan en segundos.">
+<meta property="og:title" content="Zenio Digital — Diseño Web Premium en Monterrey">
+<meta property="og:description" content="Tu web es tu vendedor más barato. Sitios que generan confianza, atraen clientes y cargan en segundos.">
 <meta property="og:url" content="https://zeniodigital.com">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_MX">
-<title>Zenio Digital — Diseño Web Profesional en México | Desde $7,500 MXN</title>
+<title>Zenio Digital — Diseño Web Premium en Monterrey | Desde $7,500 MXN</title>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Zenio Digital","description":"Agencia de diseño web en todo México especializada en sitios profesionales que convierten visitas en clientes.","url":"https://zeniodigital.com","telephone":"+528110496588","email":"hola@zeniodigital.com","address":{"@type":"PostalAddress","addressLocality":"México","addressRegion":"Nuevo León","addressCountry":"MX"},"areaServed":["México","San Pedro Garza García","San Nicolás","Guadalupe","Nuevo León","México"],"priceRange":"$$","openingHours":"Mo-Sa 09:00-20:00","sameAs":["https://wa.me/528110496588"]}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Zenio Digital","description":"Agencia de diseño web en Monterrey especializada en sitios premium que convierten.","url":"https://zeniodigital.com","telephone":"+528110496588","email":"hola@zeniodigital.com","address":{"@type":"PostalAddress","addressLocality":"Monterrey","addressRegion":"Nuevo León","addressCountry":"MX"},"areaServed":["Monterrey","Nuevo León","México"],"priceRange":"$$","openingHours":"Mo-Sa 09:00-20:00","sameAs":["https://wa.me/528110496588"]}
 </script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
 :root{
-  --bg:#060606;
-  --s1:#0b0b0b;--s2:#0f0f0f;--s3:#131313;
-  --bd:rgba(255,255,255,.06);--bd2:rgba(255,255,255,.1);
-  --tx:#ede9e4;--mu:rgba(237,233,228,.42);--mu2:rgba(237,233,228,.2);--mu3:rgba(237,233,228,.1);
-  --or:#e05c00;--or2:rgba(224,92,0,.08);--or3:rgba(224,92,0,.15);
-  --rad:2px;
+  /* Oscuros */
+  --bg:   #0f0f0f;
+  --s1:   #141414;
+  --s2:   #1a1a1a;
+  --s3:   #111111;
+  /* Cálidos */
+  --w1:   #F5F3EE;
+  --w2:   #EFECE6;
+  --w3:   #FAFAF8;
+  /* Bordes */
+  --bd:   rgba(255,255,255,.07);
+  --bd2:  rgba(255,255,255,.12);
+  --bdk:  rgba(0,0,0,.09);
+  /* Textos oscuros */
+  --tx:   #EAEAEA;
+  --mu:   rgba(234,234,234,.5);
+  --mu2:  rgba(234,234,234,.26);
+  --mu3:  rgba(234,234,234,.1);
+  /* Textos sobre cálido */
+  --dk:   #111111;
+  --mid:  #555555;
+  --dim:  #888888;
+  /* Naranja */
+  --or:   #E8621A;
+  --or2:  rgba(232,98,26,.09);
+  --or3:  rgba(232,98,26,.18);
+  --orh:  #D95A0B;
+  /* Tipo */
+  --cg:   'Cabinet Grotesk', sans-serif;
+  --dm:   'DM Sans', sans-serif;
+  --rad:  2px;
 }
+
 html{scroll-behavior:smooth}
 section[id]{scroll-margin-top:80px}
-body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);overflow-x:hidden;line-height:1.65;cursor:none}
-::-webkit-scrollbar{width:2px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--or);border-radius:2px}
+body{font-family:var(--dm);font-size:1.0625rem;background:var(--bg);color:var(--tx);overflow-x:hidden;line-height:1.65;cursor:none}
+::-webkit-scrollbar{width:2px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--or);border-radius:2px}
+img{max-width:100%;height:auto}
+a{text-decoration:none}
 
-/* CURSOR */
-#cring{position:fixed;width:32px;height:32px;border:1px solid rgba(224,92,0,.45);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s;will-change:left,top}
+/* ── CURSOR ── */
+#cring{position:fixed;width:28px;height:28px;border:1.5px solid rgba(232,98,26,.5);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;will-change:left,top}
 #cdot{position:fixed;width:4px;height:4px;background:var(--or);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);will-change:left,top}
 
-/* GRID BG */
-.gbg{position:fixed;inset:0;z-index:-2;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 80% 70% at 50% 20%,black 10%,transparent 100%)}
-.orb{position:fixed;border-radius:50%;filter:blur(100px);pointer-events:none;z-index:-1}
-.o1{width:700px;height:700px;top:-200px;right:-150px;background:radial-gradient(circle,rgba(224,92,0,.07) 0%,transparent 70%);animation:orba 11s ease-in-out infinite}
-.o2{width:400px;height:400px;bottom:-100px;left:-100px;background:radial-gradient(circle,rgba(224,92,0,.05) 0%,transparent 70%);animation:orba 13s 3s ease-in-out infinite reverse}
-@keyframes orba{0%,100%{transform:translate(0,0)}50%{transform:translate(20px,-25px)}}
+/* ── FONDO GRID ── */
+.gbg{position:fixed;inset:0;z-index:-2;background-image:linear-gradient(rgba(255,255,255,.016) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.016) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 80% 60% at 50% 10%,black,transparent 80%)}
+.orb1{position:fixed;width:600px;height:600px;top:-200px;right:-100px;background:radial-gradient(circle,rgba(232,98,26,.07) 0%,transparent 70%);border-radius:50%;filter:blur(80px);pointer-events:none;z-index:-1;animation:float1 14s ease-in-out infinite}
+.orb2{position:fixed;width:350px;height:350px;bottom:-80px;left:-80px;background:radial-gradient(circle,rgba(232,98,26,.05) 0%,transparent 70%);border-radius:50%;filter:blur(80px);pointer-events:none;z-index:-1;animation:float1 18s 4s ease-in-out infinite reverse}
+@keyframes float1{0%,100%{transform:translate(0,0)}50%{transform:translate(18px,-22px)}}
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:72px;background:rgba(6,6,6,.85);backdrop-filter:blur(24px);border-bottom:1px solid var(--bd);transition:background .3s;gap:2rem}
-nav.scrolled{background:rgba(6,6,6,.97)}
-.nlogo{font-family:'DM Serif Display',serif;font-size:1.15rem;font-weight:400;color:var(--tx);text-decoration:none;display:flex;align-items:center;gap:8px;letter-spacing:0;white-space:nowrap;flex-shrink:0}
-.nmark{width:22px;height:22px;background:var(--or);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);flex-shrink:0}
-.nlinks{display:flex;gap:1.8rem;list-style:none;flex-shrink:1}
-.nlinks a{font-size:.78rem;font-weight:400;letter-spacing:.05em;color:var(--mu);text-decoration:none;transition:color .2s}
-.nlinks a:hover{color:var(--tx)}
-.nact{display:flex;align-items:center;gap:1rem}
-.nghst{font-size:.78rem;color:var(--mu);text-decoration:none;letter-spacing:.04em;transition:color .2s}
-.nghst:hover{color:var(--tx)}
-.nwa{display:inline-flex;align-items:center;gap:8px;background:var(--or);color:#fff;padding:.48rem 1.15rem;border-radius:var(--rad);font-size:.76rem;font-weight:500;text-decoration:none;transition:background .2s,transform .15s}
-.nwa:hover{background:#f06a00;transform:translateY(-1px)}
-.nhm{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:500;height:80px;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;background:rgba(15,15,15,.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);transition:background .3s}
+nav.scrolled{background:rgba(15,15,15,.97)}
+.nlogo{font-family:var(--cg);font-size:1.25rem;font-weight:800;color:var(--tx);display:flex;align-items:center;gap:9px;letter-spacing:-.025em;flex-shrink:0}
+.nmark{width:20px;height:20px;background:var(--or);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);flex-shrink:0;transition:transform .3s}
+.nlogo:hover .nmark{transform:rotate(45deg)}
+.nlinks{display:flex;gap:2rem;list-style:none}
+.nlinks a{font-size:.78rem;font-weight:400;letter-spacing:.04em;color:var(--mu);transition:color .2s}
+.nlinks a:hover,.nlinks a.active{color:var(--tx)}
+.ncta-btn{display:inline-flex;align-items:center;gap:7px;background:var(--or);color:#fff;padding:.5rem 1.25rem;border-radius:var(--rad);font-size:.76rem;font-weight:600;letter-spacing:.03em;transition:background .2s,transform .15s}
+.ncta-btn:hover{background:var(--orh);transform:translateY(-1px)}
+.nhm{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px}
 .nhm span{width:20px;height:1.5px;background:var(--mu);transition:all .3s}
-.nmob{display:none;position:fixed;top:72px;left:0;right:0;background:rgba(6,6,6,.98);backdrop-filter:blur(24px);border-bottom:1px solid var(--bd);padding:1.5rem 2rem;z-index:199;flex-direction:column;gap:1rem}
-.nmob a{font-size:.88rem;color:var(--mu);text-decoration:none;padding:.5rem 0;border-bottom:1px solid var(--bd);transition:color .2s}
+.nmob{display:none;position:fixed;top:80px;left:0;right:0;background:rgba(15,15,15,.98);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);padding:1.5rem 2rem;z-index:499;flex-direction:column;gap:.8rem}
+.nmob a{font-size:.9rem;color:var(--mu);padding:.55rem 0;border-bottom:1px solid var(--bd);transition:color .2s}
 .nmob a:hover{color:var(--tx)}
-.nmob .nwa{margin-top:.5rem;justify-content:center}
+.nmob .ncta-btn{margin-top:.5rem;justify-content:center;padding:.75rem}
 
-/* HERO */
-#hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:9rem 2.5rem 5rem;text-align:center;position:relative}
-.hbadge{display:inline-flex;align-items:center;gap:10px;font-size:.68rem;font-weight:400;letter-spacing:.16em;color:var(--mu);text-transform:uppercase;margin-bottom:2.5rem;border:1px solid var(--bd2);padding:.45rem 1.2rem;border-radius:100px;background:rgba(255,255,255,.025);animation:fup .6s ease both}
-.hdot{width:5px;height:5px;border-radius:50%;background:var(--or);box-shadow:0 0 8px var(--or);animation:pulse 2s ease-in-out infinite}
-.hline-small{font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:300;letter-spacing:.14em;color:var(--mu);text-transform:uppercase;margin-bottom:1.2rem;animation:fup .6s .06s ease both}
-.hhead{font-family:'DM Serif Display',serif;font-size:clamp(3.2rem,7vw,6.5rem);font-weight:400;line-height:.98;letter-spacing:-.03em;color:var(--tx);max-width:900px;margin:0 auto 2rem}
-.hhead .ln{display:block;overflow:hidden}
-.hhead .ln span{display:block;animation:sup .8s cubic-bezier(.22,1,.36,1) both}
-.hhead .ln:nth-child(1) span{animation-delay:.06s}
-.hhead .ln:nth-child(2) span{animation-delay:.16s}
-.hhead .ln:nth-child(3) span{animation-delay:.26s}
-.hhead .ln:nth-child(4) span{animation-delay:.34s}
-.ital{font-style:italic;color:var(--or)}
-.hsub{font-size:1.05rem;font-weight:300;color:var(--mu);line-height:1.85;max-width:430px;margin:0 auto 3rem;animation:fup .7s .45s ease both}
-.hact{display:flex;align-items:center;justify-content:center;gap:1.2rem;flex-wrap:wrap;margin-bottom:5rem;animation:fup .7s .58s ease both}
-.bpri{display:inline-flex;align-items:center;gap:10px;background:var(--or);color:#fff;padding:.9rem 2.2rem;border-radius:var(--rad);font-size:.88rem;font-weight:500;text-decoration:none;transition:background .2s,transform .15s,box-shadow .2s}
-.bpri:hover{background:#f06a00;transform:translateY(-2px);box-shadow:0 12px 32px rgba(224,92,0,.3)}
-.bsec{display:inline-flex;align-items:center;gap:8px;color:var(--mu);padding:.9rem 1.6rem;font-size:.88rem;font-weight:400;text-decoration:none;border:1px solid var(--bd2);border-radius:var(--rad);transition:color .2s,border-color .2s,transform .15s}
-.bsec:hover{color:var(--tx);border-color:rgba(255,255,255,.22);transform:translateY(-1px)}
+/* ── WA FLOTANTE ── */
+.wa-float{position:fixed;bottom:2rem;right:2rem;z-index:400;width:52px;height:52px;background:var(--or);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(232,98,26,.4);transition:transform .2s,box-shadow .2s;animation:fadeup .6s 2s ease both}
+.wa-float:hover{transform:scale(1.1);box-shadow:0 10px 32px rgba(232,98,26,.55)}
+.wa-float svg{width:26px;height:26px;fill:#fff}
 
-/* HERO PROBLEMA VISUAL */
-.hprob{width:100%;max-width:860px;margin:0 auto;animation:mrev 1s .7s cubic-bezier(.22,1,.36,1) both;display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--bd);border:1px solid var(--bd2);border-radius:6px;overflow:hidden}
-@keyframes mrev{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
-.hpc{background:var(--s1);padding:1.8rem 1.6rem;position:relative;overflow:hidden;text-align:left}
-.hpc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
-.hpc.bad::before{background:rgba(239,68,68,.5)}
-.hpc.mid::before{background:rgba(234,179,8,.5)}
-.hpc.good::before{background:var(--or)}
-.hpc-tag{font-size:.58rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.8rem;display:flex;align-items:center;gap:6px}
-.hpc.bad .hpc-tag{color:rgba(239,68,68,.7)}
-.hpc.mid .hpc-tag{color:rgba(234,179,8,.7)}
-.hpc.good .hpc-tag{color:var(--or)}
-.hpc-tag-dot{width:4px;height:4px;border-radius:50%;background:currentColor}
-.hpc-title{font-family:'DM Serif Display',serif;font-size:1rem;font-weight:400;color:var(--tx);margin-bottom:.5rem;line-height:1.2}
-.hpc-desc{font-size:.72rem;font-weight:300;color:var(--mu);line-height:1.6}
-.hpc-score{margin-top:1rem;display:flex;align-items:center;gap:6px}
-.hpc-bar{flex:1;height:3px;background:var(--mu3);border-radius:2px;overflow:hidden}
-.hpc-fill{height:100%;border-radius:2px;transition:width 1.5s cubic-bezier(.22,1,.36,1)}
-.hpc.bad .hpc-fill{width:18%;background:rgba(239,68,68,.6)}
-.hpc.mid .hpc-fill{width:55%;background:rgba(234,179,8,.6)}
-.hpc.good .hpc-fill{width:95%;background:var(--or)}
-.hpc-pct{font-size:.6rem;font-weight:500;color:var(--mu2)}
+/* ── HERO ── */
+#hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:9rem 3rem 5rem;text-align:center;overflow:hidden}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.2;z-index:0;pointer-events:none}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(15,15,15,.3) 0%,rgba(15,15,15,.1) 40%,rgba(15,15,15,.7) 100%);z-index:1;pointer-events:none}
+.hero-in{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
 
-.scroll-hint{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;animation:fup .7s 1.4s ease both}
-.scrl{width:1px;height:32px;background:linear-gradient(to bottom,var(--bd2),transparent);animation:sca 2.2s ease-in-out infinite}
-@keyframes sca{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}100%{transform:scaleY(0);transform-origin:bottom}}
-.scrl-lbl{font-size:.56rem;letter-spacing:.18em;color:var(--mu2);text-transform:uppercase}
+.hbadge{display:inline-flex;align-items:center;gap:9px;font-size:.66rem;font-weight:500;letter-spacing:.18em;color:var(--mu);text-transform:uppercase;margin-bottom:2.5rem;border:1px solid var(--bd2);padding:.45rem 1.2rem;border-radius:100px;background:rgba(255,255,255,.03);animation:fadeup .6s ease both}
+.hpulse{width:5px;height:5px;border-radius:50%;background:var(--or);box-shadow:0 0 8px var(--or);animation:pulse 2s infinite}
 
-/* MARQUEE */
-.mqsec{border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);background:var(--s1);padding:0}
-.mqlbl{text-align:center;padding:1.4rem 2rem .8rem}
-.mqlbl span{font-size:.6rem;font-weight:400;letter-spacing:.2em;color:var(--mu2);text-transform:uppercase;display:inline-flex;align-items:center;gap:12px}
-.mqlbl span::before,.mqlbl span::after{content:'';width:20px;height:1px;background:var(--bd2)}
-.mqout{overflow:hidden;padding:.5rem 0;mask-image:linear-gradient(90deg,transparent,black 8%,black 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,black 8%,black 92%,transparent)}
-.mqt{display:flex;align-items:center;width:max-content;animation:mq 26s linear infinite}
-.mqt:hover{animation-play-state:paused}
-.mqt2{display:flex;align-items:center;width:max-content;animation:mq2 20s linear infinite;margin-top:.4rem}
-.mqt2:hover{animation-play-state:paused}
+.hh1{font-family:var(--cg);font-size:clamp(3.8rem,8.5vw,8rem);font-weight:900;line-height:.92;letter-spacing:-.04em;color:var(--tx);max-width:1000px;margin:0 auto 2rem}
+.hh1 .ln{display:block;overflow:hidden}
+.hh1 .ln span{display:block;animation:slideup .85s cubic-bezier(.22,1,.36,1) both}
+.hh1 .ln:nth-child(1) span{animation-delay:.08s}
+.hh1 .ln:nth-child(2) span{animation-delay:.18s}
+.hh1 .ln:nth-child(3) span{animation-delay:.28s}
+.hh1 em{font-style:italic;color:var(--or)}
+
+.hsub{font-size:1.1rem;font-weight:300;color:var(--mu);line-height:1.8;max-width:460px;margin:0 auto 3rem;animation:fadeup .7s .42s ease both}
+
+.hbtns{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:5rem;animation:fadeup .7s .55s ease both}
+.btn-pri{display:inline-flex;align-items:center;gap:9px;background:var(--or);color:#fff;padding:.95rem 2.4rem;border-radius:var(--rad);font-size:.9rem;font-weight:600;letter-spacing:.02em;transition:background .2s,transform .15s,box-shadow .2s}
+.btn-pri:hover{background:var(--orh);transform:translateY(-2px);box-shadow:0 14px 36px rgba(232,98,26,.32)}
+.btn-sec{display:inline-flex;align-items:center;gap:8px;color:var(--mu);padding:.95rem 1.8rem;font-size:.9rem;font-weight:400;border:1px solid var(--bd2);border-radius:var(--rad);transition:color .2s,border-color .2s,transform .15s}
+.btn-sec:hover{color:var(--tx);border-color:rgba(255,255,255,.25);transform:translateY(-1px)}
+
+/* Hero cards comparativo */
+.hero-cards{width:100%;max-width:820px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--bd);border:1px solid var(--bd2);border-radius:4px;overflow:hidden;animation:slideup-fade 1s .7s cubic-bezier(.22,1,.36,1) both}
+.hcard{background:var(--s1);padding:1.8rem 1.5rem;text-align:left;position:relative;overflow:hidden}
+.hcard::after{content:'';position:absolute;top:0;left:0;right:0;height:2px}
+.hcard.bad::after{background:rgba(239,68,68,.5)}
+.hcard.mid::after{background:rgba(234,179,8,.5)}
+.hcard.ok::after{background:var(--or)}
+.hcard-tag{font-size:.58rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.8rem;display:flex;align-items:center;gap:5px}
+.hcard.bad .hcard-tag{color:rgba(239,68,68,.7)}
+.hcard.mid .hcard-tag{color:rgba(234,179,8,.7)}
+.hcard.ok  .hcard-tag{color:var(--or)}
+.hcard-dot{width:4px;height:4px;border-radius:50%;background:currentColor}
+.hcard-t{font-family:var(--cg);font-size:.95rem;font-weight:700;color:var(--tx);margin-bottom:.4rem;line-height:1.2}
+.hcard-d{font-size:.72rem;font-weight:300;color:var(--mu);line-height:1.6;margin-bottom:.9rem}
+.hcard-bar{height:3px;background:var(--mu3);border-radius:2px;overflow:hidden}
+.hcard-fill{height:100%;border-radius:2px;transition:width 1.6s cubic-bezier(.22,1,.36,1)}
+.hcard.bad  .hcard-fill{width:0%;background:rgba(239,68,68,.6)}
+.hcard.mid  .hcard-fill{width:0%;background:rgba(234,179,8,.6)}
+.hcard.ok   .hcard-fill{width:0%;background:var(--or)}
+
+.scroll-cue{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:5px;z-index:2;animation:fadeup .6s 1.5s ease both}
+.scroll-line{width:1px;height:28px;background:linear-gradient(to bottom,var(--bd2),transparent);animation:scaleY 2.2s ease-in-out infinite}
+.scroll-txt{font-size:.55rem;letter-spacing:.2em;color:var(--mu2);text-transform:uppercase}
+@keyframes scaleY{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ── MARQUEE ── */
+.mq-sec{border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);background:var(--s1);overflow:hidden;padding:.6rem 0 1rem}
+.mq-label{text-align:center;padding:1.2rem 2rem .6rem;font-size:.58rem;font-weight:500;letter-spacing:.22em;color:var(--mu2);text-transform:uppercase}
+.mq-mask{overflow:hidden;mask-image:linear-gradient(90deg,transparent,black 8%,black 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,black 8%,black 92%,transparent)}
+.mq-track{display:flex;width:max-content;animation:mq 28s linear infinite}
+.mq-track:hover{animation-play-state:paused}
+.mq-item{display:flex;align-items:center;gap:8px;padding:0 2.5rem;border-right:1px solid var(--bd);white-space:nowrap;opacity:.35;transition:opacity .3s}
+.mq-item:hover{opacity:1}
+.mq-item svg{width:16px;height:16px;fill:none;stroke:var(--or);stroke-width:1.8;stroke-linecap:round;flex-shrink:0}
+.mq-item span{font-size:.74rem;font-weight:400;color:var(--tx)}
 @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@keyframes mq2{from{transform:translateX(-50%)}to{transform:translateX(0)}}
-.titem{display:flex;align-items:center;gap:9px;padding:0 2.5rem;border-right:1px solid var(--bd);white-space:nowrap;opacity:.38;transition:opacity .3s;cursor:default}
-.titem:hover{opacity:1}
-.tname{font-size:.76rem;font-weight:400;letter-spacing:.03em;color:var(--tx)}
-.tico{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;color:var(--or);flex-shrink:0}
-.msg2{display:flex;align-items:center;gap:9px;padding:.5rem 2rem;border-right:1px solid var(--bd);white-space:nowrap}
-.m2dot{width:4px;height:4px;border-radius:50%;background:var(--or);flex-shrink:0}
-.m2txt{font-size:.68rem;font-weight:400;letter-spacing:.08em;color:var(--mu);text-transform:uppercase}
 
-/* SECCIÓN BASE */
-.sec{padding:7rem 2.5rem;max-width:1100px;margin:0 auto}
-.eyb{display:inline-flex;align-items:center;gap:10px;font-size:.62rem;font-weight:400;letter-spacing:.2em;color:var(--or);text-transform:uppercase;margin-bottom:1.4rem}
-.eyb::before{content:'';width:20px;height:1px;background:var(--or)}
-.sh{font-family:'DM Serif Display',serif;font-size:clamp(2.2rem,4vw,3.6rem);font-weight:400;letter-spacing:-.02em;color:var(--tx);line-height:1.05}
+/* ── SECCIÓN BASE ── */
+.sec{padding:clamp(80px,10vw,140px) 3rem;max-width:1140px;margin:0 auto}
+.sec-full{border-top:1px solid var(--bd)}
+.eyb{display:inline-flex;align-items:center;gap:9px;font-size:.62rem;font-weight:600;letter-spacing:.2em;color:var(--or);text-transform:uppercase;margin-bottom:1.4rem}
+.eyb::before{content:'';width:18px;height:1px;background:var(--or)}
+.sh{font-family:var(--cg);font-size:clamp(2.2rem,4vw,3.6rem);font-weight:800;letter-spacing:-.035em;color:var(--tx);line-height:1.0}
 .sh em{font-style:italic;color:var(--or)}
-.stop{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3.5rem;gap:2rem;flex-wrap:wrap}
-.snote{font-size:.84rem;font-weight:300;color:var(--mu);line-height:1.75;max-width:270px;text-align:right}
+.sec-top{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3.5rem;gap:2rem;flex-wrap:wrap}
+.sec-note{font-size:.84rem;font-weight:300;color:var(--mu);line-height:1.75;max-width:260px;text-align:right}
 
-/* PROBLEMA */
-.prob-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bd);border:1px solid var(--bd2);margin-bottom:4rem}
-.pcard{background:var(--s1);padding:2.5rem 2.2rem;position:relative;overflow:hidden}
-.pcard-icon{width:40px;height:40px;margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;border:1px solid var(--bd2);color:var(--mu2)}
-.pcard-icon svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round}
-.pcard.highlight .pcard-icon{border-color:rgba(224,92,0,.25);background:var(--or2);color:var(--or)}
-.pcard-title{font-family:'DM Serif Display',serif;font-size:1.1rem;font-weight:400;color:var(--tx);margin-bottom:.65rem;line-height:1.2}
-.pcard-desc{font-size:.84rem;font-weight:300;color:var(--mu);line-height:1.75}
-.pcard.highlight{background:var(--s2)}
-.pcard.highlight::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--or)}
-.prob-stat{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd2);border-top:none}
-.pstat{background:var(--s1);padding:2rem;text-align:center}
-.pstat-n{font-family:'DM Serif Display',serif;font-size:2.4rem;font-weight:400;color:var(--tx);letter-spacing:-.03em;line-height:1;margin-bottom:.4rem}
+/* ── LOGOS CLIENTES ── */
+.logos-sec{background:var(--s1);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:2.5rem 3rem;text-align:center}
+.logos-label{font-size:.6rem;font-weight:500;letter-spacing:.2em;color:var(--mu2);text-transform:uppercase;margin-bottom:1.8rem}
+.logos-row{display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap}
+.logo-item{opacity:.28;transition:opacity .3s;display:flex;flex-direction:column;align-items:center;gap:6px}
+.logo-item:hover{opacity:.7}
+.logo-name{font-family:var(--cg);font-size:.8rem;font-weight:700;letter-spacing:.08em;color:var(--tx);text-transform:uppercase}
+.logo-cat{font-size:.6rem;color:var(--mu2);letter-spacing:.06em}
+
+/* ── PROBLEMA (fondo cálido) ── */
+.prob-sec{background:var(--w1);border-top:1px solid var(--bdk);border-bottom:1px solid var(--bdk)}
+.prob-sec .sh{color:var(--dk)}
+.prob-sec .sh em{color:var(--or)}
+.prob-sec .sec-note{color:var(--mid)}
+.prob-sec .eyb{color:var(--or)}
+.prob-sec .eyb::before{background:var(--or)}
+.prob-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.1);margin-bottom:1px}
+.pcard{background:#fff;padding:2.4rem 2.2rem;position:relative;overflow:hidden}
+.pcard.hl{border-top:2px solid var(--or)}
+.pcard-ico{width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(0,0,0,.1);color:rgba(0,0,0,.3);margin-bottom:1.4rem}
+.pcard.hl .pcard-ico{background:rgba(232,98,26,.07);border-color:rgba(232,98,26,.2);color:var(--or)}
+.pcard-ico svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round}
+.pcard-t{font-family:var(--cg);font-size:1.05rem;font-weight:700;color:var(--dk);margin-bottom:.55rem;line-height:1.2}
+.pcard-d{font-size:.84rem;font-weight:300;color:var(--mid);line-height:1.75}
+.pstats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.1);border-top:none}
+.pstat{background:#fff;padding:2rem;text-align:center}
+.pstat-n{font-family:var(--cg);font-size:2.6rem;font-weight:900;color:var(--dk);letter-spacing:-.04em;line-height:1;margin-bottom:.35rem}
 .pstat-n span{color:var(--or)}
-.pstat-l{font-size:.72rem;font-weight:300;color:var(--mu);line-height:1.5}
+.pstat-l{font-size:.72rem;font-weight:300;color:var(--dim);line-height:1.5}
 
-/* SOLUCIÓN */
-.sol-wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-bottom:5rem}
-.sol-left{}
-.sol-right{display:flex;flex-direction:column;gap:1.8rem}
-.sol-item{display:flex;gap:1.2rem;align-items:flex-start;padding:1.5rem;background:var(--s1);border:1px solid var(--bd)}
-.sol-item-num{font-family:'DM Serif Display',serif;font-size:1.8rem;font-weight:400;color:var(--or);opacity:.4;line-height:1;flex-shrink:0;width:2rem;text-align:center}
-.sol-item-body{}
-.sol-item-title{font-size:.88rem;font-weight:500;color:var(--tx);margin-bottom:.4rem}
-.sol-item-desc{font-size:.8rem;font-weight:300;color:var(--mu);line-height:1.7}
-.sol-promise{background:var(--s1);border:1px solid var(--bd);border-left:2px solid var(--or);padding:2rem 2.2rem;margin-top:2rem}
-.sol-promise-label{font-size:.6rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:.7rem}
-.sol-promise-text{font-family:'DM Serif Display',serif;font-size:1.2rem;font-weight:400;color:var(--tx);line-height:1.3}
-.sol-visual{background:var(--s2);border:1px solid var(--bd2);padding:2rem;display:flex;flex-direction:column;gap:.8rem}
-.sv-bar{height:1px;background:var(--bd2)}
-.sv-row{display:flex;align-items:center;gap:1rem}
-.sv-label{font-size:.68rem;color:var(--mu);flex:0 0 110px}
+/* ── SOLUCIÓN ── */
+.sol-wrap{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.sol-visual{background:var(--s1);border:1px solid var(--bd);padding:2.2rem}
+.sv-title{font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mu2);margin-bottom:.4rem}
+.sv-head{font-family:var(--cg);font-size:1.1rem;font-weight:700;color:var(--tx);margin-bottom:1.4rem;line-height:1.2}
+.sv-div{height:1px;background:var(--bd);margin-bottom:1.2rem}
+.sv-row{display:flex;align-items:center;gap:.9rem;margin-bottom:.8rem}
+.sv-lbl{font-size:.68rem;color:var(--mu);flex:0 0 110px}
 .sv-track{flex:1;height:4px;background:var(--mu3);border-radius:2px;overflow:hidden}
 .sv-fill{height:100%;border-radius:2px;background:var(--or);transition:width 1.8s cubic-bezier(.22,1,.36,1)}
-.sv-val{font-size:.68rem;font-weight:500;color:var(--or);flex:0 0 28px;text-align:right}
-.sv-title{font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mu2);margin-bottom:.5rem}
-.sv-headline{font-family:'DM Serif Display',serif;font-size:1.05rem;font-weight:400;color:var(--tx);margin-bottom:1.2rem;line-height:1.3}
+.sv-val{font-size:.68rem;font-weight:600;color:var(--or);flex:0 0 30px;text-align:right}
+.sol-promise{background:var(--s1);border:1px solid var(--bd);border-left:2px solid var(--or);padding:1.8rem 2rem;margin-top:1px}
+.sol-promise-lbl{font-size:.58rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:.6rem}
+.sol-promise-txt{font-family:var(--cg);font-size:1.1rem;font-weight:700;color:var(--tx);line-height:1.3}
+.sol-items{display:flex;flex-direction:column;gap:1.6rem}
+.sol-item{display:flex;gap:1.2rem;align-items:flex-start;padding:1.5rem;background:var(--s1);border:1px solid var(--bd);transition:border-color .2s,background .2s}
+.sol-item:hover{background:var(--s2);border-color:rgba(232,98,26,.2)}
+.sol-num{font-family:var(--cg);font-size:1.8rem;font-weight:900;color:var(--or);opacity:.3;line-height:1;flex-shrink:0;width:2rem;text-align:center}
+.sol-t{font-size:.9rem;font-weight:600;color:var(--tx);margin-bottom:.35rem;font-family:var(--cg)}
+.sol-d{font-size:.82rem;font-weight:300;color:var(--mu);line-height:1.7}
 
-/* SERVICIOS */
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd2)}
-.svc{background:var(--s1);padding:2.4rem 2rem;position:relative;overflow:hidden;transition:background .3s;cursor:default}
-.svc::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 80% at 0% 0%,rgba(224,92,0,.06),transparent 70%);opacity:0;transition:opacity .4s}
-.svc:hover{background:var(--s2)}.svc:hover::before{opacity:1}
-.svc-top2{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.8rem}
-.svc-n{font-family:'DM Serif Display',serif;font-size:.72rem;font-weight:400;letter-spacing:.1em;color:var(--mu2)}
-.svc-arr{width:26px;height:26px;border:1px solid var(--bd2);display:flex;align-items:center;justify-content:center;color:var(--mu2);font-size:11px;transition:all .25s}
+/* ── SERVICIOS (fondo cálido) ── */
+.svc-sec{background:var(--w1);border-top:1px solid var(--bdk);border-bottom:1px solid var(--bdk)}
+.svc-sec .sh{color:var(--dk)}
+.svc-sec .sh em{color:var(--or)}
+.svc-sec .eyb{color:var(--or)}
+.svc-sec .eyb::before{background:var(--or)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.1)}
+.svc{background:#fff;padding:2.4rem 2rem;position:relative;overflow:hidden;transition:background .3s;cursor:default}
+.svc::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 80% at 0% 0%,rgba(232,98,26,.05),transparent 70%);opacity:0;transition:opacity .4s}
+.svc:hover{background:#fdf9f6}.svc:hover::before{opacity:1}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.6rem}
+.svc-n{font-size:.62rem;font-weight:600;letter-spacing:.12em;color:var(--dim);text-transform:uppercase}
+.svc-arr{width:24px;height:24px;border:1px solid rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:11px;transition:all .25s}
 .svc:hover .svc-arr{background:var(--or);border-color:var(--or);color:#fff;transform:rotate(-45deg)}
-.svc-ico{width:40px;height:40px;margin-bottom:1.4rem;display:flex;align-items:center;justify-content:center;background:var(--or2);border:1px solid rgba(224,92,0,.15)}
-.svc:hover .svc-ico{background:var(--or3);border-color:rgba(224,92,0,.3)}
-.svc-ico svg{width:18px;height:18px;stroke:var(--or);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.svc-t{font-family:'DM Serif Display',serif;font-size:1.1rem;font-weight:400;color:var(--tx);letter-spacing:-.01em;margin-bottom:.6rem}
-.svc-d{font-size:.82rem;font-weight:300;color:var(--mu);line-height:1.75;margin-bottom:1.6rem}
-.svc-p{display:inline-flex;align-items:center;gap:6px;font-size:.7rem;font-weight:500;letter-spacing:.05em;color:var(--or);padding-top:1.2rem;border-top:1px solid var(--bd);width:100%}
-.svc-parr{margin-left:auto;font-size:.8rem;transition:transform .2s}
-.svc:hover .svc-parr{transform:translateX(4px)}
-.svc.feat{background:var(--s2);border-left:1px solid rgba(224,92,0,.2)}
-.svc.feat::before{opacity:.5}
-.feat-lbl{position:absolute;top:0;right:0;background:var(--or);font-size:.56rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#fff;padding:4px 10px}
+.svc-ico{width:38px;height:38px;background:rgba(232,98,26,.07);border:1px solid rgba(232,98,26,.15);display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem}
+.svc-ico svg{width:17px;height:17px;stroke:var(--or);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.svc-t{font-family:var(--cg);font-size:1.05rem;font-weight:700;color:var(--dk);margin-bottom:.5rem}
+.svc-d{font-size:.82rem;font-weight:300;color:var(--mid);line-height:1.75;margin-bottom:1.4rem}
+.svc-price{display:inline-flex;align-items:center;gap:5px;font-size:.7rem;font-weight:600;color:var(--or);padding-top:1.2rem;border-top:1px solid rgba(0,0,0,.08);width:100%;letter-spacing:.04em}
+.svc-price-arr{margin-left:auto;font-size:.8rem;transition:transform .2s}
+.svc:hover .svc-price-arr{transform:translateX(4px)}
+.svc.feat{background:#fdf9f6;border-top:2px solid var(--or)}
+.svc-badge{position:absolute;top:0;right:0;background:var(--or);font-size:.52rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;padding:4px 10px}
 
-/* DIFERENCIADORES */
+/* ── DIFERENCIADORES ── */
 .dif-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd2)}
 .dif{background:var(--s1);padding:2.5rem 2.2rem;position:relative}
 .dif.full{grid-column:span 2;background:var(--s2);display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
-.dif-ico{width:36px;height:36px;background:var(--or2);border:1px solid rgba(224,92,0,.15);display:flex;align-items:center;justify-content:center;margin-bottom:1.4rem}
-.dif-ico svg{width:16px;height:16px;stroke:var(--or);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.dif-title{font-family:'DM Serif Display',serif;font-size:1.05rem;font-weight:400;color:var(--tx);margin-bottom:.6rem;line-height:1.2}
-.dif-desc{font-size:.82rem;font-weight:300;color:var(--mu);line-height:1.75}
-.dif-big{font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:400;color:var(--tx);line-height:1.1;letter-spacing:-.02em}
+.dif-ico{width:36px;height:36px;background:var(--or2);border:1px solid var(--or3);display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem}
+.dif-ico svg{width:16px;height:16px;stroke:var(--or);fill:none;stroke-width:1.6;stroke-linecap:round}
+.dif-t{font-family:var(--cg);font-size:1.05rem;font-weight:700;color:var(--tx);margin-bottom:.5rem}
+.dif-d{font-size:.82rem;font-weight:300;color:var(--mu);line-height:1.75}
+.dif-big{font-family:var(--cg);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:900;color:var(--tx);line-height:1.05;letter-spacing:-.035em}
 .dif-big em{font-style:italic;color:var(--or)}
-.dif-list{display:flex;flex-direction:column;gap:.8rem}
-.dif-li{display:flex;align-items:flex-start;gap:10px;font-size:.84rem;font-weight:300;color:var(--mu);line-height:1.6}
-.dif-li::before{content:'→';color:var(--or);font-size:.76rem;flex-shrink:0;margin-top:2px}
-.auth-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd2);border-top:none}
-.auth-item{background:var(--s1);padding:1.8rem;text-align:center}
-.auth-n{font-family:'DM Serif Display',serif;font-size:2.2rem;font-weight:400;color:var(--tx);letter-spacing:-.03em;line-height:1;margin-bottom:.3rem}
-.auth-n span{color:var(--or)}
-.auth-l{font-size:.7rem;font-weight:300;color:var(--mu)}
+.dif-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}
+.dif-li{display:flex;align-items:flex-start;gap:9px;font-size:.84rem;font-weight:300;color:var(--mu);line-height:1.6}
+.dif-li::before{content:'→';color:var(--or);font-size:.75rem;flex-shrink:0;margin-top:2px}
+.stats-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd2);border-top:none}
+.stat-item{background:var(--s1);padding:2rem;text-align:center}
+.stat-n{font-family:var(--cg);font-size:2.4rem;font-weight:900;color:var(--tx);letter-spacing:-.04em;line-height:1;margin-bottom:.3rem}
+.stat-n span{color:var(--or)}
+.stat-l{font-size:.7rem;font-weight:300;color:var(--mu)}
 
-/* PROCESO */
-.proc{position:relative;padding-left:4rem}
-.proc-line{position:absolute;left:20px;top:28px;bottom:28px;width:1px;background:linear-gradient(to bottom,var(--or),rgba(224,92,0,.1))}
-.pstep{position:relative;margin-bottom:3rem;display:flex;gap:2.5rem}
-.pstep:last-child{margin-bottom:0}
-.pstep-circ{position:absolute;left:-4rem;width:40px;height:40px;border:1px solid var(--bd2);background:var(--bg);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s;z-index:2}
-.pstep:hover .pstep-circ{background:var(--or);border-color:var(--or)}
-.pstep-num{font-family:'DM Serif Display',serif;font-size:.9rem;font-weight:400;color:var(--mu);transition:color .3s}
-.pstep:hover .pstep-num{color:#fff}
-.pstep-body{padding-bottom:3rem;border-bottom:1px solid var(--bd);flex:1}
-.pstep:last-child .pstep-body{border-bottom:none;padding-bottom:0}
-.pstep-tag{font-size:.58rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--mu2);margin-bottom:.6rem;margin-top:.4rem}
-.pstep-title{font-family:'DM Serif Display',serif;font-size:1.3rem;font-weight:400;color:var(--tx);margin-bottom:.7rem}
-.pstep:hover .pstep-title{color:var(--or)}
-.pstep-desc{font-size:.86rem;font-weight:300;color:var(--mu);line-height:1.8;max-width:560px;margin-bottom:1rem}
-.pstep-pills{display:flex;gap:6px;flex-wrap:wrap}
-.pill2{font-size:.62rem;font-weight:400;letter-spacing:.06em;color:var(--mu2);text-transform:uppercase;padding:.28rem .8rem;border:1px solid var(--bd);background:rgba(255,255,255,.015);transition:all .25s}
-.pstep:hover .pill2{border-color:rgba(224,92,0,.25);color:rgba(224,92,0,.7)}
-.pstep-time{display:inline-flex;align-items:center;gap:5px;margin-top:.8rem;font-size:.66rem;font-weight:500;letter-spacing:.06em;color:var(--or)}
-.ptime-dot{width:4px;height:4px;border-radius:50%;background:var(--or);box-shadow:0 0 6px var(--or)}
-.proc-cta{margin-top:4rem;padding-top:3rem;border-top:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
-.proc-cta-txt{font-family:'DM Serif Display',serif;font-size:1.4rem;font-weight:400;color:var(--tx);line-height:1.2}
-.proc-cta-txt em{font-style:italic;color:var(--or)}
+/* ── PROCESO ── */
+.proc-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--bd);background:var(--bd)}
+.proc-step{background:var(--s1);padding:2.5rem 2.8rem;display:grid;grid-template-columns:80px 1fr;gap:2rem;align-items:start;border-bottom:1px solid var(--bd);transition:background .25s;cursor:default}
+.proc-step:last-child{border-bottom:none}
+.proc-step:hover{background:var(--s2)}
+.proc-num{font-family:var(--cg);font-size:3.5rem;font-weight:900;color:var(--or);opacity:.18;line-height:1;transition:opacity .3s}
+.proc-step:hover .proc-num{opacity:.35}
+.proc-tag{font-size:.58rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mu2);margin-bottom:.5rem}
+.proc-t{font-family:var(--cg);font-size:1.2rem;font-weight:700;color:var(--tx);margin-bottom:.6rem;line-height:1.15;transition:color .25s}
+.proc-step:hover .proc-t{color:var(--or)}
+.proc-d{font-size:.85rem;font-weight:300;color:var(--mu);line-height:1.8;max-width:580px;margin-bottom:.8rem}
+.proc-pills{display:flex;gap:5px;flex-wrap:wrap}
+.pill{font-size:.6rem;font-weight:500;letter-spacing:.06em;color:var(--mu2);text-transform:uppercase;padding:.25rem .75rem;border:1px solid var(--bd);background:rgba(255,255,255,.015);transition:all .25s}
+.proc-step:hover .pill{border-color:rgba(232,98,26,.25);color:rgba(232,98,26,.7)}
+.proc-time{display:inline-flex;align-items:center;gap:5px;margin-top:.7rem;font-size:.65rem;font-weight:600;color:var(--or);letter-spacing:.05em}
+.proc-dot{width:4px;height:4px;border-radius:50%;background:var(--or)}
 
-/* TESTIMONIOS */
-.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd2);margin-bottom:1px}
-.tcard{background:var(--s1);padding:2.2rem 2rem;position:relative;overflow:hidden;transition:background .3s}
-.tcard:hover{background:var(--s2)}
-.tcard.feat{background:var(--s2);border-top:2px solid var(--or)}
+/* ── PORTAFOLIO ── */
+.port-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.port-card{position:relative;overflow:hidden;cursor:pointer;background:var(--bg);border:1px solid var(--bd)}
+.port-thumb{aspect-ratio:16/9;position:relative;overflow:hidden}
+.port-thumb-bg{position:absolute;inset:0;transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.port-card:hover .port-thumb-bg{transform:scale(1.04)}
+.port-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,15,15,.85) 0%,transparent 55%);opacity:0;transition:opacity .3s}
+.port-card:hover .port-overlay{opacity:1}
+.port-info{padding:1.2rem 1.4rem}
+.port-cat{font-size:.6rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--or);margin-bottom:.3rem}
+.port-name{font-family:var(--cg);font-size:1.05rem;font-weight:700;color:var(--tx);margin-bottom:.3rem}
+.port-desc{font-size:.76rem;font-weight:300;color:var(--mu);line-height:1.6}
+.port-more{background:var(--s1);border:1px solid var(--bd2);border-top:none;display:flex;align-items:center;justify-content:center;padding:1px 0 0}
+.port-more a{display:flex;align-items:center;gap:6px;padding:1.2rem;font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--or);transition:color .2s}
+.port-more a:hover{color:var(--tx)}
+
+/* ── TESTIMONIOS (fondo cálido) ── */
+.test-sec{background:var(--w2);border-top:1px solid var(--bdk);border-bottom:1px solid var(--bdk)}
+.test-sec .sh{color:var(--dk)}
+.test-sec .eyb{color:var(--or)}
+.test-sec .eyb::before{background:var(--or)}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.1)}
+.tcard{background:#fff;padding:2.2rem;position:relative;overflow:hidden;transition:background .3s}
+.tcard:hover{background:var(--w3)}
+.tcard.feat{border-top:2px solid var(--or)}
 .tcard-stars{display:flex;gap:3px;margin-bottom:1.2rem}
-.star{width:12px;height:12px;fill:var(--or);color:var(--or)}
-.tcard-quote{font-size:.88rem;font-weight:300;color:var(--mu);line-height:1.8;margin-bottom:1.5rem;font-style:italic}
-.tcard-quote::before{content:'"';font-family:'DM Serif Display',serif;font-size:2rem;color:var(--or);opacity:.3;line-height:.5;display:block;margin-bottom:.3rem}
-.tcard-author{display:flex;align-items:center;gap:.9rem;padding-top:1rem;border-top:1px solid var(--bd)}
-.tcard-avatar{width:36px;height:36px;background:var(--or2);border:1px solid rgba(224,92,0,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'DM Serif Display',serif;font-size:.88rem;font-weight:400;color:var(--or)}
-.tcard-name{font-size:.8rem;font-weight:500;color:var(--tx)}
-.tcard-co{font-size:.7rem;font-weight:300;color:var(--mu2);margin-top:1px}
-.trust-bar{background:var(--s1);border:1px solid var(--bd2);border-top:none;padding:2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
-.trust-bar-item{display:flex;align-items:center;gap:8px;font-size:.78rem;font-weight:300;color:var(--mu2)}
-.trust-bar-ico{width:20px;height:20px;border-radius:50%;background:var(--or2);border:1px solid rgba(224,92,0,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.trust-bar-ico svg{width:9px;height:9px;stroke:var(--or);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.tstar{width:11px;height:11px;fill:var(--or)}
+.tcard-q{font-size:.88rem;font-weight:300;color:var(--mid);line-height:1.8;margin-bottom:1.4rem;font-style:italic}
+.tcard-q::before{content:'"';font-family:var(--cg);font-size:2.2rem;font-weight:900;color:var(--or);opacity:.25;line-height:.4;display:block;margin-bottom:.4rem}
+.tcard-author{display:flex;align-items:center;gap:.8rem;padding-top:1rem;border-top:1px solid rgba(0,0,0,.07)}
+.tcard-av{width:34px;height:34px;background:rgba(232,98,26,.08);border:1px solid rgba(232,98,26,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--cg);font-size:.9rem;font-weight:800;color:var(--or)}
+.tcard-name{font-size:.8rem;font-weight:600;color:var(--dk);font-family:var(--cg)}
+.tcard-co{font-size:.7rem;font-weight:300;color:var(--dim);margin-top:1px}
+.trust-bar{background:#fff;border:1px solid rgba(0,0,0,.08);border-top:none;padding:1.8rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.2rem}
+.trust-item{display:flex;align-items:center;gap:7px;font-size:.76rem;font-weight:300;color:var(--mid)}
+.trust-ico{width:18px;height:18px;border-radius:50%;background:rgba(232,98,26,.08);border:1px solid rgba(232,98,26,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.trust-ico svg{width:8px;height:8px;stroke:var(--or);fill:none;stroke-width:2.5;stroke-linecap:round}
 
-/* PRECIOS */
-.tog-wrap{display:flex;align-items:center;gap:12px;margin-bottom:2.5rem}
+/* ── PRECIOS ── */
+.tog-wrap{display:flex;align-items:center;gap:11px;margin-bottom:2.5rem}
 .tog-lbl{font-size:.78rem;color:var(--mu);font-weight:400}
 .tog-lbl.on{color:var(--tx)}
-.tog{width:44px;height:24px;background:rgba(255,255,255,.07);border:1px solid var(--bd2);border-radius:100px;position:relative;cursor:pointer;transition:background .3s;flex-shrink:0}
+.tog{width:42px;height:22px;background:rgba(255,255,255,.07);border:1px solid var(--bd2);border-radius:100px;position:relative;cursor:pointer;transition:background .3s;flex-shrink:0}
 .tog.active{background:var(--or);border-color:var(--or)}
-.tog-thumb{width:16px;height:16px;border-radius:50%;background:#fff;position:absolute;top:3px;left:3px;transition:transform .3s cubic-bezier(.22,1,.36,1)}
+.tog-thumb{width:14px;height:14px;border-radius:50%;background:#fff;position:absolute;top:3px;left:3px;transition:transform .3s cubic-bezier(.22,1,.36,1)}
 .tog.active .tog-thumb{transform:translateX(20px)}
-.tog-eco{font-size:.6rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--or);padding:2px 8px;border-radius:100px;opacity:0;transition:opacity .3s}
-.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd2);margin-bottom:1px}
-.pcard2{background:var(--s1);padding:2.2rem 1.8rem;position:relative;overflow:hidden;transition:background .3s;display:flex;flex-direction:column}
-.pcard2:hover{background:var(--s2)}
-.pcard2.feat{background:var(--s2);border-top:2px solid var(--or);margin-top:-2px}
-.pcard2.feat::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(224,92,0,.07),transparent 70%)}
-.feat-badge{position:absolute;top:0;left:0;right:0;background:var(--or);font-size:.56rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#fff;text-align:center;padding:5px}
-.ptier{font-family:'DM Serif Display',serif;font-size:.72rem;font-weight:400;letter-spacing:.12em;color:var(--mu2);text-transform:uppercase;margin-bottom:1.2rem}
-.pcard2.feat .ptier{margin-top:1.5rem}
-.pamount{font-family:'DM Serif Display',serif;font-size:2.8rem;font-weight:400;letter-spacing:-.04em;color:var(--tx);line-height:1;display:flex;align-items:baseline;gap:3px;margin-bottom:4px}
-.pamount .curr{font-size:1.1rem;color:var(--mu);margin-right:1px;font-family:'DM Sans',sans-serif;font-weight:300}
-.pnote{font-size:.64rem;color:var(--mu2);letter-spacing:.04em;margin-bottom:1.5rem}
+.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd2)}
+.pcrd{background:var(--s1);padding:2.2rem 1.8rem;position:relative;overflow:hidden;transition:background .3s;display:flex;flex-direction:column}
+.pcrd:hover{background:var(--s2)}
+.pcrd.feat{background:var(--s2);border-top:2px solid var(--or);margin-top:-2px}
+.pcrd.feat::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(232,98,26,.07),transparent 70%)}
+.pfeat-badge{position:absolute;top:0;left:0;right:0;background:var(--or);font-size:.54rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;text-align:center;padding:5px}
+.ptier{font-family:var(--cg);font-size:.7rem;font-weight:600;letter-spacing:.12em;color:var(--mu2);text-transform:uppercase;margin-bottom:1.2rem}
+.pcrd.feat .ptier{margin-top:1.6rem}
+.pamount{font-family:var(--cg);font-size:2.8rem;font-weight:900;letter-spacing:-.04em;color:var(--tx);line-height:1;display:flex;align-items:baseline;gap:3px;margin-bottom:4px}
+.pamount .curr{font-size:1rem;color:var(--mu);margin-right:1px;font-family:var(--dm);font-weight:300}
+.pnote{font-size:.63rem;color:var(--mu2);letter-spacing:.04em;margin-bottom:1.5rem}
 .pdiv{height:1px;background:var(--bd);margin-bottom:1.5rem}
-.pfeats{list-style:none;display:flex;flex-direction:column;gap:9px;flex:1;margin-bottom:1.8rem}
-.pfeats li{font-size:.8rem;font-weight:300;color:var(--mu);display:flex;align-items:flex-start;gap:8px;line-height:1.4}
-.pfeats li::before{content:'→';color:var(--or);font-size:.74rem;flex-shrink:0;margin-top:1px}
+.pfeats{list-style:none;display:flex;flex-direction:column;gap:8px;flex:1;margin-bottom:1.8rem}
+.pfeats li{font-size:.8rem;font-weight:300;color:var(--mu);display:flex;align-items:flex-start;gap:7px;line-height:1.4}
+.pfeats li::before{content:'→';color:var(--or);font-size:.72rem;flex-shrink:0;margin-top:1px}
 .pfeats li.off{color:var(--mu2)}.pfeats li.off::before{content:'—';color:var(--mu2)}
-.pbtn{display:block;width:100%;padding:.88rem;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:500;letter-spacing:.04em;text-transform:uppercase;text-align:center;text-decoration:none;cursor:pointer;border:none;transition:all .2s;border-radius:var(--rad)}
+.pbtn{display:block;width:100%;padding:.85rem;font-family:var(--dm);font-size:.78rem;font-weight:500;letter-spacing:.04em;text-transform:uppercase;text-align:center;text-decoration:none;border:none;cursor:pointer;transition:all .2s;border-radius:var(--rad)}
 .pbtn-out{background:transparent;color:var(--mu);border:1px solid var(--bd2)}
-.pbtn-out:hover{color:var(--tx);border-color:rgba(255,255,255,.22)}
+.pbtn-out:hover{color:var(--tx);border-color:rgba(255,255,255,.25)}
 .pbtn-solid{background:var(--or);color:#fff}
-.pbtn-solid:hover{background:#f06a00;transform:translateY(-1px);box-shadow:0 8px 24px rgba(224,92,0,.25)}
-.price-foot{margin-top:2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-top:1.5rem;border-top:1px solid var(--bd)}
-.pf-note{font-size:.76rem;font-weight:300;color:var(--mu2);display:flex;align-items:center;gap:8px}
-.pf-note::before{content:'';width:14px;height:1px;background:var(--bd2)}
-.pf-cta{font-size:.76rem;color:var(--mu)}
-.pf-cta a{color:var(--or);text-decoration:none}
-.pf-cta a:hover{text-decoration:underline}
+.pbtn-solid:hover{background:var(--orh);transform:translateY(-1px);box-shadow:0 8px 24px rgba(232,98,26,.28)}
 
-/* FAQ */
+/* ── FAQ ── */
 .faq-list{display:flex;flex-direction:column;gap:1px;background:var(--bd);border:1px solid var(--bd2)}
 .faq-item{background:var(--s1);overflow:hidden}
-.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.6rem 2rem;cursor:pointer;transition:background .2s;gap:1rem}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.5rem 2rem;cursor:pointer;transition:background .2s;gap:1rem}
 .faq-q:hover{background:var(--s2)}
-.faq-qtxt{font-size:.9rem;font-weight:400;color:var(--tx);line-height:1.4}
-.faq-ico{width:24px;height:24px;border:1px solid var(--bd2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px;color:var(--mu);transition:all .3s}
+.faq-qt{font-size:.9rem;font-weight:500;color:var(--tx);line-height:1.4;font-family:var(--cg)}
+.faq-ico{width:22px;height:22px;border:1px solid var(--bd2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px;color:var(--mu);transition:all .3s}
 .faq-item.open .faq-ico{background:var(--or);border-color:var(--or);color:#fff;transform:rotate(45deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.22,1,.36,1)}
-.faq-item.open .faq-a{max-height:200px}
-.faq-atxt{padding:0 2rem 1.6rem;font-size:.84rem;font-weight:300;color:var(--mu);line-height:1.8}
+.faq-item.open .faq-a{max-height:220px}
+.faq-at{padding:0 2rem 1.5rem;font-size:.84rem;font-weight:300;color:var(--mu);line-height:1.8}
 
-/* CTA FINAL */
-.cta-sec{position:relative;overflow:hidden;padding:8rem 2.5rem;text-align:center;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)}
-.cta-gbg{position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 70% 90% at 50% 50%,black 20%,transparent 100%)}
-.cta-orb{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;width:500px;height:500px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(224,92,0,.1) 0%,transparent 70%);animation:coa 8s ease-in-out infinite}
-@keyframes coa{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(1.12)}}
-.cta-in{position:relative;z-index:1;max-width:680px;margin:0 auto}
-.cta-badge{display:inline-flex;align-items:center;gap:10px;font-size:.66rem;font-weight:400;letter-spacing:.18em;color:var(--mu);text-transform:uppercase;margin-bottom:2rem;border:1px solid var(--bd2);padding:.45rem 1.2rem;border-radius:100px;background:rgba(255,255,255,.025)}
-.cta-head{font-family:'DM Serif Display',serif;font-size:clamp(2.8rem,6vw,5.5rem);font-weight:400;letter-spacing:-.03em;color:var(--tx);line-height:.97;margin-bottom:1.5rem}
-.cta-head em{font-style:italic;color:transparent;-webkit-text-stroke:1.5px rgba(224,92,0,.55)}
-.cta-sub{font-size:1rem;font-weight:300;color:var(--mu);line-height:1.8;margin-bottom:2.8rem;max-width:400px;margin-left:auto;margin-right:auto}
-.cta-acts{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem}
-.bwa{display:inline-flex;align-items:center;gap:10px;background:var(--or);color:#fff;padding:1rem 2.2rem;border-radius:var(--rad);font-size:.9rem;font-weight:500;text-decoration:none;transition:all .2s}
-.bwa:hover{background:#f06a00;transform:translateY(-2px);box-shadow:0 12px 36px rgba(224,92,0,.3)}
-.bghost{display:inline-flex;align-items:center;gap:8px;color:var(--mu);padding:1rem 1.8rem;font-size:.9rem;font-weight:400;text-decoration:none;border:1px solid var(--bd2);border-radius:var(--rad);transition:all .2s}
-.bghost:hover{color:var(--tx);border-color:rgba(255,255,255,.22)}
-.cta-trust2{display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap}
-.ct2{display:flex;align-items:center;gap:7px;font-size:.72rem;font-weight:300;color:var(--mu2)}
-.ct2-ck{width:16px;height:16px;border-radius:50%;background:var(--or2);border:1px solid rgba(224,92,0,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.ct2-ck svg{width:8px;height:8px;stroke:var(--or);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
-.ct2-div{width:1px;height:14px;background:var(--bd2)}
+/* ── CTA FINAL ── */
+.cta-sec{position:relative;overflow:hidden;padding:clamp(80px,12vw,160px) 3rem;text-align:center;border-top:1px solid var(--bd)}
+.cta-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 70% 90% at 50% 50%,black 20%,transparent 100%)}
+.cta-glow{position:absolute;border-radius:50%;filter:blur(90px);width:500px;height:500px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(232,98,26,.12) 0%,transparent 70%);animation:pulse-glow 8s ease-in-out infinite}
+@keyframes pulse-glow{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(1.15)}}
+.cta-in{position:relative;z-index:1;max-width:700px;margin:0 auto}
+.cta-badge{display:inline-flex;align-items:center;gap:9px;font-size:.64rem;font-weight:500;letter-spacing:.18em;color:var(--mu);text-transform:uppercase;margin-bottom:2rem;border:1px solid var(--bd2);padding:.42rem 1.2rem;border-radius:100px;background:rgba(255,255,255,.025)}
+.cta-h{font-family:var(--cg);font-size:clamp(3rem,6.5vw,6rem);font-weight:900;letter-spacing:-.04em;color:var(--tx);line-height:.92;margin-bottom:1.5rem}
+.cta-h em{font-style:italic;color:transparent;-webkit-text-stroke:1.5px rgba(232,98,26,.6)}
+.cta-sub{font-size:1.05rem;font-weight:300;color:var(--mu);line-height:1.8;margin-bottom:2.8rem;max-width:420px;margin-left:auto;margin-right:auto}
+.cta-btns{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.2rem}
+.btn-wa{display:inline-flex;align-items:center;gap:9px;background:var(--or);color:#fff;padding:1rem 2.4rem;border-radius:var(--rad);font-size:.92rem;font-weight:600;letter-spacing:.02em;transition:all .2s}
+.btn-wa:hover{background:var(--orh);transform:translateY(-2px);box-shadow:0 14px 40px rgba(232,98,26,.32)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;color:var(--mu);padding:1rem 1.8rem;font-size:.92rem;font-weight:400;border:1px solid var(--bd2);border-radius:var(--rad);transition:all .2s}
+.btn-ghost:hover{color:var(--tx);border-color:rgba(255,255,255,.25)}
+.cta-trust{display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap}
+.ct{display:flex;align-items:center;gap:6px;font-size:.72rem;font-weight:300;color:var(--mu2)}
+.ct-ck{width:15px;height:15px;border-radius:50%;background:var(--or2);border:1px solid var(--or3);display:flex;align-items:center;justify-content:center}
+.ct-ck svg{width:7px;height:7px;stroke:var(--or);fill:none;stroke-width:2.5;stroke-linecap:round}
+.ct-div{width:1px;height:13px;background:var(--bd2)}
 
-/* FOOTER */
+/* ── FOOTER ── */
 footer{background:var(--s1);border-top:1px solid var(--bd)}
-.fmain{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding:4rem 2.5rem 3rem}
-.flogo{display:flex;align-items:center;gap:10px;margin-bottom:1rem;text-decoration:none}
-.flogo-mark{width:20px;height:20px;background:var(--or);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%)}
-.flogo-name{font-family:'DM Serif Display',serif;font-size:1.1rem;font-weight:400;color:var(--tx);letter-spacing:-.01em}
-.ftagline{font-size:.8rem;font-weight:300;color:var(--mu);line-height:1.75;max-width:230px;margin-bottom:1.5rem}
-.fcontact{display:flex;flex-direction:column;gap:8px}
-.fcontact a{display:flex;align-items:center;gap:8px;font-size:.76rem;font-weight:300;color:var(--mu);text-decoration:none;transition:color .2s}
-.fcontact a:hover{color:var(--tx)}
-.fcontact svg{width:13px;height:13px;stroke:var(--or);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
-.fcol-title{font-family:'DM Serif Display',serif;font-size:.72rem;font-weight:400;letter-spacing:.12em;color:var(--tx);text-transform:uppercase;margin-bottom:1.2rem}
-.flinks{list-style:none;display:flex;flex-direction:column;gap:.65rem}
-.flinks a{font-size:.78rem;font-weight:300;color:var(--mu);text-decoration:none;transition:color .2s;display:inline-flex;align-items:center;gap:4px}
-.flinks a:hover{color:var(--tx)}
-.ext{font-size:.58rem;color:var(--mu2)}
-.fsocial{display:flex;gap:8px;margin-top:1rem}
-.fsoc{width:30px;height:30px;border:1px solid var(--bd2);display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--mu);transition:all .2s}
-.fsoc:hover{background:var(--or);border-color:var(--or);color:#fff;transform:translateY(-2px)}
-.fsoc svg{width:13px;height:13px;fill:currentColor}
-.fbot{max-width:1100px;margin:0 auto;padding:1.5rem 2.5rem;border-top:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
-.fcopy{font-size:.66rem;font-weight:300;color:var(--mu2);letter-spacing:.04em}
-.fcredit{font-size:.66rem;font-weight:400;color:var(--mu2)}
-.fcredit span{color:var(--or)}
+.f-main{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding:4.5rem 3rem 3rem}
+.f-logo{display:flex;align-items:center;gap:9px;margin-bottom:1rem}
+.f-logo-mark{width:18px;height:18px;background:var(--or);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%)}
+.f-logo-name{font-family:var(--cg);font-size:1.15rem;font-weight:800;color:var(--tx);letter-spacing:-.02em}
+.f-tag{font-size:.8rem;font-weight:300;color:var(--mu);line-height:1.75;max-width:220px;margin-bottom:1.5rem}
+.f-contact{display:flex;flex-direction:column;gap:8px}
+.f-contact a{display:flex;align-items:center;gap:7px;font-size:.76rem;font-weight:300;color:var(--mu);transition:color .2s}
+.f-contact a:hover{color:var(--tx)}
+.f-contact svg{width:12px;height:12px;stroke:var(--or);fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0}
+.f-social{display:flex;gap:7px;margin-top:1rem}
+.f-soc{width:28px;height:28px;border:1px solid var(--bd2);display:flex;align-items:center;justify-content:center;color:var(--mu);transition:all .2s}
+.f-soc:hover{background:var(--or);border-color:var(--or);color:#fff;transform:translateY(-2px)}
+.f-soc svg{width:12px;height:12px;fill:currentColor}
+.f-col-t{font-family:var(--cg);font-size:.7rem;font-weight:700;letter-spacing:.12em;color:var(--tx);text-transform:uppercase;margin-bottom:1.2rem}
+.f-links{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.f-links a{font-size:.78rem;font-weight:300;color:var(--mu);transition:color .2s;display:inline-flex;align-items:center;gap:3px}
+.f-links a:hover{color:var(--tx)}
+.f-bot{max-width:1140px;margin:0 auto;padding:1.4rem 3rem;border-top:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.f-copy{font-size:.65rem;font-weight:300;color:var(--mu2);letter-spacing:.04em}
+.f-credit{font-size:.65rem;font-weight:400;color:var(--mu2)}
+.f-credit span{color:var(--or)}
 
-/* WA FLOTANTE */
-.wa-float{position:fixed;bottom:2rem;right:2rem;z-index:300;width:52px;height:52px;background:var(--or);border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 6px 24px rgba(224,92,0,.4);transition:all .2s;animation:fup .7s 2s ease both}
-.wa-float:hover{transform:scale(1.1);box-shadow:0 10px 32px rgba(224,92,0,.5)}
-.wa-float svg{width:26px;height:26px;fill:#fff}
-
-/* ANIMACIONES */
-@keyframes fup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-@keyframes sup{from{transform:translateY(115%);opacity:0}to{transform:translateY(0);opacity:1}}
+/* ── ANIMACIONES ── */
+@keyframes fadeup{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideup{from{transform:translateY(110%);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes slideup-fade{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:translateY(0)}}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-.rv{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
 .rv.vis{opacity:1;transform:none}
 
-/* BTN */
-.bwa2{display:inline-flex;align-items:center;gap:8px;background:var(--or);color:#fff;padding:.75rem 1.6rem;border-radius:var(--rad);font-size:.82rem;font-weight:500;text-decoration:none;transition:all .2s}
-.bwa2:hover{background:#f06a00;transform:translateY(-1px);box-shadow:0 8px 24px rgba(224,92,0,.25)}
-
-/* RESPONSIVE */
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .sol-wrap{grid-template-columns:1fr;gap:3rem}
+  .price-grid{grid-template-columns:1fr 1fr}
+  .dif.full{grid-template-columns:1fr;grid-column:span 1}
+  .f-main{grid-template-columns:1fr 1fr;gap:2rem}
+}
 @media(max-width:960px){
-  .nlinks,.nact{display:none}
+  #nosotros .sec > div:last-child{grid-template-columns:1fr!important}
+  .nlinks,.ncta-btn{display:none}
   .nhm{display:flex}
-  .hhead{font-size:clamp(2.8rem,8vw,4.5rem)}
-  .hprob{grid-template-columns:1fr}
+  .hh1{font-size:clamp(3rem,9vw,5rem)}
+  .hero-cards{grid-template-columns:1fr}
   .prob-grid{grid-template-columns:1fr}
-  .sol-wrap{grid-template-columns:1fr}
+  .pstats{grid-template-columns:1fr 1fr}
   .svc-grid{grid-template-columns:1fr}
   .dif-grid{grid-template-columns:1fr}
-  .dif.full{grid-template-columns:1fr;grid-column:span 1}
-  .auth-strip{grid-template-columns:repeat(2,1fr)}
   .test-grid{grid-template-columns:1fr}
-  .price-grid{grid-template-columns:1fr 1fr}
-  .fmain{grid-template-columns:1fr 1fr;gap:2rem}
-  .sec{padding:5rem 1.5rem}
-  .cta-sec{padding:5rem 1.5rem}
-  nav{padding:0 1.5rem}
-  .prob-stat{grid-template-columns:1fr 1fr}
+  .port-grid{grid-template-columns:1fr 1fr}
+  .stats-strip{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:600px){
-  .hact{flex-direction:column;width:100%}
-  .bpri,.bsec{width:100%;justify-content:center}
-  .cta-acts{flex-direction:column}
-  .bwa,.bghost{width:100%;justify-content:center}
-  .cta-trust2{flex-direction:column;align-items:flex-start;gap:1rem}
-  .ct2-div{display:none}
+  body{cursor:auto}
+  #cring,#cdot{display:none}
+  nav{padding:0 1.5rem}
+  .sec{padding:5rem 1.5rem}
+  .hh1{font-size:clamp(2.8rem,10vw,4rem);text-align:left;letter-spacing:-.03em}
+  .hbadge,.hsub{text-align:left}
+  .hbtns{flex-direction:column;width:100%}
+  .btn-pri,.btn-sec{width:100%;justify-content:center}
+  .hero-cards{grid-template-columns:1fr}
+  #hero{padding:7rem 1.5rem 3rem;min-height:auto}
   .price-grid{grid-template-columns:1fr}
-  .fmain{grid-template-columns:1fr}
-  .trust-bar{flex-direction:column}
-  .auth-strip{grid-template-columns:repeat(2,1fr)}
-  .prob-stat{grid-template-columns:1fr}
+  .port-grid{grid-template-columns:1fr}
+  .pstats{grid-template-columns:1fr}
+  .f-main{grid-template-columns:1fr}
+  .cta-sec{padding:5rem 1.5rem}
+  .cta-btns{flex-direction:column}
+  .btn-wa,.btn-ghost{width:100%;justify-content:center}
+  .cta-trust{flex-direction:column;align-items:flex-start;gap:.8rem}
+  .ct-div{display:none}
+  .stats-strip{grid-template-columns:1fr 1fr}
+  .logos-sec{padding:2rem 1.5rem}
+  .logos-row{gap:1.5rem}
+  .f-bot{flex-direction:column;align-items:flex-start;gap:.5rem}
+  .proc-step{grid-template-columns:50px 1fr;gap:1rem;padding:1.8rem 1.5rem}
 }
 </style>
-
-<title>Agencia de Diseño Web Premium en México — Zenio Digital</title>
 </head>
 <body>
-<div id="cring"></div><div id="cdot"></div>
+
+<div id="cring"></div>
+<div id="cdot"></div>
+<div class="gbg"></div>
+<div class="orb1"></div>
+<div class="orb2"></div>
+
 <!-- WA FLOTANTE -->
 <a href="https://wa.me/528110496588?text=Hola,%20quiero%20cotizar%20mi%20p%C3%A1gina%20web" class="wa-float" target="_blank" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
-
-<!-- NAV -->
+<!-- 01 HEADER -->
 <nav id="nav">
   <a href="index.html" class="nlogo">
     <div class="nmark"></div>Zenio Digital
   </a>
   <ul class="nlinks">
-    <li><a href="index.html" style="color:var(--or)">Inicio</a></li>
+    <li><a href="index.html" class="active">Inicio</a></li>
     <li><a href="servicios.html">Servicios</a></li>
     <li><a href="portafolio.html">Portafolio</a></li>
-    <li><a href="contacto.html">Nosotros</a></li>
-    <li><a href="https://wa.me/528110496588" target="_blank" class="ncta">Cotizar →</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
   </ul>
-  <div class="nhm" id="hm" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  <a href="https://wa.me/528110496588?text=Hola,%20quiero%20cotizar%20mi%20p%C3%A1gina%20web" class="ncta-btn" target="_blank">Cotizar →</a>
+  <div class="nhm" id="hm" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
 </nav>
 <div class="nmob" id="nm">
-  <a href="index.html" style="color:var(--or)">Inicio</a>
+  <a href="index.html" class="active">Inicio</a>
   <a href="servicios.html">Servicios</a>
   <a href="portafolio.html">Portafolio</a>
-  <a href="contacto.html">Nosotros</a>
-  <a href="https://wa.me/528110496588" target="_blank">Cotizar →</a>
-</div>
-<!-- HERO -->
-<section id="hero" style="position:relative;">
-<video autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.22;pointer-events:none;">
-  <source src="hero.mp4" type="video/mp4">
-</video>
-<div style="position:absolute;inset:0;background:transparent;z-index:1;pointer-events:none;display:none;"></div>
-
-  <div class="hbadge"><div class="hdot"></div>Agencia web · Todo México</div>
-  <p class="hline-small">Tu negocio merece una web que trabaje por ti</p>
-  <h1 class="hhead">
-    <span class="ln"><span>La primera impresión</span></span>
-    <span class="ln"><span>que convierte visitas</span></span>
-    <span class="ln"><span>en <span class="ital">clientes reales.</span></span></span>
-  </h1>
-  <p class="hsub">Diseño profesional, entrega en 7 días y tecnología que funciona. Para negocios que saben que su presencia digital importa.</p>
-  <div class="hact">
-    <a href="#precios" class="bpri">Ver precios y paquetes <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-    <a href="https://wa.me/528110496588?text=Hola,%20quiero%20cotizar%20mi%20p%C3%A1gina%20web" class="bsec" target="_blank">Agendar llamada gratis</a>
-  </div>
-
-  <!-- Comparación visual: sin Zenio vs con Zenio -->
-  <div class="hprob rv">
-    <div class="hpc bad">
-      <div class="hpc-tag"><div class="hpc-tag-dot"></div>Sin presencia profesional</div>
-      <div class="hpc-title">Tu competencia aparece primero</div>
-      <div class="hpc-desc">Sin sitio o con uno genérico, los clientes eligen a quien se ve más confiable.</div>
-      <div class="hpc-score">
-        <div class="hpc-bar"><div class="hpc-fill"></div></div>
-        <div class="hpc-pct">18%</div>
-      </div>
-    </div>
-    <div class="hpc mid">
-      <div class="hpc-tag"><div class="hpc-tag-dot"></div>Plantilla genérica</div>
-      <div class="hpc-title">Visible, pero no memorable</div>
-      <div class="hpc-desc">Un sitio de plantilla dice que eres uno más. No diferencia, no cierra ventas.</div>
-      <div class="hpc-score">
-        <div class="hpc-bar"><div class="hpc-fill"></div></div>
-        <div class="hpc-pct">55%</div>
-      </div>
-    </div>
-    <div class="hpc good">
-      <div class="hpc-tag"><div class="hpc-tag-dot"></div>Con Zenio Digital</div>
-      <div class="hpc-title">Profesional desde el primer clic</div>
-      <div class="hpc-desc">Tu sitio transmite confianza, claridad y genera contactos desde el día uno.</div>
-      <div class="hpc-score">
-        <div class="hpc-bar"><div class="hpc-fill"></div></div>
-        <div class="hpc-pct">95%</div>
-      </div>
-    </div>
-  </div>
-  <div class="scroll-hint"><div class="scrl"></div><div class="scrl-lbl">Scroll</div></div>
-</section>
-
-
-<!-- MARQUEE -->
-<div class="mqsec">
-  <div class="mqlbl"><span>Stack que usamos en cada proyecto</span></div>
-  <div class="mqout">
-    <div class="mqt">
-      <!-- Fila 1 -->
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg><span class="tname">Cloudflare</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg><span class="tname">Netlify</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span class="tname">WordPress</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg><span class="tname">WooCommerce</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg><span class="tname">Figma</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span class="tname">Google Analytics</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><span class="tname">HTML · CSS · JS</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="tname">SEO</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 11a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.9 2H6.9a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="tname">WhatsApp Business</span></div>
-      <!-- duplicado -->
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg><span class="tname">Cloudflare</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg><span class="tname">Netlify</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg><span class="tname">WordPress</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8"/></svg><span class="tname">WooCommerce</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg><span class="tname">Figma</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span class="tname">Analytics</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="tname">SEO</span></div>
-      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2"/></svg><span class="tname">WhatsApp</span></div>
-    </div>
-  </div>
-  <div class="mqout" style="padding-bottom:1.4rem">
-    <div class="mqt2">
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Entrega en 7 días</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Sin plantillas genéricas</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Mobile-first siempre</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">SEO desde el día uno</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Soporte por WhatsApp</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Código limpio y rápido</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">México · México</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Sin costos escondidos</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">100% a tu medida</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Entrega en 7 días</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Sin plantillas genéricas</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Mobile-first siempre</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">SEO desde el día uno</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Soporte por WhatsApp</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Código limpio y rápido</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">México · México</span></div>
-      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Sin costos escondidos</span></div>
-    </div>
-  </div>
+  <a href="#nosotros">Nosotros</a>
+  <a href="https://wa.me/528110496588" target="_blank" class="ncta-btn">Cotizar →</a>
 </div>
 
-
-
-<!-- DEMOS PREVIEW -->
-<section id="demos-preview" style="padding:6rem 0;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);overflow:hidden;background:var(--s1);">
-  <div style="max-width:1100px;margin:0 auto;padding:0 2.5rem;">
-    <div class="reveal" style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3rem;flex-wrap:wrap;gap:1rem;">
-      <div>
-        <div class="eyb">Portafolio</div>
-        <h2 class="sh" style="font-size:clamp(2rem,4vw,3rem);">Sitios que ya están<br><em>generando resultados.</em></h2>
-      </div>
-      <a href="portafolio.html" style="font-size:.78rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--or);text-decoration:none;display:flex;align-items:center;gap:6px;">Ver todos los demos →</a>
-    </div>
-    <!-- Cards demos -->
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;" class="reveal">
-      <!-- GRM Collision -->
-      <div class="demo-prev-card" onclick="window.open('https://grmcollision.pages.dev','_blank')" style="cursor:pointer;position:relative;overflow:hidden;background:var(--bg);border:1px solid var(--bd);group">
-        <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#080808 0%,#1a0005 50%,#080808 100%);position:relative;overflow:hidden;">
-          <!-- Animated bg GRM style -->
-          <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(212,0,26,.15),transparent);"></div>
-          <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(to top,rgba(8,8,8,.9),transparent);"></div>
-          <!-- Fake browser chrome -->
-          <div style="position:absolute;top:0;left:0;right:0;height:28px;background:rgba(0,0,0,.5);display:flex;align-items:center;gap:5px;padding:0 10px;">
-            <div style="width:7px;height:7px;border-radius:50%;background:#ff5f57;"></div>
-            <div style="width:7px;height:7px;border-radius:50%;background:#febc2e;"></div>
-            <div style="width:7px;height:7px;border-radius:50%;background:#28c840;"></div>
-            <div style="flex:1;background:rgba(255,255,255,.06);border-radius:3px;height:14px;margin:0 8px;display:flex;align-items:center;padding:0 8px;">
-              <span style="font-size:.5rem;color:rgba(255,255,255,.3);">grmcollision.com</span>
-            </div>
-          </div>
-          <!-- Content preview -->
-          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
-            <div style="font-family:'DM Serif Display',serif;font-size:2.5rem;font-weight:900;color:#fff;text-shadow:0 0 40px rgba(212,0,26,.5);letter-spacing:-2px;line-height:1;">GRM<br><span style="color:#D4001A;">COLLISION</span></div>
-          </div>
-          <div style="position:absolute;bottom:12px;left:12px;background:#D4001A;color:#fff;font-size:.55rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:3px 8px;">Premium N2</div>
-        </div>
-        <div style="padding:1.25rem;">
-          <div style="font-size:.62rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--or);margin-bottom:.4rem;">Automotriz · Colisión</div>
-          <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--tx);margin-bottom:.4rem;">GRM Collision</div>
-          <div style="font-size:.78rem;color:var(--mu);line-height:1.6;">Dark UI cinematográfica, videos 4K, cursor de mira, 3 sucursales.</div>
-        </div>
-      </div>
-      <!-- BICSA -->
-      <div class="demo-prev-card" style="cursor:default;position:relative;overflow:hidden;background:var(--bg);border:1px solid var(--bd);">
-        <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#f8f5f0 0%,#ede5d8 100%);position:relative;overflow:hidden;">
-          <div style="position:absolute;top:0;left:0;right:0;height:28px;background:rgba(0,0,0,.15);display:flex;align-items:center;gap:5px;padding:0 10px;">
-            <div style="width:7px;height:7px;border-radius:50%;background:#ff5f57;"></div>
-            <div style="width:7px;height:7px;border-radius:50%;background:#febc2e;"></div>
-            <div style="width:7px;height:7px;border-radius:50%;background:#28c840;"></div>
-            <div style="flex:1;background:rgba(0,0,0,.08);border-radius:3px;height:14px;margin:0 8px;display:flex;align-items:center;padding:0 8px;">
-              <span style="font-size:.5rem;color:rgba(0,0,0,.3);">bicsa.com</span>
-            </div>
-          </div>
-          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
-            <div style="font-family:'DM Serif Display',serif;font-size:2rem;font-weight:900;color:#866445;letter-spacing:-1px;line-height:1;">BICSA</div>
-            <div style="font-size:.6rem;letter-spacing:3px;color:#866445;opacity:.6;margin-top:4px;text-transform:uppercase;">Clínica Médica</div>
-          </div>
-          <div style="position:absolute;bottom:12px;left:12px;background:#866445;color:#fff;font-size:.55rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:3px 8px;">Corporativo N1</div>
-        </div>
-        <div style="padding:1.25rem;">
-          <div style="font-size:.62rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--or);margin-bottom:.4rem;">Salud · Clínica</div>
-          <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--tx);margin-bottom:.4rem;">BICSA</div>
-          <div style="font-size:.78rem;color:var(--mu);line-height:1.6;">Paleta cálida café-beige, slider de imágenes, diseño limpio.</div>
-        </div>
-      </div>
-      <!-- Tu sitio aquí -->
-      <div class="demo-prev-card" onclick="window.open('https://wa.me/528110496588','_blank')" style="cursor:pointer;position:relative;overflow:hidden;background:var(--bg);border:1px solid var(--bd2);">
-        <div style="aspect-ratio:16/9;background:var(--s1);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--bd);">
-          <div style="text-align:center;">
-            <div style="width:48px;height:48px;border:1.5px solid var(--or);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:1.4rem;">+</div>
-            <div style="font-size:.75rem;font-weight:500;letter-spacing:.08em;color:var(--or);text-transform:uppercase;">Tu negocio aquí</div>
-          </div>
-        </div>
-        <div style="padding:1.25rem;">
-          <div style="font-size:.62rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--or);margin-bottom:.4rem;">Tu categoría</div>
-          <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--tx);margin-bottom:.4rem;">Tu Negocio</div>
-          <div style="font-size:.78rem;color:var(--mu);line-height:1.6;">Diseñamos tu sitio desde cero en 72 horas. Cotización sin costo.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- VIDEO BANNER 1 -->
-<div style="position:relative;height:360px;overflow:hidden;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);">
-  <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;opacity:.45;">
-    <source src="banner1.mp4" type="video/mp4">
+<!-- 02 HERO -->
+<section id="hero">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="hero.mp4" type="video/mp4">
   </video>
-  <div style="position:absolute;inset:0;background:rgba(6,6,6,.78);display:flex;align-items:center;justify-content:center;">
-    <div style="text-align:center;max-width:700px;padding:0 2rem;">
-      <div style="font-family:'DM Serif Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:400;color:#ede9e4;letter-spacing:-.02em;line-height:1.05;text-shadow:0 2px 20px rgba(0,0,0,.8);">
-        No hacemos páginas web.<br><span style="font-style:italic;color:var(--or);">Construimos resultados.</span>
+  <div class="hero-overlay"></div>
+  <div class="hero-in">
+    <div class="hbadge"><div class="hpulse"></div>Agencia web · Monterrey, México</div>
+    <h1 class="hh1">
+      <span class="ln"><span>La primera impresión</span></span>
+      <span class="ln"><span>que convierte visitas</span></span>
+      <span class="ln"><span>en <em>clientes reales.</em></span></span>
+    </h1>
+    <p class="hsub">Tu web es tu vendedor más barato. Diseño premium, entrega en 7 días y tecnología que funciona — para negocios que saben que su presencia digital importa.</p>
+    <div class="hbtns">
+      <a href="#precios" class="btn-pri">Ver paquetes y precios <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://wa.me/528110496588?text=Hola,%20quiero%20agendar%20una%20llamada%20sin%20compromiso" class="btn-sec" target="_blank">Agendar llamada gratis</a>
+    </div>
+    <!-- Comparativo visual -->
+    <div class="hero-cards rv">
+      <div class="hcard bad">
+        <div class="hcard-tag"><div class="hcard-dot"></div>Sin presencia profesional</div>
+        <div class="hcard-t">Tu competencia aparece primero</div>
+        <div class="hcard-d">Sin sitio o con uno genérico, los clientes eligen a quien se ve más confiable.</div>
+        <div class="hcard-bar"><div class="hcard-fill" data-w="18%"></div></div>
+      </div>
+      <div class="hcard mid">
+        <div class="hcard-tag"><div class="hcard-dot"></div>Plantilla genérica</div>
+        <div class="hcard-t">Visible, pero no memorable</div>
+        <div class="hcard-d">Un sitio de plantilla dice que eres uno más. No diferencia, no cierra ventas.</div>
+        <div class="hcard-bar"><div class="hcard-fill" data-w="55%"></div></div>
+      </div>
+      <div class="hcard ok">
+        <div class="hcard-tag"><div class="hcard-dot"></div>Con Zenio Digital</div>
+        <div class="hcard-t">Profesional desde el primer clic</div>
+        <div class="hcard-d">Tu sitio transmite confianza, claridad y genera contactos desde el día uno.</div>
+        <div class="hcard-bar"><div class="hcard-fill" data-w="95%"></div></div>
       </div>
     </div>
   </div>
+  <div class="scroll-cue">
+    <div class="scroll-line"></div>
+    <div class="scroll-txt">Scroll</div>
+  </div>
+</section>
+
+<!-- 03 LOGOS CLIENTES -->
+<div class="logos-sec">
+  <div class="logos-label">Negocios que ya confían en Zenio Digital</div>
+  <div class="logos-row">
+    <div class="logo-item"><div class="logo-name">GRM Collision</div><div class="logo-cat">Automotriz · Monterrey</div></div>
+    <div class="logo-item"><div class="logo-name">Backnet</div><div class="logo-cat">Telecomunicaciones · NL</div></div>
+    <div class="logo-item" onclick="window.open('https://zeniovision.com','_blank')" style="cursor:pointer"><div class="logo-name">Zenio Vision</div><div class="logo-cat">Drones · Aerial · México</div></div>
+    <div class="logo-item" style="opacity:.15;pointer-events:none"><div class="logo-name">Tu negocio</div><div class="logo-cat">Próximo cliente</div></div>
+  </div>
 </div>
-<!-- PROBLEMA -->
-<section id="problema" style="background:var(--s1);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)">
+
+<!-- MARQUEE STACK -->
+<div class="mq-sec">
+  <div class="mq-label">Stack que usamos en cada proyecto</div>
+  <div class="mq-mask">
+    <div class="mq-track">
+      <div class="mq-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg><span>Cloudflare Pages</span></div>
+      <div class="mq-item"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><span>HTML · CSS · JS</span></div>
+      <div class="mq-item"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span>SEO Local</span></div>
+      <div class="mq-item"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>Google Analytics</span></div>
+      <div class="mq-item"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 11a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.9 2H6.9a2 2 0 0 1 2 1.72"/></svg><span>WhatsApp Business</span></div>
+      <div class="mq-item"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Schema.org</span></div>
+      <div class="mq-item"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg><span>Cloudflare R2</span></div>
+      <div class="mq-item"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg><span>Figma</span></div>
+      <!-- duplicado para loop -->
+      <div class="mq-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg><span>Cloudflare Pages</span></div>
+      <div class="mq-item"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><span>HTML · CSS · JS</span></div>
+      <div class="mq-item"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span>SEO Local</span></div>
+      <div class="mq-item"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>Google Analytics</span></div>
+      <div class="mq-item"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Schema.org</span></div>
+      <div class="mq-item"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg><span>Cloudflare R2</span></div>
+      <div class="mq-item"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg><span>Figma</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- 04 PROBLEMA -->
+<section id="problema" class="prob-sec">
   <div class="sec">
-    <div class="rv"><div class="eyb">El problema real</div>
-      <div class="stop">
+    <div class="rv">
+      <div class="eyb">El problema real</div>
+      <div class="sec-top">
         <h2 class="sh">El 70% de los negocios pierde<br>clientes por una <em>mala primera impresión.</em></h2>
-        <p class="snote">No es el producto. No es el precio. Es cómo se ven en línea cuando el cliente los busca por primera vez.</p>
+        <p class="sec-note" style="color:var(--mid)">No es el producto. No es el precio. Es cómo se ven en línea cuando el cliente los busca por primera vez.</p>
       </div>
     </div>
     <div class="prob-grid rv">
       <div class="pcard">
-        <div class="pcard-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
-        <div class="pcard-title">Tu competencia ya tiene sitio profesional</div>
-        <div class="pcard-desc">Mientras no inviertes en tu presencia digital, alguien más está captando a tus clientes potenciales con un sitio que transmite confianza desde el primer segundo.</div>
+        <div class="pcard-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <div class="pcard-t">Tu competencia ya tiene sitio profesional</div>
+        <div class="pcard-d">Mientras no inviertes en tu presencia digital, alguien más está captando a tus clientes con un sitio que transmite confianza desde el primer segundo.</div>
       </div>
-      <div class="pcard highlight">
-        <div class="pcard-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-        <div class="pcard-title">Un sitio lento o feo vale lo mismo que no tener</div>
-        <div class="pcard-desc">El 53% de usuarios abandona una página si tarda más de 3 segundos. Un diseño anticuado o una plantilla genérica comunica exactamente lo contrario de profesionalismo.</div>
-      </div>
-      <div class="pcard">
-        <div class="pcard-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <div class="pcard-title">No tienes forma de capturar prospectos 24/7</div>
-        <div class="pcard-desc">Sin un sitio optimizado, dependes de referencias y redes sociales. Estás perdiendo clientes que buscan exactamente lo que ofreces en Google, pero no te encuentran.</div>
+      <div class="pcard hl">
+        <div class="pcard-ico"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <div class="pcard-t">Un sitio lento o feo vale lo mismo que no tener</div>
+        <div class="pcard-d">El 53% de usuarios abandona si tarda más de 3 segundos. Una plantilla genérica comunica exactamente lo contrario de profesionalismo.</div>
       </div>
       <div class="pcard">
-        <div class="pcard-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-        <div class="pcard-title">Pagas por diseñadores y no ves resultados</div>
-        <div class="pcard-desc">Muchos entregan sitios bonitos que no convierten. Un buen sitio no solo se ve bien — está estructurado para guiar al visitante hacia una sola acción: contactarte.</div>
+        <div class="pcard-ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+        <div class="pcard-t">No capturas prospectos las 24 horas</div>
+        <div class="pcard-d">Sin un sitio optimizado, dependes de referencias. Estás perdiendo clientes que buscan exactamente lo que ofreces en Google, pero no te encuentran.</div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div class="pcard-t">Pagas por diseñadores y no ves resultados</div>
+        <div class="pcard-d">Muchos entregan sitios bonitos que no convierten. Un buen sitio no solo se ve bien — está estructurado para guiar al visitante hacia una sola acción.</div>
       </div>
     </div>
-    <div class="prob-stat rv">
+    <div class="pstats rv">
       <div class="pstat"><div class="pstat-n"><span class="counter" data-target="75">0</span><span>%</span></div><div class="pstat-l">de los compradores evalúan la credibilidad de un negocio por su sitio web</div></div>
-      <div class="pstat"><div class="pstat-n"><span class="counter" data-target="3">0</span><span>s</span></div><div class="pstat-l">es todo el tiempo que tienes para causar una primera impresión antes de que el usuario se vaya</div></div>
-      <div class="pstat"><div class="pstat-n"><span class="counter" data-target="7">0</span><span>%</span></div><div class="pstat-l">de los clientes prefieren hacer negocios con empresas que tienen presencia profesional en línea</div></div>
+      <div class="pstat"><div class="pstat-n"><span class="counter" data-target="3">0</span><span>s</span></div><div class="pstat-l">es todo el tiempo que tienes para causar primera impresión antes de que el usuario se vaya</div></div>
+      <div class="pstat"><div class="pstat-n"><span class="counter" data-target="70">0</span><span>%</span></div><div class="pstat-l">de los clientes prefieren negocios con presencia digital profesional</div></div>
     </div>
   </div>
 </section>
 
-
-<!-- SOLUCIÓN -->
-<section id="solucion">
+<!-- 05 SOLUCIÓN -->
+<section id="solucion" class="sec-full">
   <div class="sec">
-    <div class="rv"><div class="eyb">La solución Zenio</div>
+    <div class="rv">
+      <div class="eyb">La solución Zenio</div>
       <h2 class="sh" style="margin-bottom:3rem">No vendemos páginas web.<br>Construimos <em>motores de confianza.</em></h2>
     </div>
     <div class="sol-wrap rv">
-      <div class="sol-left">
+      <div>
         <div class="sol-visual">
           <div class="sv-title">Lo que entrega tu sitio Zenio</div>
-          <div class="sv-headline">Percepción premium desde el primer clic</div>
-          <div class="sv-bar"></div>
-          <div class="sv-row"><div class="sv-label">Confianza visual</div><div class="sv-track"><div class="sv-fill" style="width:0%" data-w="96%"></div></div><div class="sv-val">96%</div></div>
-          <div class="sv-row"><div class="sv-label">Velocidad de carga</div><div class="sv-track"><div class="sv-fill" style="width:0%" data-w="98%"></div></div><div class="sv-val">98%</div></div>
-          <div class="sv-row"><div class="sv-label">Mobile-first</div><div class="sv-track"><div class="sv-fill" style="width:0%" data-w="100%"></div></div><div class="sv-val">100%</div></div>
-          <div class="sv-row"><div class="sv-label">SEO local</div><div class="sv-track"><div class="sv-fill" style="width:0%" data-w="90%"></div></div><div class="sv-val">90%</div></div>
-          <div class="sv-row"><div class="sv-label">Conversión</div><div class="sv-track"><div class="sv-fill" style="width:0%" data-w="85%"></div></div><div class="sv-val">85%</div></div>
+          <div class="sv-head">Percepción premium desde el primer clic</div>
+          <div class="sv-div"></div>
+          <div class="sv-row"><div class="sv-lbl">Confianza visual</div><div class="sv-track"><div class="sv-fill" data-w="96%"></div></div><div class="sv-val">96%</div></div>
+          <div class="sv-row"><div class="sv-lbl">Velocidad de carga</div><div class="sv-track"><div class="sv-fill" data-w="98%"></div></div><div class="sv-val">98%</div></div>
+          <div class="sv-row"><div class="sv-lbl">Mobile-first</div><div class="sv-track"><div class="sv-fill" data-w="100%"></div></div><div class="sv-val">100%</div></div>
+          <div class="sv-row"><div class="sv-lbl">SEO local</div><div class="sv-track"><div class="sv-fill" data-w="90%"></div></div><div class="sv-val">90%</div></div>
+          <div class="sv-row"><div class="sv-lbl">Conversión</div><div class="sv-track"><div class="sv-fill" data-w="85%"></div></div><div class="sv-val">85%</div></div>
         </div>
-        <div class="sol-promise" style="margin-top:1px">
-          <div class="sol-promise-label">Nuestra promesa</div>
-          <div class="sol-promise-text">"Si en 30 días no estás satisfecho con el resultado, lo corregimos sin costo adicional."</div>
+        <div class="sol-promise">
+          <div class="sol-promise-lbl">Nuestra promesa</div>
+          <div class="sol-promise-txt">"Si en 30 días no estás satisfecho, lo corregimos sin costo adicional."</div>
         </div>
       </div>
-      <div class="sol-right">
-        <div class="sol-item">
-          <div class="sol-item-num">1</div>
-          <div class="sol-item-body"><div class="sol-item-title">Diseño a tu medida, no una plantilla</div><div class="sol-item-desc">Cada sitio parte de cero. Tu paleta, tu voz, tu industria. No eres uno más en nuestro portafolio — eres el proyecto más importante de la semana.</div></div>
-        </div>
-        <div class="sol-item">
-          <div class="sol-item-num">2</div>
-          <div class="sol-item-body"><div class="sol-item-title">Entregado en 7 días hábiles</div><div class="sol-item-desc">Sin esperar meses. Un proceso claro, con etapas definidas y comunicación directa por WhatsApp. Sabes exactamente en qué punto estamos.</div></div>
-        </div>
-        <div class="sol-item">
-          <div class="sol-item-num">3</div>
-          <div class="sol-item-body"><div class="sol-item-title">Estructurado para convertir</div><div class="sol-item-desc">No solo se ve bien — cada sección está pensada para guiar al visitante hacia una acción. Más contactos, más citas, más ventas.</div></div>
-        </div>
-        <div class="sol-item">
-          <div class="sol-item-num">4</div>
-          <div class="sol-item-body"><div class="sol-item-title">SEO y velocidad desde el día uno</div><div class="sol-item-desc">Código limpio, sin frameworks pesados, imágenes optimizadas. Tu sitio carga en menos de 2 segundos y Google lo indexa desde el primer día.</div></div>
-        </div>
+      <div class="sol-items">
+        <div class="sol-item"><div class="sol-num">1</div><div><div class="sol-t">Diseño a tu medida, no una plantilla</div><div class="sol-d">Cada sitio parte de cero. Tu paleta, tu voz, tu industria. Eres el proyecto más importante de la semana.</div></div></div>
+        <div class="sol-item"><div class="sol-num">2</div><div><div class="sol-t">Entregado en 7 días hábiles</div><div class="sol-d">Sin esperar meses. Proceso claro, etapas definidas y comunicación directa por WhatsApp en todo momento.</div></div></div>
+        <div class="sol-item"><div class="sol-num">3</div><div><div class="sol-t">Estructurado para convertir</div><div class="sol-d">Cada sección pensada para guiar al visitante hacia una acción. Más contactos, más citas, más ventas.</div></div></div>
+        <div class="sol-item"><div class="sol-num">4</div><div><div class="sol-t">SEO y velocidad desde el día uno</div><div class="sol-d">Código limpio, sin frameworks pesados. Tu sitio carga en menos de 2 segundos y Google lo indexa desde el primer día.</div></div></div>
       </div>
     </div>
   </div>
 </section>
 
-
-
-<!-- VIDEO BANNER 2 -->
-<div style="position:relative;height:420px;overflow:hidden;border-top:1px solid var(--bd);">
-  <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;opacity:.4;">
-    <source src="banner2.mp4" type="video/mp4">
+<!-- VIDEO BANNER -->
+<div style="position:relative;height:380px;overflow:hidden;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)">
+  <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;opacity:.3">
+    <source src="banner1.mp4" type="video/mp4">
   </video>
-  <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(6,6,6,.95) 0%,rgba(6,6,6,.85) 55%,rgba(6,6,6,.6) 100%);display:flex;align-items:center;justify-content:flex-start;padding:0 10%;">
-    <div style="max-width:520px;">
-      <div style="font-size:.65rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--or);margin-bottom:1rem;">Todo México</div>
-      <div style="font-family:'DM Serif Display',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:400;color:#ede9e4;line-height:1.1;margin-bottom:1.5rem;text-shadow:0 2px 20px rgba(0,0,0,.9);">
-        Tu negocio merece la<br><span style="font-style:italic;color:var(--or);">mejor primera impresión.</span>
-      </div>
-      <a href="https://wa.me/528110496588" target="_blank"
-        style="display:inline-flex;align-items:center;gap:10px;background:var(--or);color:#fff;padding:.9rem 2rem;font-size:.85rem;font-weight:500;text-decoration:none;border-radius:2px;">
-        Cotizar por WhatsApp →
-      </a>
+  <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(15,15,15,.95) 0%,rgba(15,15,15,.8) 55%,rgba(15,15,15,.55) 100%);display:flex;align-items:center;padding:0 clamp(2rem,8%,120px)">
+    <div style="max-width:540px">
+      <div style="font-size:.64rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--or);margin-bottom:1rem">Monterrey · Todo México</div>
+      <div style="font-family:var(--cg);font-size:clamp(2rem,3.8vw,3.2rem);font-weight:900;color:var(--tx);line-height:1.0;letter-spacing:-.035em;margin-bottom:1.5rem">No hacemos páginas web.<br><span style="font-style:italic;color:var(--or)">Construimos resultados.</span></div>
+      <a href="https://wa.me/528110496588" target="_blank" style="display:inline-flex;align-items:center;gap:9px;background:var(--or);color:#fff;padding:.9rem 2rem;font-size:.85rem;font-weight:600;border-radius:var(--rad)">Cotizar por WhatsApp →</a>
     </div>
   </div>
 </div>
-<!-- CTA FINAL -->
-<section class="cta-sec">
-  <div class="cta-gbg"></div>
-  <div class="cta-orb"></div>
-  <div class="cta-in rv">
-    <div class="cta-badge"><div class="hdot"></div>Disponibles esta semana</div>
-    <h2 class="cta-head">Tu negocio merece<br>una web que <em>cierre ventas.</em></h2>
-    <p class="cta-sub">Agenda una llamada de 30 minutos sin compromiso. Te decimos exactamente qué necesitas y cuánto costaría.</p>
-    <div class="cta-acts">
-      <a href="https://wa.me/528110496588?text=Hola,%20quiero%20agendar%20mi%20llamada%20sin%20compromiso" class="bwa" target="_blank">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Agendar llamada gratis
-      </a>
-      <a href="mailto:hola@zeniodigital.com" class="bghost">Enviar email →</a>
+
+<!-- 06 SERVICIOS -->
+<section id="servicios" class="svc-sec">
+  <div class="sec">
+    <div class="rv">
+      <div class="eyb">Servicios</div>
+      <div class="sec-top">
+        <h2 class="sh">Todo lo que necesita<br>tu negocio para <em>crecer en línea.</em></h2>
+        <p class="sec-note" style="color:var(--mid)">Desde una landing de impacto hasta un sistema web completo con e-commerce.</p>
+      </div>
     </div>
-    <div class="cta-trust2">
-      <div class="ct2"><div class="ct2-ck"><svg viewBox="0 0 10 10"><polyline points="2 5 4.5 7.5 8 3"/></svg></div>Sin costo por la llamada</div>
-      <div class="ct2-div"></div>
-      <div class="ct2"><div class="ct2-ck"><svg viewBox="0 0 10 10"><polyline points="2 5 4.5 7.5 8 3"/></svg></div>Respuesta en menos de 2 horas</div>
-      <div class="ct2-div"></div>
-      <div class="ct2"><div class="ct2-ck"><svg viewBox="0 0 10 10"><polyline points="2 5 4.5 7.5 8 3"/></svg></div>Entrega esta semana</div>
+    <div class="svc-grid rv">
+      <div class="svc">
+        <div class="svc-top"><div class="svc-n">01</div><div class="svc-arr">↗</div></div>
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg></div>
+        <div class="svc-t">Landing Page Premium</div>
+        <div class="svc-d">Una página de impacto diseñada para convertir. Hero potente, servicios, testimonios y CTA claro. Entrega en 5 días.</div>
+        <div class="svc-price">Desde $7,500 MXN <span class="svc-price-arr">→</span></div>
+      </div>
+      <div class="svc feat">
+        <div class="svc-badge">Más popular</div>
+        <div class="svc-top"><div class="svc-n">02</div><div class="svc-arr">↗</div></div>
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div class="svc-t">Sitio Web Completo</div>
+        <div class="svc-d">Multi-sección con blog, portafolio, proceso, precios y FAQ. Diseño premium que posiciona tu marca sobre la competencia local.</div>
+        <div class="svc-price">Desde $12,500 MXN <span class="svc-price-arr">→</span></div>
+      </div>
+      <div class="svc">
+        <div class="svc-top"><div class="svc-n">03</div><div class="svc-arr">↗</div></div>
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+        <div class="svc-t">Tienda en Línea</div>
+        <div class="svc-d">E-commerce completo con catálogo, carrito, pasarela de pago y panel de administración. Diseño que convierte visitas en ventas.</div>
+        <div class="svc-price">Desde $18,500 MXN <span class="svc-price-arr">→</span></div>
+      </div>
+      <div class="svc">
+        <div class="svc-top"><div class="svc-n">04</div><div class="svc-arr">↗</div></div>
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><polyline points="12 16 12 16"/></svg></div>
+        <div class="svc-t">SEO Local</div>
+        <div class="svc-d">Optimización para aparecer en Google cuando tus clientes buscan tus servicios en Monterrey y toda la República.</div>
+        <div class="svc-price">Incluido en todos los planes <span class="svc-price-arr">→</span></div>
+      </div>
+      <div class="svc">
+        <div class="svc-top"><div class="svc-n">05</div><div class="svc-arr">↗</div></div>
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <div class="svc-t">Identidad Visual</div>
+        <div class="svc-d">Logo, paleta de colores, tipografía y guía de marca. Todo lo que tu negocio necesita para comunicar profesionalismo desde el primer contacto.</div>
+        <div class="svc-price">Desde $4,500 MXN <span class="svc-price-arr">→</span></div>
+      </div>
+      <div class="svc">
+        <div class="svc-top"><div class="svc-n">06</div><div class="svc-arr">↗</div></div>
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+        <div class="svc-t">Mantenimiento y Hosting</div>
+        <div class="svc-d">Actualizaciones, respaldos, soporte técnico y hosting en Cloudflare Pages. Tu sitio siempre en línea y funcionando al 100%.</div>
+        <div class="svc-price">Desde $800 MXN/mes <span class="svc-price-arr">→</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 DIFERENCIADORES -->
+<section id="diferenciadores" class="sec-full">
+  <div class="sec">
+    <div class="rv">
+      <div class="eyb">Por qué Zenio</div>
+      <div class="sec-top">
+        <h2 class="sh">Criterio visual.<br>Capacidad técnica.<br><em>Precio transparente.</em></h2>
+      </div>
+    </div>
+    <div class="dif-grid rv">
+      <div class="dif">
+        <div class="dif-ico"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <div class="dif-t">Diseño de nivel internacional</div>
+        <div class="dif-d">Cada sitio compite visualmente con agencias de CDMX y Guadalajara, a precio de Monterrey. Sin plantillas, sin mediocridad.</div>
+      </div>
+      <div class="dif">
+        <div class="dif-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="dif-t">Entrega en 7 días hábiles</div>
+        <div class="dif-d">Proceso probado: briefing → propuesta → desarrollo → revisiones → entrega. Sin esperas de meses ni sorpresas al final.</div>
+      </div>
+      <div class="dif">
+        <div class="dif-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 11"/></svg></div>
+        <div class="dif-t">Soporte directo por WhatsApp</div>
+        <div class="dif-d">Sin tickets, sin intermediarios. Hablas directamente con quien diseña tu sitio. Respuesta en menos de 2 horas en horario hábil.</div>
+      </div>
+      <div class="dif full">
+        <div>
+          <div class="dif-big">Tu web trabaja<br><em>24/7 sin sueldo,</em><br>sin vacaciones.</div>
+        </div>
+        <div class="dif-list">
+          <div class="dif-li">$15,000 MXN de sitio vs. $15,000 de publicidad mensual sin base sólida</div>
+          <div class="dif-li">Un buen sitio genera confianza antes de que el cliente te llame</div>
+          <div class="dif-li">Código limpio sin Bootstrap — carga 3x más rápido que sitios de plantilla</div>
+          <div class="dif-li">Mobile-first: el 78% de tu tráfico viene desde celular</div>
+          <div class="dif-li">SEO incluido desde el primer día — no como extra</div>
+        </div>
+      </div>
+    </div>
+    <div class="stats-strip rv">
+      <div class="stat-item"><div class="stat-n"><span class="counter" data-target="7">0</span><span>d</span></div><div class="stat-l">Tiempo promedio de entrega</div></div>
+      <div class="stat-item"><div class="stat-n"><span class="counter" data-target="100">0</span><span>%</span></div><div class="stat-l">Proyectos en Cloudflare Pages</div></div>
+      <div class="stat-item"><div class="stat-n"><span class="counter" data-target="3">0</span><span>+</span></div><div class="stat-l">Proyectos entregados en 2025-26</div></div>
+      <div class="stat-item"><div class="stat-n"><span class="counter" data-target="2">0</span><span>h</span></div><div class="stat-l">Tiempo máximo de respuesta</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 PROCESO -->
+<section id="proceso" class="sec-full">
+  <div class="sec">
+    <div class="rv">
+      <div class="eyb">Cómo trabajamos</div>
+      <div class="sec-top" style="margin-bottom:2.5rem">
+        <h2 class="sh">Proceso claro,<br>sin <em>sorpresas.</em></h2>
+        <p class="sec-note">De la primera llamada a tu sitio en vivo en menos de 7 días hábiles.</p>
+      </div>
+    </div>
+    <div class="proc-list rv">
+      <div class="proc-step">
+        <div class="proc-num">01</div>
+        <div>
+          <div class="proc-tag">Día 1</div>
+          <div class="proc-t">Llamada de diagnóstico gratuita</div>
+          <div class="proc-d">30 minutos para entender tu negocio, tus objetivos y lo que necesita tu sitio. Sin compromiso y sin costo. Al final tienes una propuesta clara.</div>
+          <div class="proc-pills"><span class="pill">WhatsApp</span><span class="pill">Llamada</span><span class="pill">Google Meet</span></div>
+          <div class="proc-time"><div class="proc-dot"></div>30 minutos</div>
+        </div>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">02</div>
+        <div>
+          <div class="proc-tag">Día 1–2</div>
+          <div class="proc-t">Propuesta y dirección visual</div>
+          <div class="proc-d">Cotización detallada, paleta de colores propuesta, tipografía y referencias de diseño. Tú apruebas antes de que escribamos una sola línea de código.</div>
+          <div class="proc-pills"><span class="pill">Propuesta PDF</span><span class="pill">Paleta de colores</span><span class="pill">Referencias</span></div>
+          <div class="proc-time"><div class="proc-dot"></div>24–48 horas</div>
+        </div>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">03</div>
+        <div>
+          <div class="proc-tag">Día 2–6</div>
+          <div class="proc-t">Desarrollo y revisiones</div>
+          <div class="proc-d">Construimos tu sitio con HTML + CSS + JS puro, mobile-first, sin frameworks pesados. Tienes hasta 2 rondas de revisiones incluidas en el precio.</div>
+          <div class="proc-pills"><span class="pill">HTML · CSS · JS</span><span class="pill">Mobile-first</span><span class="pill">SEO incluido</span></div>
+          <div class="proc-time"><div class="proc-dot"></div>3–5 días</div>
+        </div>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">04</div>
+        <div>
+          <div class="proc-tag">Día 7</div>
+          <div class="proc-t">Lanzamiento y entrega</div>
+          <div class="proc-d">Desplegamos en Cloudflare Pages con tu dominio, configuramos Google Analytics y te entregamos el código fuente. Tu sitio en vivo y funcionando.</div>
+          <div class="proc-pills"><span class="pill">Cloudflare Pages</span><span class="pill">Dominio</span><span class="pill">Analytics</span><span class="pill">Código fuente</span></div>
+          <div class="proc-time"><div class="proc-dot"></div>Día 7 en vivo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 PORTAFOLIO -->
+<section id="portafolio" class="sec-full">
+  <div class="sec">
+    <div class="rv">
+      <div class="eyb">Portafolio</div>
+      <div class="sec-top">
+        <h2 class="sh">Sitios que ya están<br><em>generando resultados.</em></h2>
+        <a href="portafolio.html" style="font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--or);display:flex;align-items:center;gap:5px">Ver todos →</a>
+      </div>
+    </div>
+    <div class="port-grid rv">
+      <!-- GRM Collision -->
+      <div class="port-card" onclick="window.open('https://grmcollision.com','_blank')">
+        <div class="port-thumb">
+          <div class="port-thumb-bg" style="background:linear-gradient(135deg,#080808 0%,#1a0005 50%,#0a0003 100%);position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+            <div style="text-align:center"><div style="font-family:var(--cg);font-size:2.8rem;font-weight:900;color:#fff;letter-spacing:-2px;line-height:.9;text-shadow:0 0 40px rgba(212,0,26,.5)">GRM<br><span style="color:#D4001A">COLLISION</span></div></div>
+          </div>
+          <div class="port-overlay"></div>
+          <div style="position:absolute;top:10px;left:10px;background:rgba(15,15,15,.7);border:1px solid var(--bd2);font-size:.54rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx);padding:4px 9px;backdrop-filter:blur(8px)">Premium N2</div>
+        </div>
+        <div class="port-info">
+          <div class="port-cat">Automotriz · Colisión · Monterrey</div>
+          <div class="port-name">GRM Collision</div>
+          <div class="port-desc">Dark UI cinematográfica, videos 4K, cursor personalizado. 3 sucursales con WhatsApp individual.</div>
+        </div>
+      </div>
+      <!-- Backnet -->
+      <div class="port-card" onclick="window.open('https://backnetmx.com','_blank')">
+        <div class="port-thumb">
+          <div class="port-thumb-bg" style="background:linear-gradient(135deg,#0d1f35 0%,#0a1628 50%,#0d2040 100%);position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+            <div style="text-align:center"><div style="font-family:var(--cg);font-size:2.2rem;font-weight:900;color:#fff;letter-spacing:-1px;line-height:.9">BACK<span style="color:#3b82f6">NET</span></div><div style="font-size:.58rem;letter-spacing:3px;color:rgba(255,255,255,.35);margin-top:6px;text-transform:uppercase">Telecomunicaciones</div></div>
+          </div>
+          <div class="port-overlay"></div>
+          <div style="position:absolute;top:10px;left:10px;background:rgba(15,15,15,.7);border:1px solid var(--bd2);font-size:.54rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx);padding:4px 9px;backdrop-filter:blur(8px)">Premium N2</div>
+        </div>
+        <div class="port-info">
+          <div class="port-cat">Telecomunicaciones · Redes · NL</div>
+          <div class="port-name">Backnet</div>
+          <div class="port-desc">Infraestructura de redes, cableado estructurado y soluciones corporativas para industria y gobierno.</div>
+        </div>
+      </div>
+      <!-- Tu negocio -->
+      <div class="port-card" onclick="window.open('https://wa.me/528110496588','_blank')" style="cursor:pointer">
+        <div class="port-thumb" style="background:var(--s2)">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+            <div style="text-align:center"><div style="width:52px;height:52px;border:1.5px solid var(--or);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:1.6rem;color:var(--or)">+</div><div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;color:var(--or);text-transform:uppercase">Tu negocio aquí</div></div>
+          </div>
+        </div>
+        <div class="port-info">
+          <div class="port-cat">Tu categoría · Tu ciudad</div>
+          <div class="port-name">Tu Negocio</div>
+          <div class="port-desc">Diseñamos tu sitio desde cero. Cotización sin costo y sin compromiso.</div>
+        </div>
+      </div>
+    </div>
+    <div class="port-more"><a href="portafolio.html">Ver portafolio completo con demos →</a></div>
+  </div>
+</section>
+
+<!-- VIDEO BANNER 2 -->
+<div style="position:relative;height:400px;overflow:hidden;border-top:1px solid var(--bd)">
+  <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;opacity:.28">
+    <source src="banner2.mp4" type="video/mp4">
+  </video>
+  <div style="position:absolute;inset:0;background:rgba(15,15,15,.75);display:flex;align-items:center;justify-content:center">
+    <div style="text-align:center;max-width:700px;padding:0 2rem">
+      <div style="font-family:var(--cg);font-size:clamp(2.2rem,4.5vw,4rem);font-weight:900;color:var(--tx);letter-spacing:-.04em;line-height:.95">Tu negocio merece la<br><span style="font-style:italic;color:var(--or)">mejor primera impresión.</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- 10 TESTIMONIOS -->
+<section id="testimonios" class="test-sec">
+  <div class="sec">
+    <div class="rv">
+      <div class="eyb">Clientes</div>
+      <div class="sec-top">
+        <h2 class="sh" style="color:var(--dk)">Lo que dicen quienes<br>ya <em>trabajan con nosotros.</em></h2>
+      </div>
+    </div>
+    <div class="test-grid rv">
+      <div class="tcard feat">
+        <div class="tcard-stars">
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="tcard-q">El sitio quedó exactamente como lo imaginaba, y los clientes nos comentan que les da mucha confianza antes de visitarnos. Valió cada peso.</div>
+        <div class="tcard-author"><div class="tcard-av">G</div><div><div class="tcard-name">Gerencia GRM</div><div class="tcard-co">GRM Collision · Monterrey</div></div></div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-stars">
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="tcard-q">Profesional, rápido y con criterio. Zenio entiende lo que necesita un negocio B2B — no solo hace sitios bonitos, hace sitios que funcionan.</div>
+        <div class="tcard-author"><div class="tcard-av">V</div><div><div class="tcard-name">Víctor Treviño</div><div class="tcard-co">Backnet Telecomunicaciones</div></div></div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-stars">
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="tstar" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="tcard-q">Entrega en tiempo, comunicación directa y el resultado superó lo que esperábamos. Muy recomendable para empresas que quieren verse serias en internet.</div>
+        <div class="tcard-author"><div class="tcard-av">J</div><div><div class="tcard-name">Cliente Zenio</div><div class="tcard-co">Monterrey, Nuevo León</div></div></div>
+      </div>
+    </div>
+    <div class="trust-bar rv">
+      <div class="trust-item"><div class="trust-ico"><svg viewBox="0 0 10 10"><polyline points="2 5 4.5 7.5 8 3"/></svg></div>Respuesta en menos de 2 horas</div>
+      <div class="trust-item"><div class="trust-ico"><svg viewBox="0 0 10 10"><polyline points="2 5 4.5 7.5 8 3"/></svg></div>Entrega garantizada en 7 días</div>
+      <div class="trust-item"><div class="trust-ico"><svg viewBox="0 0 10 10"><polyline points="2 5 4.5 7.5 8 3"/></svg></div>Código fuente incluido</div>
+      <div class="trust-item"><div class="trust-ico"><svg viewBox="0 0 10 10"><polyline points="2 5 4.5 7.5 8 3"/></svg></div>Sin costos escondidos</div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 PRECIOS -->
+<section id="precios" class="sec-full">
+  <div class="sec">
+    <div class="rv">
+      <div class="eyb">Precios</div>
+      <div class="sec-top">
+        <h2 class="sh">Inversión clara,<br>resultados <em>medibles.</em></h2>
+        <p class="sec-note">Sin letras pequeñas. Sin costos sorpresa. El precio que ves es el que pagas.</p>
+      </div>
+    </div>
+    <div class="tog-wrap rv">
+      <span class="tog-lbl on" id="lw">Sitio web</span>
+      <div class="tog" id="tog" onclick="swMode()"><div class="tog-thumb"></div></div>
+      <span class="tog-lbl" id="le">E-commerce</span>
+    </div>
+    <div class="price-grid rv">
+      <div class="pcrd">
+        <div class="ptier" id="pt0">Starter</div>
+        <div class="pamount"><span class="curr">$</span><span id="pv0">7,500</span></div>
+        <div class="pnote" id="pn0">MXN · pago único</div>
+        <div class="pdiv"></div>
+        <ul class="pfeats" id="pf0">
+          <li>1 página (landing)</li>
+          <li>Diseño personalizado</li>
+          <li>Mobile-first</li>
+          <li>Formulario de contacto</li>
+          <li>SEO básico</li>
+          <li>Entrega en 5 días</li>
+          <li class="off">Blog o secciones extra</li>
+          <li class="off">Identidad visual</li>
+        </ul>
+        <a href="https://wa.me/528110496588?text=Hola,%20me%20interesa%20el%20plan%20Starter" target="_blank" class="pbtn pbtn-out">Cotizar Starter</a>
+      </div>
+      <div class="pcrd feat">
+        <div class="pfeat-badge">Más popular</div>
+        <div class="ptier" id="pt1">Business</div>
+        <div class="pamount"><span class="curr">$</span><span id="pv1">12,500</span></div>
+        <div class="pnote" id="pn1">MXN · pago único</div>
+        <div class="pdiv"></div>
+        <ul class="pfeats" id="pf1">
+          <li>Hasta 5 secciones</li>
+          <li>Diseño personalizado</li>
+          <li>Mobile-first</li>
+          <li>Formulario + WhatsApp</li>
+          <li>SEO completo</li>
+          <li>Google Analytics</li>
+          <li>Entrega en 7 días</li>
+          <li class="off">Identidad visual</li>
+        </ul>
+        <a href="https://wa.me/528110496588?text=Hola,%20me%20interesa%20el%20plan%20Business" target="_blank" class="pbtn pbtn-solid">Cotizar Business</a>
+      </div>
+      <div class="pcrd">
+        <div class="ptier" id="pt2">Pro</div>
+        <div class="pamount"><span class="curr">$</span><span id="pv2">16,500</span></div>
+        <div class="pnote" id="pn2">MXN · pago único</div>
+        <div class="pdiv"></div>
+        <ul class="pfeats" id="pf2">
+          <li>Secciones ilimitadas</li>
+          <li>Diseño personalizado</li>
+          <li>Mobile-first</li>
+          <li>Blog incluido</li>
+          <li>SEO avanzado</li>
+          <li>Google Analytics</li>
+          <li>Mantenimiento 1 mes</li>
+          <li>Entrega en 7 días</li>
+        </ul>
+        <a href="https://wa.me/528110496588?text=Hola,%20me%20interesa%20el%20plan%20Pro" target="_blank" class="pbtn pbtn-out">Cotizar Pro</a>
+      </div>
+      <div class="pcrd">
+        <div class="ptier" id="pt3">Premium</div>
+        <div class="pamount"><span class="curr">$</span><span id="pv3">24,500</span></div>
+        <div class="pnote" id="pn3">MXN · pago único</div>
+        <div class="pdiv"></div>
+        <ul class="pfeats" id="pf3">
+          <li>Todo lo del Pro</li>
+          <li>Identidad visual completa</li>
+          <li>Logo y branding</li>
+          <li>SEO premium</li>
+          <li>Mantenimiento 3 meses</li>
+          <li>Soporte prioritario</li>
+          <li>Entrega en 10 días</li>
+          <li>Fotografía de producto</li>
+        </ul>
+        <a href="https://wa.me/528110496588?text=Hola,%20me%20interesa%20el%20plan%20Premium" target="_blank" class="pbtn pbtn-out">Cotizar Premium</a>
+      </div>
+    </div>
+    <div class="rv" style="margin-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-top:1.5rem;border-top:1px solid var(--bd)">
+      <span style="font-size:.76rem;font-weight:300;color:var(--mu2);display:flex;align-items:center;gap:8px"><span style="width:14px;height:1px;background:var(--bd2);display:inline-block"></span>Todos los planes incluyen hosting en Cloudflare Pages y código fuente</span>
+      <span style="font-size:.76rem;color:var(--mu)">¿Proyecto especial? <a href="https://wa.me/528110496588" target="_blank" style="color:var(--or)">Cotización personalizada →</a></span>
+    </div>
+  </div>
+</section>
+
+<!-- 12 FAQ -->
+<section id="faq" class="sec-full">
+  <div class="sec">
+    <div class="rv">
+      <div class="eyb">Preguntas frecuentes</div>
+      <h2 class="sh" style="margin-bottom:3rem">Todo lo que necesitas<br>saber antes de <em>empezar.</em></h2>
+    </div>
+    <div class="faq-list rv">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-qt">¿Realmente entregan en 7 días?</span>
+          <div class="faq-ico">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-at">Sí. Con la información necesaria de tu parte (logo, textos, fotos, referencias), entregamos en 7 días hábiles. El proceso está probado y optimizado. La única variable eres tú — entre más rápido nos das el material, más rápido terminamos.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-qt">¿Qué incluye el precio? ¿Hay costos adicionales?</span>
+          <div class="faq-ico">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-at">El precio que ves incluye diseño, desarrollo, SEO básico, hosting en Cloudflare Pages (primer año) y código fuente. El dominio (.com o .com.mx) tiene un costo adicional de aprox. $300-500 MXN/año si no tienes uno. Sin sorpresas al final.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-qt">¿Puedo hacer cambios después de la entrega?</span>
+          <div class="faq-ico">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-at">Sí. Durante el proceso tienes 2 rondas de revisiones incluidas. Después de la entrega, cambios menores (textos, fotos) son sin costo el primer mes. Para cambios mayores o nuevas secciones, cotizamos por separado a precios accesibles.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-qt">¿Por qué no usan WordPress o Wix?</span>
+          <div class="faq-ico">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-at">Porque HTML + CSS + JS puro carga 3-5x más rápido que WordPress, no tiene vulnerabilidades de plugins, no requiere actualizaciones constantes y Cloudflare Pages es gratis y ultra-rápido. Para tu negocio, eso se traduce en mejor SEO y mejor experiencia de usuario.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-qt">¿Trabajan con negocios fuera de Monterrey?</span>
+          <div class="faq-ico">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-at">Sí, todo México. Todo el proceso es remoto — llamada por WhatsApp o Google Meet, y la entrega es digital. Hemos trabajado con clientes en CDMX, Guadalajara, Saltillo y más ciudades sin ningún problema.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-qt">¿Cómo es el proceso de pago?</span>
+          <div class="faq-ico">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-at">50% al inicio del proyecto y 50% al aprobar el diseño final antes del lanzamiento. Aceptamos transferencia bancaria, OXXO Pay y tarjeta. El código fuente se entrega después del pago final.</div></div>
+      </div>
     </div>
   </div>
 </section>
 
 
-<footer>
-  <div class="fmain">
+<!-- NOSOTROS -->
+<section id="nosotros" class="sec-full">
+  <div class="sec">
     <div class="rv">
-      <a href="#" class="flogo"><div class="flogo-mark"></div><span class="flogo-name">Zenio Digital</span></a>
-      <p class="ftagline">Diseño web profesional para negocios que quieren destacar en México y México.</p>
-      <div class="fcontact">
-        <a href="https://wa.me/528110496588" target="_blank"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 11a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.9 2H6.9a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+52 811 049 6588</a>
-        <a href="mailto:hola@zeniodigital.com"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hola@zeniodigital.com</a>
-        <a href="#"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Todo México</a>
-      </div>
-      <div class="fsocial">
-        <a href="#" class="fsoc" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-        <a href="#" class="fsoc" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
-        <a href="#" class="fsoc" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      <div class="eyb">Nosotros</div>
+      <div class="sec-top">
+        <h2 class="sh">Una agencia pequeña<br>con <em>criterio de las grandes.</em></h2>
+        <p class="sec-note">Monterrey, Nuevo León.<br>Trabajamos con todo México.</p>
       </div>
     </div>
-    <div class="rv"><div class="fcol-title">Servicios</div><ul class="flinks"><li><a href="#servicios">Diseño web</a></li><li><a href="#servicios">Tienda en línea</a></li><li><a href="#servicios">SEO local</a></li><li><a href="#servicios">Identidad visual</a></li><li><a href="#servicios">Hosting y dominio</a></li><li><a href="#servicios">Mantenimiento</a></li></ul></div>
-    <div class="rv"><div class="fcol-title">Empresa</div><ul class="flinks"><li><a href="#proceso">Proceso</a></li><li><a href="#precios">Precios</a></li><li><a href="#testimonios">Clientes</a></li><li><a href="https://backnetmx.com" target="_blank">Backnet <span class="ext">↗</span></a></li></ul></div>
-    <div class="rv"><div class="fcol-title">Contacto</div><ul class="flinks"><li><a href="https://wa.me/528110496588" target="_blank">WhatsApp</a></li><li><a href="mailto:hola@zeniodigital.com">Email</a></li><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li><li><a href="#">LinkedIn</a></li></ul></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bd);border:1px solid var(--bd2)" class="rv">
+      <!-- Columna izquierda: quiénes somos -->
+      <div style="background:var(--s1);padding:3rem 2.8rem">
+        <div style="font-family:var(--cg);font-size:1.5rem;font-weight:900;color:var(--tx);letter-spacing:-.03em;line-height:1.1;margin-bottom:1.5rem">
+          Zenio no es una agencia de 50 personas.<br>
+          <span style="color:var(--or);font-style:italic">Es mejor que eso.</span>
+        </div>
+        <p style="font-size:.9rem;font-weight:300;color:var(--mu);line-height:1.85;margin-bottom:1.5rem">
+          Somos un estudio especializado en Monterrey. Cada proyecto lo trabaja directamente quien lo diseña — sin capas de intermediarios, sin proyectos perdidos en una cola de producción.
+        </p>
+        <p style="font-size:.9rem;font-weight:300;color:var(--mu);line-height:1.85;margin-bottom:2rem">
+          Cuando contratas Zenio, hablas con José. Él diseña, él desarrolla, él entrega. Eso significa criterio visual consistente, comunicación directa y un resultado que realmente refleja tu negocio.
+        </p>
+        <div style="display:flex;align-items:center;gap:1.2rem;padding-top:2rem;border-top:1px solid var(--bd)">
+          <div style="width:48px;height:48px;background:var(--or2);border:1px solid var(--or3);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--cg);font-size:1.2rem;font-weight:900;color:var(--or)">J</div>
+          <div>
+            <div style="font-family:var(--cg);font-size:.95rem;font-weight:700;color:var(--tx)">José Treviño</div>
+            <div style="font-size:.76rem;font-weight:300;color:var(--mu)">Founder · Director Creativo · Zenio Digital</div>
+          </div>
+        </div>
+      </div>
+      <!-- Columna derecha: valores -->
+      <div style="display:flex;flex-direction:column;gap:1px;background:var(--bd)">
+        <div style="background:var(--s1);padding:2rem 2.4rem;flex:1;transition:background .2s" onmouseenter="this.style.background='var(--s2)'" onmouseleave="this.style.background='var(--s1)'">
+          <div style="font-family:var(--cg);font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:.6rem">Criterio</div>
+          <div style="font-family:var(--cg);font-size:1rem;font-weight:700;color:var(--tx);margin-bottom:.4rem">Diseño con intención</div>
+          <div style="font-size:.82rem;font-weight:300;color:var(--mu);line-height:1.7">Cada decisión visual tiene un porqué. No decoramos — comunicamos. Cada color, tipografía y espacio está pensado para generar confianza en tu cliente.</div>
+        </div>
+        <div style="background:var(--s1);padding:2rem 2.4rem;flex:1;transition:background .2s" onmouseenter="this.style.background='var(--s2)'" onmouseleave="this.style.background='var(--s1)'">
+          <div style="font-family:var(--cg);font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:.6rem">Velocidad</div>
+          <div style="font-family:var(--cg);font-size:1rem;font-weight:700;color:var(--tx);margin-bottom:.4rem">7 días, no 7 semanas</div>
+          <div style="font-size:.82rem;font-weight:300;color:var(--mu);line-height:1.7">Proceso probado que elimina los tiempos muertos. Mientras otras agencias tardan meses, tu sitio está en vivo esta semana y generando resultados desde el día uno.</div>
+        </div>
+        <div style="background:var(--s1);padding:2rem 2.4rem;flex:1;transition:background .2s" onmouseenter="this.style.background='var(--s2)'" onmouseleave="this.style.background='var(--s1)'">
+          <div style="font-family:var(--cg);font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:.6rem">Transparencia</div>
+          <div style="font-family:var(--cg);font-size:1rem;font-weight:700;color:var(--tx);margin-bottom:.4rem">Precio claro desde el inicio</div>
+          <div style="font-size:.82rem;font-weight:300;color:var(--mu);line-height:1.7">Lo que cotizamos es lo que pagas. Sin sorpresas al final, sin extras escondidos. Si algo cambia, te avisamos antes — nunca después.</div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="fbot">
-    <span class="fcopy">© 2026 Zenio Digital — Todo México, México</span>
-    <span class="fcredit">Diseñado por <span>Zenio Digital</span></span>
+</section>
+
+<!-- 13 CTA FINAL -->
+<section class="cta-sec">
+  <div class="cta-grid"></div>
+  <div class="cta-glow"></div>
+  <div class="cta-in rv">
+    <div class="cta-badge"><div class="hpulse"></div>Disponibles esta semana</div>
+    <h2 class="cta-h">Tu negocio merece<br>una web que <em>cierre ventas.</em></h2>
+    <p class="cta-sub">Agenda una llamada de 30 minutos sin compromiso. Te decimos exactamente qué necesitas y cuánto costaría.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/528110496588?text=Hola,%20quiero%20agendar%20mi%20llamada%20sin%20compromiso" class="btn-wa" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Agendar llamada gratis
+      </a>
+      <a href="mailto:hola@zeniodigital.com" class="btn-ghost">Enviar email →</a>
+    </div>
+    <div class="cta-trust">
+      <div class="ct"><div class="ct-ck"><svg viewBox="0 0 10 10"><polyline points="2 5 4.5 7.5 8 3"/></svg></div>Sin costo por la llamada</div>
+      <div class="ct-div"></div>
+      <div class="ct"><div class="ct-ck"><svg viewBox="0 0 10 10"><polyline points="2 5 4.5 7.5 8 3"/></svg></div>Respuesta en menos de 2 horas</div>
+      <div class="ct-div"></div>
+      <div class="ct"><div class="ct-ck"><svg viewBox="0 0 10 10"><polyline points="2 5 4.5 7.5 8 3"/></svg></div>Entrega esta semana</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-main">
+    <div class="rv">
+      <a href="index.html" class="f-logo"><div class="f-logo-mark"></div><span class="f-logo-name">Zenio Digital</span></a>
+      <p class="f-tag">Diseño web premium para negocios que quieren destacar en Monterrey y todo México.</p>
+      <div class="f-contact">
+        <a href="https://wa.me/528110496588" target="_blank"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 11a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.9 2H6.9a2 2 0 0 1 2 1.72"/></svg>+52 811 049 6588</a>
+        <a href="mailto:hola@zeniodigital.com"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hola@zeniodigital.com</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Monterrey, Nuevo León</a>
+      </div>
+      <div class="f-social">
+        <a href="#" class="f-soc" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="#" class="f-soc" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+        <a href="#" class="f-soc" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+    </div>
+    <div class="rv">
+      <div class="f-col-t">Servicios</div>
+      <ul class="f-links">
+        <li><a href="#servicios">Landing Page</a></li>
+        <li><a href="#servicios">Sitio Completo</a></li>
+        <li><a href="#servicios">Tienda en línea</a></li>
+        <li><a href="#servicios">SEO local</a></li>
+        <li><a href="#servicios">Identidad visual</a></li>
+        <li><a href="#servicios">Mantenimiento</a></li>
+      </ul>
+    </div>
+    <div class="rv">
+      <div class="f-col-t">Empresa</div>
+      <ul class="f-links">
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="https://backnetmx.com" target="_blank">Backnet ↗</a></li>
+      </ul>
+    </div>
+    <div class="rv">
+      <div class="f-col-t">Contacto</div>
+      <ul class="f-links">
+        <li><a href="https://wa.me/528110496588" target="_blank">WhatsApp</a></li>
+        <li><a href="mailto:hola@zeniodigital.com">Email</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="f-bot">
+    <span class="f-copy">© 2026 Zenio Digital — Monterrey, Nuevo León, México</span>
+    <span class="f-credit">Diseñado por <span>Zenio Digital</span></span>
   </div>
 </footer>
+
 <script>
 // CURSOR
 let mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my;
@@ -799,21 +1242,27 @@ const ring=document.getElementById('cring'),dot=document.getElementById('cdot');
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
 (function anim(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';dot.style.left=mx+'px';dot.style.top=my+'px';requestAnimationFrame(anim)})();
 document.querySelectorAll('a,button,[onclick]').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{ring.style.width='46px';ring.style.height='46px';ring.style.borderColor='rgba(224,92,0,.75)'});
-  el.addEventListener('mouseleave',()=>{ring.style.width='32px';ring.style.height='32px';ring.style.borderColor='rgba(224,92,0,.45)'});
+  el.addEventListener('mouseenter',()=>{ring.style.width='44px';ring.style.height='44px';ring.style.borderColor='rgba(232,98,26,.8)'});
+  el.addEventListener('mouseleave',()=>{ring.style.width='28px';ring.style.height='28px';ring.style.borderColor='rgba(232,98,26,.5)'});
 });
 
 // NAV SCROLL
 const nav=document.getElementById('nav');
-window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30));
 
-// MENU MOBILE
+// MOBILE MENU
 let mOpen=false;
-function toggleMenu(){mOpen=!mOpen;document.getElementById('nm').style.display=mOpen?'flex':'none'}
+function toggleMenu(){
+  mOpen=!mOpen;
+  const nm=document.getElementById('nm');
+  nm.style.display=mOpen?'flex':'none';
+}
 
-// REVEAL
+// REVEAL ON SCROLL
 const rObs=new IntersectionObserver(entries=>{
-  entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('vis'),i*70)});
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting) setTimeout(()=>e.target.classList.add('vis'),i*60);
+  });
 },{threshold:.07});
 document.querySelectorAll('.rv').forEach(el=>rObs.observe(el));
 
@@ -823,26 +1272,35 @@ const cObs=new IntersectionObserver(entries=>{
     if(entry.isIntersecting){
       const el=entry.target,target=parseInt(el.dataset.target);
       let start=null;const dur=1400;
-      const step=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1),ease=1-Math.pow(1-p,3);el.textContent=Math.round(ease*target);if(p<1)requestAnimationFrame(step);else el.textContent=target};
-      requestAnimationFrame(step);cObs.unobserve(el);
+      const step=ts=>{
+        if(!start)start=ts;
+        const p=Math.min((ts-start)/dur,1),ease=1-Math.pow(1-p,3);
+        el.textContent=Math.round(ease*target);
+        if(p<1)requestAnimationFrame(step);else el.textContent=target;
+      };
+      requestAnimationFrame(step);
+      cObs.unobserve(el);
     }
   });
 },{threshold:.5});
 document.querySelectorAll('.counter').forEach(c=>cObs.observe(c));
 
-// BARS VISUAL
+// BARS ANIMACIÓN
 const bObs=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
     if(entry.isIntersecting){
-      entry.target.querySelectorAll('.sv-fill').forEach(b=>{setTimeout(()=>{b.style.width=b.dataset.w},200)});
-      entry.target.querySelectorAll('.hpc-fill').forEach(b=>{setTimeout(()=>b.style.width=b.style.width,300)});
+      entry.target.querySelectorAll('.sv-fill,.hcard-fill').forEach(b=>{
+        setTimeout(()=>{ b.style.width=b.dataset.w||b.style.width; },200);
+      });
       bObs.unobserve(entry.target);
     }
   });
 },{threshold:.3});
-document.querySelectorAll('.sol-visual,.hprob').forEach(el=>bObs.observe(el));
-// trigger hero bars immediately
-setTimeout(()=>{document.querySelectorAll('.hpc-fill').forEach(b=>{b.style.transition='width 1.6s cubic-bezier(.22,1,.36,1)';b.style.width=b.style.width.replace('0%',b.closest('.hpc.bad')?'18%':b.closest('.hpc.mid')?'55%':'95%')})},900);
+document.querySelectorAll('.sol-visual,.hero-cards').forEach(el=>bObs.observe(el));
+// Hero bars al cargar
+setTimeout(()=>{
+  document.querySelectorAll('.hcard-fill').forEach(b=>{ b.style.transition='width 1.6s cubic-bezier(.22,1,.36,1)'; b.style.width=b.dataset.w; });
+},900);
 
 // FAQ
 function toggleFaq(btn){
@@ -857,7 +1315,6 @@ let isEco=false;
 function swMode(){
   isEco=!isEco;
   document.getElementById('tog').classList.toggle('active',isEco);
-  document.getElementById('tecobadge').style.opacity=isEco?'1':'0';
   document.getElementById('lw').classList.toggle('on',!isEco);
   document.getElementById('le').classList.toggle('on',isEco);
   const names=isEco?['Básica','Estándar','Avanzada','Enterprise']:['Starter','Business','Pro','Premium'];
@@ -879,62 +1336,9 @@ function swMode(){
     document.getElementById('pv'+i).textContent=prices[i];
     document.getElementById('pn'+i).textContent=notes[i];
     const ul=document.getElementById('pf'+i);
-    ul.innerHTML=feats[i].map(f=>{const off=f.startsWith('off:'),t=off?f.slice(4):f;return`<li class="${off?'off':''}">${t}</li>`}).join('');
+    ul.innerHTML=feats[i].map(f=>{const off=f.startsWith('off:'),t=off?f.slice(4):f;return`<li class="${off?'off':''}">${t}</li>`;}).join('');
   });
 }
-</script>
-
-<canvas id="particles-canvas" style="position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.35;"></canvas>
-<script>
-(function(){
-  const c=document.getElementById('particles-canvas');
-  const ctx=c.getContext('2d');
-  let W,H,pts=[];
-  function resize(){W=c.width=window.innerWidth;H=c.height=window.innerHeight;}
-  resize();
-  window.addEventListener('resize',resize);
-  
-  // Crear partículas
-  for(let i=0;i<90;i++){
-    pts.push({
-      x:Math.random()*W, y:Math.random()*H,
-      vx:(Math.random()-.5)*.35, vy:(Math.random()-.5)*.35,
-      r:Math.random()*1.5+.5,
-      a:Math.random()
-    });
-  }
-  
-  function draw(){
-    ctx.clearRect(0,0,W,H);
-    // Líneas entre partículas cercanas
-    for(let i=0;i<pts.length;i++){
-      for(let j=i+1;j<pts.length;j++){
-        const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y;
-        const dist=Math.sqrt(dx*dx+dy*dy);
-        if(dist<160){
-          ctx.beginPath();
-          ctx.strokeStyle=`rgba(224,92,0,${.18*(1-dist/160)})`;
-          ctx.lineWidth=.5;
-          ctx.moveTo(pts[i].x,pts[i].y);
-          ctx.lineTo(pts[j].x,pts[j].y);
-          ctx.stroke();
-        }
-      }
-      // Puntos
-      ctx.beginPath();
-      ctx.arc(pts[i].x,pts[i].y,pts[i].r,0,Math.PI*2);
-      ctx.fillStyle=`rgba(224,92,0,${pts[i].a*.6})`;
-      ctx.fill();
-      // Mover
-      pts[i].x+=pts[i].vx;
-      pts[i].y+=pts[i].vy;
-      if(pts[i].x<0||pts[i].x>W) pts[i].vx*=-1;
-      if(pts[i].y<0||pts[i].y>H) pts[i].vy*=-1;
-    }
-    requestAnimationFrame(draw);
-  }
-  draw();
-})();
 </script>
 </body>
 </html>

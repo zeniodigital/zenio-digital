@@ -407,22 +407,22 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 }
 @media(max-width:600px){
   body{cursor:auto}
+  .demos-prev-grid{grid-template-columns:1fr!important}
   #cring,#cdot{display:none}
   .o1,.o2{display:none}
   .scroll-hint{display:none}
+  #hero{padding:7rem 1.5rem 3rem;min-height:auto}
+  .hhead{font-size:clamp(2.4rem,9vw,3.2rem);text-align:left}
+  .hline-small{text-align:left}
+  .hbadge{font-size:.6rem}
+  .hsub{font-size:.95rem;text-align:left;max-width:100%}
+  .hact{margin-bottom:2rem}
+  .hprob{margin-top:2rem}
   .sec{padding:4rem 1.5rem}
 }
 </style>
 
-<title>Nosotros · Contacto — Zenio Digital</title>
-<style>
-@media(max-width:768px){
-  .contacto-stats{grid-template-columns:repeat(2,1fr)!important}
-}
-@media(max-width:400px){
-  .contacto-stats{grid-template-columns:1fr 1fr!important}
-}
-</style>
+<title>Agencia de Diseño Web Premium en México — Zenio Digital</title>
 </head>
 <body>
 <div id="cring"></div><div id="cdot"></div>
@@ -438,117 +438,351 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
     <div class="nmark"></div>Zenio Digital
   </a>
   <ul class="nlinks">
-    <li><a href="index.html">Inicio</a></li>
+    <li><a href="index.html" style="color:var(--or)">Inicio</a></li>
     <li><a href="servicios.html">Servicios</a></li>
     <li><a href="portafolio.html">Portafolio</a></li>
-    <li><a href="contacto.html" style="color:var(--or)">Nosotros</a></li>
+    <li><a href="contacto.html">Nosotros</a></li>
     <li><a href="https://wa.me/528110496588" target="_blank" class="ncta">Cotizar →</a></li>
   </ul>
   <div class="nhm" id="hm" onclick="toggleMenu()"><span></span><span></span><span></span></div>
 </nav>
 <div class="nmob" id="nm">
-  <a href="index.html">Inicio</a>
+  <a href="index.html" style="color:var(--or)">Inicio</a>
   <a href="servicios.html">Servicios</a>
   <a href="portafolio.html">Portafolio</a>
-  <a href="contacto.html" style="color:var(--or)">Nosotros</a>
+  <a href="contacto.html">Nosotros</a>
   <a href="https://wa.me/528110496588" target="_blank">Cotizar →</a>
 </div>
+<!-- HERO -->
+<section id="hero" style="position:relative;">
+<video autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.22;pointer-events:none;">
+  <source src="hero.mp4" type="video/mp4">
+</video>
+<div style="position:absolute;inset:0;background:transparent;z-index:1;pointer-events:none;display:none;"></div>
 
-<!-- VIDEO BANNER CONTACTO -->
-<div style="position:relative;height:clamp(280px,50vw,480px);overflow:hidden;margin-top:72px;border-bottom:1px solid var(--bd);">
-  <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.45;">
-    <source src="contacto_video1.mp4" type="video/mp4">
+  <div class="hbadge"><div class="hdot"></div>Agencia web · Todo México</div>
+  <p class="hline-small">Tu negocio merece una web que trabaje por ti</p>
+  <h1 class="hhead">
+    <span class="ln"><span>La primera impresión</span></span>
+    <span class="ln"><span>que convierte visitas</span></span>
+    <span class="ln"><span>en <span class="ital">clientes reales.</span></span></span>
+  </h1>
+  <p class="hsub">Diseño profesional, entrega en 7 días y tecnología que funciona. Para negocios que saben que su presencia digital importa.</p>
+  <div class="hact">
+    <a href="#precios" class="bpri">Ver precios y paquetes <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="https://wa.me/528110496588?text=Hola,%20quiero%20cotizar%20mi%20p%C3%A1gina%20web" class="bsec" target="_blank">Agendar llamada gratis</a>
+  </div>
+
+  <!-- Comparación visual: sin Zenio vs con Zenio -->
+  <div class="hprob rv">
+    <div class="hpc bad">
+      <div class="hpc-tag"><div class="hpc-tag-dot"></div>Sin presencia profesional</div>
+      <div class="hpc-title">Tu competencia aparece primero</div>
+      <div class="hpc-desc">Sin sitio o con uno genérico, los clientes eligen a quien se ve más confiable.</div>
+      <div class="hpc-score">
+        <div class="hpc-bar"><div class="hpc-fill"></div></div>
+        <div class="hpc-pct">18%</div>
+      </div>
+    </div>
+    <div class="hpc mid">
+      <div class="hpc-tag"><div class="hpc-tag-dot"></div>Plantilla genérica</div>
+      <div class="hpc-title">Visible, pero no memorable</div>
+      <div class="hpc-desc">Un sitio de plantilla dice que eres uno más. No diferencia, no cierra ventas.</div>
+      <div class="hpc-score">
+        <div class="hpc-bar"><div class="hpc-fill"></div></div>
+        <div class="hpc-pct">55%</div>
+      </div>
+    </div>
+    <div class="hpc good">
+      <div class="hpc-tag"><div class="hpc-tag-dot"></div>Con Zenio Digital</div>
+      <div class="hpc-title">Profesional desde el primer clic</div>
+      <div class="hpc-desc">Tu sitio transmite confianza, claridad y genera contactos desde el día uno.</div>
+      <div class="hpc-score">
+        <div class="hpc-bar"><div class="hpc-fill"></div></div>
+        <div class="hpc-pct">95%</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="scrl"></div><div class="scrl-lbl">Scroll</div></div>
+</section>
+
+
+<!-- MARQUEE -->
+<div class="mqsec">
+  <div class="mqlbl"><span>Stack que usamos en cada proyecto</span></div>
+  <div class="mqout">
+    <div class="mqt">
+      <!-- Fila 1 -->
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg><span class="tname">Cloudflare</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg><span class="tname">Netlify</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span class="tname">WordPress</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg><span class="tname">WooCommerce</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg><span class="tname">Figma</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span class="tname">Google Analytics</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><span class="tname">HTML · CSS · JS</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="tname">SEO</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 11a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.9 2H6.9a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="tname">WhatsApp Business</span></div>
+      <!-- duplicado -->
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg><span class="tname">Cloudflare</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg><span class="tname">Netlify</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg><span class="tname">WordPress</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8"/></svg><span class="tname">WooCommerce</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg><span class="tname">Figma</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span class="tname">Analytics</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="tname">SEO</span></div>
+      <div class="titem"><svg class="tico" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2"/></svg><span class="tname">WhatsApp</span></div>
+    </div>
+  </div>
+  <div class="mqout" style="padding-bottom:1.4rem">
+    <div class="mqt2">
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Entrega en 7 días</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Sin plantillas genéricas</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Mobile-first siempre</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">SEO desde el día uno</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Soporte por WhatsApp</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Código limpio y rápido</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">México · México</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Sin costos escondidos</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">100% a tu medida</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Entrega en 7 días</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Sin plantillas genéricas</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Mobile-first siempre</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">SEO desde el día uno</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Soporte por WhatsApp</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Código limpio y rápido</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">México · México</span></div>
+      <div class="msg2"><div class="m2dot"></div><span class="m2txt">Sin costos escondidos</span></div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- DEMOS PREVIEW -->
+<section id="demos-preview" style="padding:6rem 0;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);overflow:hidden;background:var(--s1);">
+  <div style="max-width:1100px;margin:0 auto;padding:0 2.5rem;">
+    <div class="reveal" style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3rem;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <div class="eyb">Portafolio</div>
+        <h2 class="sh" style="font-size:clamp(2rem,4vw,3rem);">Sitios que ya están<br><em>generando resultados.</em></h2>
+      </div>
+      <a href="portafolio.html" style="font-size:.78rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--or);text-decoration:none;display:flex;align-items:center;gap:6px;">Ver todos los demos →</a>
+    </div>
+    <!-- Cards demos -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;" class="reveal demos-prev-grid">
+      <!-- GRM Collision -->
+      <div class="demo-prev-card" onclick="window.open('https://grmcollision.com','_blank')" style="cursor:pointer;position:relative;overflow:hidden;background:var(--bg);border:1px solid var(--bd);group">
+        <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#080808 0%,#1a0005 50%,#080808 100%);position:relative;overflow:hidden;">
+          <!-- Animated bg GRM style -->
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(212,0,26,.15),transparent);"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(to top,rgba(8,8,8,.9),transparent);"></div>
+          <!-- Fake browser chrome -->
+          <div style="position:absolute;top:0;left:0;right:0;height:28px;background:rgba(0,0,0,.5);display:flex;align-items:center;gap:5px;padding:0 10px;">
+            <div style="width:7px;height:7px;border-radius:50%;background:#ff5f57;"></div>
+            <div style="width:7px;height:7px;border-radius:50%;background:#febc2e;"></div>
+            <div style="width:7px;height:7px;border-radius:50%;background:#28c840;"></div>
+            <div style="flex:1;background:rgba(255,255,255,.06);border-radius:3px;height:14px;margin:0 8px;display:flex;align-items:center;padding:0 8px;">
+              <span style="font-size:.5rem;color:rgba(255,255,255,.3);">grmcollision.com</span>
+            </div>
+          </div>
+          <!-- Content preview -->
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
+            <div style="font-family:'DM Serif Display',serif;font-size:2.5rem;font-weight:900;color:#fff;text-shadow:0 0 40px rgba(212,0,26,.5);letter-spacing:-2px;line-height:1;">GRM<br><span style="color:#D4001A;">COLLISION</span></div>
+          </div>
+          <div style="position:absolute;bottom:12px;left:12px;background:#D4001A;color:#fff;font-size:.55rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:3px 8px;">Premium N2</div>
+        </div>
+        <div style="padding:1.25rem;">
+          <div style="font-size:.62rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--or);margin-bottom:.4rem;">Automotriz · Colisión</div>
+          <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--tx);margin-bottom:.4rem;">GRM Collision</div>
+          <div style="font-size:.78rem;color:var(--mu);line-height:1.6;">Dark UI cinematográfica, videos 4K, cursor de mira, 3 sucursales.</div>
+        </div>
+      </div>
+      <!-- BACKNET -->
+      <div class="demo-prev-card" onclick="window.open('https://backnetmx.com','_blank')" style="cursor:pointer;position:relative;overflow:hidden;background:var(--bg);border:1px solid var(--bd);">
+        <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#0d1f35 0%,#0a1628 50%,#0d2040 100%);position:relative;overflow:hidden;">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(59,130,246,.1),transparent);"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(to top,rgba(13,31,53,.9),transparent);"></div>
+          <div style="position:absolute;top:0;left:0;right:0;height:28px;background:rgba(0,0,0,.4);display:flex;align-items:center;gap:5px;padding:0 10px;">
+            <div style="width:7px;height:7px;border-radius:50%;background:#ff5f57;"></div>
+            <div style="width:7px;height:7px;border-radius:50%;background:#febc2e;"></div>
+            <div style="width:7px;height:7px;border-radius:50%;background:#28c840;"></div>
+            <div style="flex:1;background:rgba(255,255,255,.06);border-radius:3px;height:14px;margin:0 8px;display:flex;align-items:center;padding:0 8px;">
+              <span style="font-size:.5rem;color:rgba(255,255,255,.3);">backnetmx.com</span>
+            </div>
+          </div>
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
+            <div style="font-family:'DM Serif Display',serif;font-size:2rem;font-weight:900;color:#fff;letter-spacing:-1px;line-height:1;">BACK<span style="color:#3b82f6;">NET</span></div>
+            <div style="font-size:.6rem;letter-spacing:3px;color:rgba(255,255,255,.4);margin-top:4px;text-transform:uppercase;">Telecomunicaciones</div>
+          </div>
+          <div style="position:absolute;bottom:12px;left:12px;background:#3b82f6;color:#fff;font-size:.55rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:3px 8px;">Premium N2</div>
+        </div>
+        <div style="padding:1.25rem;">
+          <div style="font-size:.62rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--or);margin-bottom:.4rem;">Telecomunicaciones · Redes</div>
+          <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--tx);margin-bottom:.4rem;">Backnet</div>
+          <div style="font-size:.78rem;color:var(--mu);line-height:1.6;">Infraestructura de redes, cableado estructurado y soluciones corporativas.</div>
+        </div>
+      </div>
+      <!-- ZENIO VISION -->
+      <div class="demo-prev-card" onclick="window.open('https://zeniovision.com','_blank')" style="cursor:pointer;position:relative;overflow:hidden;background:var(--bg);border:1px solid var(--bd);">
+        <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#050510 0%,#0a0a20 50%,#0d0d28 100%);position:relative;overflow:hidden;">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(99,102,241,.12),transparent);"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(to top,rgba(5,5,16,.9),transparent);"></div>
+          <div style="position:absolute;top:0;left:0;right:0;height:28px;background:rgba(0,0,0,.4);display:flex;align-items:center;gap:5px;padding:0 10px;">
+            <div style="width:7px;height:7px;border-radius:50%;background:#ff5f57;"></div>
+            <div style="width:7px;height:7px;border-radius:50%;background:#febc2e;"></div>
+            <div style="width:7px;height:7px;border-radius:50%;background:#28c840;"></div>
+            <div style="flex:1;background:rgba(255,255,255,.06);border-radius:3px;height:14px;margin:0 8px;display:flex;align-items:center;padding:0 8px;">
+              <span style="font-size:.5rem;color:rgba(255,255,255,.3);">zeniovision.com</span>
+            </div>
+          </div>
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
+            <div style="font-family:'DM Serif Display',serif;font-size:2rem;font-weight:900;color:#fff;letter-spacing:-1px;line-height:1;">ZENIO<br><span style="color:#818cf8;font-style:italic;">Vision</span></div>
+            <div style="font-size:.6rem;letter-spacing:3px;color:rgba(255,255,255,.4);margin-top:4px;text-transform:uppercase;">Drones · Aerial</div>
+          </div>
+          <div style="position:absolute;bottom:12px;left:12px;background:#6366f1;color:#fff;font-size:.55rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:3px 8px;">Premium N2</div>
+        </div>
+        <div style="padding:1.25rem;">
+          <div style="font-size:.62rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--or);margin-bottom:.4rem;">Tecnología · Drones</div>
+          <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--tx);margin-bottom:.4rem;">Zenio Vision</div>
+          <div style="font-size:.78rem;color:var(--mu);line-height:1.6;">Servicios de fotografía y video aéreo con drones para eventos y empresas.</div>
+        </div>
+      </div>
+      <!-- Tu sitio aquí -->
+      <div class="demo-prev-card" onclick="window.open('https://wa.me/528110496588','_blank')" style="cursor:pointer;position:relative;overflow:hidden;background:var(--bg);border:1px solid var(--bd2);">
+        <div style="aspect-ratio:16/9;background:var(--s1);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--bd);">
+          <div style="text-align:center;">
+            <div style="width:48px;height:48px;border:1.5px solid var(--or);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:1.4rem;">+</div>
+            <div style="font-size:.75rem;font-weight:500;letter-spacing:.08em;color:var(--or);text-transform:uppercase;">Tu negocio aquí</div>
+          </div>
+        </div>
+        <div style="padding:1.25rem;">
+          <div style="font-size:.62rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--or);margin-bottom:.4rem;">Tu categoría</div>
+          <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--tx);margin-bottom:.4rem;">Tu Negocio</div>
+          <div style="font-size:.78rem;color:var(--mu);line-height:1.6;">Diseñamos tu sitio desde cero en 72 horas. Cotización sin costo.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO BANNER 1 -->
+<div style="position:relative;height:360px;overflow:hidden;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);">
+  <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;opacity:.45;">
+    <source src="banner1.mp4" type="video/mp4">
   </video>
-  <div style="position:absolute;inset:0;background:rgba(6,6,6,.75);display:flex;align-items:center;justify-content:center;text-align:center;">
-    <div>
-      <div style="font-size:.65rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--or);margin-bottom:1rem;">Nosotros</div>
-      <div style="font-family:'DM Serif Display',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:400;color:#ede9e4;line-height:1.05;text-shadow:0 2px 20px rgba(0,0,0,.8);">
-        Diseño que <span style="font-style:italic;color:var(--or);">vende.</span><br>Desde cualquier parte del mundo.
+  <div style="position:absolute;inset:0;background:rgba(6,6,6,.78);display:flex;align-items:center;justify-content:center;">
+    <div style="text-align:center;max-width:700px;padding:0 2rem;">
+      <div style="font-family:'DM Serif Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:400;color:#ede9e4;letter-spacing:-.02em;line-height:1.05;text-shadow:0 2px 20px rgba(0,0,0,.8);">
+        No hacemos páginas web.<br><span style="font-style:italic;color:var(--or);">Construimos resultados.</span>
       </div>
     </div>
   </div>
 </div>
-<!-- CONTACTO -->
-<section id="contacto" style="padding-top:60px;">
-  <div style="max-width:1100px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem);">
-    <div class="reveal" style="margin-bottom:5rem;">
-      <p style="font-size:1rem;color:var(--muted);line-height:1.8;max-width:580px;margin-top:1.5rem;">Zenio Digital es una agencia de diseño web especializada en negocios que quieren crecer. No hacemos páginas web — construimos la primera impresión que cierra ventas.</p>
-    </div>
-    <!-- Stats -->
-    <div class="reveal contacto-stats" style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-bottom:5rem;">
-      <div style="background:var(--s1);border:1px solid var(--bd);padding:2.5rem;text-align:center;">
-        <div style="font-family:'Cabinet Grotesk',sans-serif;font-size:3rem;font-weight:800;color:var(--or);">3+</div>
-        <div style="font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:.5rem;">Años de experiencia</div>
-      </div>
-      <div style="background:var(--s1);border:1px solid var(--bd);padding:2.5rem;text-align:center;">
-        <div style="font-family:'Cabinet Grotesk',sans-serif;font-size:3rem;font-weight:800;color:var(--or);">20+</div>
-        <div style="font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:.5rem;">Proyectos entregados</div>
-      </div>
-      <div style="background:var(--s1);border:1px solid var(--bd);padding:2.5rem;text-align:center;">
-        <div style="font-family:'Cabinet Grotesk',sans-serif;font-size:3rem;font-weight:800;color:var(--or);">72h</div>
-        <div style="font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:.5rem;">Tiempo promedio</div>
-      </div>
-      <div style="background:var(--s1);border:1px solid var(--bd);padding:2.5rem;text-align:center;">
-        <div style="font-family:'Cabinet Grotesk',sans-serif;font-size:3rem;font-weight:800;color:var(--or);">100%</div>
-        <div style="font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:.5rem;">Clientes satisfechos</div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- TESTIMONIOS -->
-<section id="testimonios">
+<!-- PROBLEMA -->
+<section id="problema" style="background:var(--s1);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)">
   <div class="sec">
-    <div class="rv"><div class="eyb">Clientes</div>
+    <div class="rv"><div class="eyb">El problema real</div>
       <div class="stop">
-        <h2 class="sh">Lo que dicen quienes ya<br>tienen su sitio <em>Zenio.</em></h2>
-        <p class="snote">Resultados reales de negocios en México y Latinoamérica.</p>
+        <h2 class="sh">El 70% de los negocios pierde<br>clientes por una <em>mala primera impresión.</em></h2>
+        <p class="snote">No es el producto. No es el precio. Es cómo se ven en línea cuando el cliente los busca por primera vez.</p>
       </div>
     </div>
-    <div class="test-grid rv">
-      <div class="tcard feat">
-        <div class="tcard-stars">
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <div class="tcard-quote">En menos de una semana tenía mi sitio listo y publicado. Mis clientes me dicen que se ve mucho más profesional que el de mis competidores. Ya recuperé la inversión en el primer mes.</div>
-        <div class="tcard-author"><div class="tcard-avatar">RM</div><div><div class="tcard-name">Rodrigo Medina</div><div class="tcard-co">Despacho jurídico · México</div></div></div>
+    <div class="prob-grid rv">
+      <div class="pcard">
+        <div class="pcard-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <div class="pcard-title">Tu competencia ya tiene sitio profesional</div>
+        <div class="pcard-desc">Mientras no inviertes en tu presencia digital, alguien más está captando a tus clientes potenciales con un sitio que transmite confianza desde el primer segundo.</div>
       </div>
-      <div class="tcard">
-        <div class="tcard-stars">
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <div class="tcard-quote">Antes tenía un sitio de Wix que me daba vergüenza compartir. Ahora lo mando en mi presentación de ventas. La diferencia en cómo me perciben los clientes es brutal.</div>
-        <div class="tcard-author"><div class="tcard-avatar">VL</div><div><div class="tcard-name">Verónica Lozano</div><div class="tcard-co">Consultora de imagen · San Pedro</div></div></div>
+      <div class="pcard highlight">
+        <div class="pcard-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <div class="pcard-title">Un sitio lento o feo vale lo mismo que no tener</div>
+        <div class="pcard-desc">El 53% de usuarios abandona una página si tarda más de 3 segundos. Un diseño anticuado o una plantilla genérica comunica exactamente lo contrario de profesionalismo.</div>
       </div>
-      <div class="tcard">
-        <div class="tcard-stars">
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <div class="tcard-quote">El proceso fue rapidísimo. Me mandaron avance a los 3 días, hicieron los cambios el mismo día y publicaron en el plazo prometido. Comunicación excelente en todo momento.</div>
-        <div class="tcard-author"><div class="tcard-avatar">CA</div><div><div class="tcard-name">Carlos Aguirre</div><div class="tcard-co">Constructora · México NL</div></div></div>
+      <div class="pcard">
+        <div class="pcard-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div class="pcard-title">No tienes forma de capturar prospectos 24/7</div>
+        <div class="pcard-desc">Sin un sitio optimizado, dependes de referencias y redes sociales. Estás perdiendo clientes que buscan exactamente lo que ofreces en Google, pero no te encuentran.</div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div class="pcard-title">Pagas por diseñadores y no ves resultados</div>
+        <div class="pcard-desc">Muchos entregan sitios bonitos que no convierten. Un buen sitio no solo se ve bien — está estructurado para guiar al visitante hacia una sola acción: contactarte.</div>
       </div>
     </div>
-    <div class="trust-bar rv">
-      <div class="trust-bar-item"><div class="trust-bar-ico"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Proyectos entregados en tiempo</div>
-      <div class="trust-bar-item"><div class="trust-bar-ico"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Sin costos adicionales no acordados</div>
-      <div class="trust-bar-item"><div class="trust-bar-ico"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Revisiones incluidas en cada paquete</div>
-      <div class="trust-bar-item"><div class="trust-bar-ico"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Soporte post-entrega por WhatsApp</div>
+    <div class="prob-stat rv">
+      <div class="pstat"><div class="pstat-n"><span class="counter" data-target="75">0</span><span>%</span></div><div class="pstat-l">de los compradores evalúan la credibilidad de un negocio por su sitio web</div></div>
+      <div class="pstat"><div class="pstat-n"><span class="counter" data-target="3">0</span><span>s</span></div><div class="pstat-l">es todo el tiempo que tienes para causar una primera impresión antes de que el usuario se vaya</div></div>
+      <div class="pstat"><div class="pstat-n"><span class="counter" data-target="7">0</span><span>%</span></div><div class="pstat-l">de los clientes prefieren hacer negocios con empresas que tienen presencia profesional en línea</div></div>
     </div>
   </div>
 </section>
 
 
+<!-- SOLUCIÓN -->
+<section id="solucion">
+  <div class="sec">
+    <div class="rv"><div class="eyb">La solución Zenio</div>
+      <h2 class="sh" style="margin-bottom:3rem">No vendemos páginas web.<br>Construimos <em>motores de confianza.</em></h2>
+    </div>
+    <div class="sol-wrap rv">
+      <div class="sol-left">
+        <div class="sol-visual">
+          <div class="sv-title">Lo que entrega tu sitio Zenio</div>
+          <div class="sv-headline">Percepción premium desde el primer clic</div>
+          <div class="sv-bar"></div>
+          <div class="sv-row"><div class="sv-label">Confianza visual</div><div class="sv-track"><div class="sv-fill" style="width:0%" data-w="96%"></div></div><div class="sv-val">96%</div></div>
+          <div class="sv-row"><div class="sv-label">Velocidad de carga</div><div class="sv-track"><div class="sv-fill" style="width:0%" data-w="98%"></div></div><div class="sv-val">98%</div></div>
+          <div class="sv-row"><div class="sv-label">Mobile-first</div><div class="sv-track"><div class="sv-fill" style="width:0%" data-w="100%"></div></div><div class="sv-val">100%</div></div>
+          <div class="sv-row"><div class="sv-label">SEO local</div><div class="sv-track"><div class="sv-fill" style="width:0%" data-w="90%"></div></div><div class="sv-val">90%</div></div>
+          <div class="sv-row"><div class="sv-label">Conversión</div><div class="sv-track"><div class="sv-fill" style="width:0%" data-w="85%"></div></div><div class="sv-val">85%</div></div>
+        </div>
+        <div class="sol-promise" style="margin-top:1px">
+          <div class="sol-promise-label">Nuestra promesa</div>
+          <div class="sol-promise-text">"Si en 30 días no estás satisfecho con el resultado, lo corregimos sin costo adicional."</div>
+        </div>
+      </div>
+      <div class="sol-right">
+        <div class="sol-item">
+          <div class="sol-item-num">1</div>
+          <div class="sol-item-body"><div class="sol-item-title">Diseño a tu medida, no una plantilla</div><div class="sol-item-desc">Cada sitio parte de cero. Tu paleta, tu voz, tu industria. No eres uno más en nuestro portafolio — eres el proyecto más importante de la semana.</div></div>
+        </div>
+        <div class="sol-item">
+          <div class="sol-item-num">2</div>
+          <div class="sol-item-body"><div class="sol-item-title">Entregado en 7 días hábiles</div><div class="sol-item-desc">Sin esperar meses. Un proceso claro, con etapas definidas y comunicación directa por WhatsApp. Sabes exactamente en qué punto estamos.</div></div>
+        </div>
+        <div class="sol-item">
+          <div class="sol-item-num">3</div>
+          <div class="sol-item-body"><div class="sol-item-title">Estructurado para convertir</div><div class="sol-item-desc">No solo se ve bien — cada sección está pensada para guiar al visitante hacia una acción. Más contactos, más citas, más ventas.</div></div>
+        </div>
+        <div class="sol-item">
+          <div class="sol-item-num">4</div>
+          <div class="sol-item-body"><div class="sol-item-title">SEO y velocidad desde el día uno</div><div class="sol-item-desc">Código limpio, sin frameworks pesados, imágenes optimizadas. Tu sitio carga en menos de 2 segundos y Google lo indexa desde el primer día.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- VIDEO BANNER 2 -->
+<div style="position:relative;height:420px;overflow:hidden;border-top:1px solid var(--bd);">
+  <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;opacity:.4;">
+    <source src="banner2.mp4" type="video/mp4">
+  </video>
+  <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(6,6,6,.95) 0%,rgba(6,6,6,.85) 55%,rgba(6,6,6,.6) 100%);display:flex;align-items:center;justify-content:flex-start;padding:0 10%;">
+    <div style="max-width:520px;">
+      <div style="font-size:.65rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--or);margin-bottom:1rem;">Todo México</div>
+      <div style="font-family:'DM Serif Display',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:400;color:#ede9e4;line-height:1.1;margin-bottom:1.5rem;text-shadow:0 2px 20px rgba(0,0,0,.9);">
+        Tu negocio merece la<br><span style="font-style:italic;color:var(--or);">mejor primera impresión.</span>
+      </div>
+      <a href="https://wa.me/528110496588" target="_blank"
+        style="display:inline-flex;align-items:center;gap:10px;background:var(--or);color:#fff;padding:.9rem 2rem;font-size:.85rem;font-weight:500;text-decoration:none;border-radius:2px;">
+        Cotizar por WhatsApp →
+      </a>
+    </div>
+  </div>
+</div>
 <!-- CTA FINAL -->
 <section class="cta-sec">
   <div class="cta-gbg"></div>
@@ -579,11 +813,11 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
   <div class="fmain">
     <div class="rv">
       <a href="#" class="flogo"><div class="flogo-mark"></div><span class="flogo-name">Zenio Digital</span></a>
-      <p class="ftagline">Diseño web profesional para negocios que quieren destacar en México y el mundo.</p>
+      <p class="ftagline">Diseño web profesional para negocios que quieren destacar en México y México.</p>
       <div class="fcontact">
         <a href="https://wa.me/528110496588" target="_blank"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 11a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.9 2H6.9a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+52 811 049 6588</a>
         <a href="mailto:hola@zeniodigital.com"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hola@zeniodigital.com</a>
-        <a href="#"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>México y LATAM</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Todo México</a>
       </div>
       <div class="fsocial">
         <a href="#" class="fsoc" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
@@ -596,7 +830,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
     <div class="rv"><div class="fcol-title">Contacto</div><ul class="flinks"><li><a href="https://wa.me/528110496588" target="_blank">WhatsApp</a></li><li><a href="mailto:hola@zeniodigital.com">Email</a></li><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li><li><a href="#">LinkedIn</a></li></ul></div>
   </div>
   <div class="fbot">
-    <span class="fcopy">© 2026 Zenio Digital — México · Latinoamérica</span>
+    <span class="fcopy">© 2026 Zenio Digital — Todo México, México</span>
     <span class="fcredit">Diseñado por <span>Zenio Digital</span></span>
   </div>
 </footer>
@@ -690,6 +924,59 @@ function swMode(){
     ul.innerHTML=feats[i].map(f=>{const off=f.startsWith('off:'),t=off?f.slice(4):f;return`<li class="${off?'off':''}">${t}</li>`}).join('');
   });
 }
+</script>
+
+<canvas id="particles-canvas" style="position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.35;"></canvas>
+<script>
+(function(){
+  const c=document.getElementById('particles-canvas');
+  const ctx=c.getContext('2d');
+  let W,H,pts=[];
+  function resize(){W=c.width=window.innerWidth;H=c.height=window.innerHeight;}
+  resize();
+  window.addEventListener('resize',resize);
+  
+  // Crear partículas
+  for(let i=0;i<90;i++){
+    pts.push({
+      x:Math.random()*W, y:Math.random()*H,
+      vx:(Math.random()-.5)*.35, vy:(Math.random()-.5)*.35,
+      r:Math.random()*1.5+.5,
+      a:Math.random()
+    });
+  }
+  
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    // Líneas entre partículas cercanas
+    for(let i=0;i<pts.length;i++){
+      for(let j=i+1;j<pts.length;j++){
+        const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y;
+        const dist=Math.sqrt(dx*dx+dy*dy);
+        if(dist<160){
+          ctx.beginPath();
+          ctx.strokeStyle=`rgba(224,92,0,${.18*(1-dist/160)})`;
+          ctx.lineWidth=.5;
+          ctx.moveTo(pts[i].x,pts[i].y);
+          ctx.lineTo(pts[j].x,pts[j].y);
+          ctx.stroke();
+        }
+      }
+      // Puntos
+      ctx.beginPath();
+      ctx.arc(pts[i].x,pts[i].y,pts[i].r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(224,92,0,${pts[i].a*.6})`;
+      ctx.fill();
+      // Mover
+      pts[i].x+=pts[i].vx;
+      pts[i].y+=pts[i].vy;
+      if(pts[i].x<0||pts[i].x>W) pts[i].vx*=-1;
+      if(pts[i].y<0||pts[i].y>H) pts[i].vy*=-1;
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
 </script>
 </body>
 </html>
