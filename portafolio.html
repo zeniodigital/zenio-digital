@@ -513,6 +513,8 @@ function filtrar(cat){
 .port-cta p{font-size:1rem;font-weight:300;color:var(--mu);margin-bottom:1.8rem;}
 @media(max-width:900px){#demos-grid{grid-template-columns:1fr 1fr;}.port-stats{grid-template-columns:1fr 1fr;}}
 @media(max-width:600px){#demos-grid{grid-template-columns:1fr;}.port-stats{grid-template-columns:1fr 1fr;}.demos-wrap,.filtros-wrap{padding-left:1.5rem;padding-right:1.5rem;}.port-hero{padding:5rem 1.5rem 3.5rem;}}
+.clientes-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--bd);border:1px solid var(--bd2)}
+@media(max-width:600px){.clientes-grid{grid-template-columns:1fr}}
 @media(max-width:600px){
   body{cursor:auto}
   #cring,#cdot{display:none}
@@ -540,7 +542,7 @@ function filtrar(cat){
     <span style="font-size:.6rem;font-weight:600;letter-spacing:.2em;color:var(--or);text-transform:uppercase;white-space:nowrap;font-family:'Cabinet Grotesk',sans-serif">Clientes activos</span>
     <span style="flex:1;height:1px;background:var(--bd)"></span>
   </div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--bd);border:1px solid var(--bd2)">
+  <div class="clientes-grid">
     <div style="background:var(--s1);padding:2rem 2.2rem;cursor:pointer;transition:background .3s" onclick="window.open('https://grmcollision.com','_blank')" onmouseenter="this.style.background='var(--s2)'" onmouseleave="this.style.background='var(--s1)'">
       <div style="font-size:.58rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:.5rem;font-family:'Cabinet Grotesk',sans-serif">Automotriz · Colisión · Monterrey</div>
       <div style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.3rem;font-weight:900;color:var(--tx);letter-spacing:-.025em;margin-bottom:.4rem">GRM Collision</div>

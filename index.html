@@ -287,7 +287,7 @@ nav.scrolled{background:rgba(15,15,15,.97)}
 .port-thumb{aspect-ratio:16/9;position:relative;overflow:hidden}
 .port-thumb-bg{position:absolute;inset:0;transition:transform .5s cubic-bezier(.22,1,.36,1)}
 .port-card:hover .port-thumb-bg{transform:scale(1.04)}
-.port-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,15,15,.85) 0%,transparent 55%);opacity:0;transition:opacity .3s}
+.port-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,15,15,.85) 0%,transparent 55%);opacity:0;transition:opacity .3s;pointer-events:none}
 .port-card:hover .port-overlay{opacity:1}
 .port-info{padding:1.2rem 1.4rem}
 .port-cat{font-size:.6rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--or);margin-bottom:.3rem}
@@ -411,8 +411,8 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 @keyframes slideup{from{transform:translateY(110%);opacity:0}to{transform:translateY(0);opacity:1}}
 @keyframes slideup-fade{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:translateY(0)}}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-.rv{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
-.rv.vis{opacity:1;transform:none}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease;pointer-events:none}
+.rv.vis{opacity:1;transform:none;pointer-events:auto}
 
 /* ── RESPONSIVE ── */
 @media(max-width:1024px){
@@ -550,8 +550,8 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 <div class="logos-sec">
   <div class="logos-label">Negocios que ya confían en Zenio Digital</div>
   <div class="logos-row">
-    <div class="logo-item"><div class="logo-name">GRM Collision</div><div class="logo-cat">Automotriz · Monterrey</div></div>
-    <div class="logo-item"><div class="logo-name">Backnet</div><div class="logo-cat">Telecomunicaciones · NL</div></div>
+    <div class="logo-item" onclick="window.open('https://grmcollision.com','_blank')" style="cursor:pointer"><div class="logo-name">GRM Collision</div><div class="logo-cat">Automotriz · Monterrey</div></div>
+    <div class="logo-item" onclick="window.open('https://backnetmx.com','_blank')" style="cursor:pointer"><div class="logo-name">Backnet</div><div class="logo-cat">Telecomunicaciones · NL</div></div>
     <div class="logo-item" onclick="window.open('https://zeniovision.com','_blank')" style="cursor:pointer"><div class="logo-name">Zenio Vision</div><div class="logo-cat">Drones · Aerial · México</div></div>
     <div class="logo-item" style="opacity:.15;pointer-events:none"><div class="logo-name">Tu negocio</div><div class="logo-cat">Próximo cliente</div></div>
   </div>
@@ -842,7 +842,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
     </div>
     <div class="port-grid rv">
       <!-- GRM Collision -->
-      <div class="port-card" onclick="window.open('https://grmcollision.com','_blank')">
+      <a class="port-card" href="https://grmcollision.com" target="_blank" rel="noopener" style="text-decoration:none;display:block;color:inherit">
         <div class="port-thumb">
           <div class="port-thumb-bg" style="background:linear-gradient(135deg,#080808 0%,#1a0005 50%,#0a0003 100%);position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
             <div style="text-align:center"><div style="font-family:var(--cg);font-size:2.8rem;font-weight:900;color:#fff;letter-spacing:-2px;line-height:.9;text-shadow:0 0 40px rgba(212,0,26,.5)">GRM<br><span style="color:#D4001A">COLLISION</span></div></div>
@@ -855,9 +855,9 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
           <div class="port-name">GRM Collision</div>
           <div class="port-desc">Dark UI cinematográfica, videos 4K, cursor personalizado. 3 sucursales con WhatsApp individual.</div>
         </div>
-      </div>
+      </a>
       <!-- Backnet -->
-      <div class="port-card" onclick="window.open('https://backnetmx.com','_blank')">
+      <a class="port-card" href="https://backnetmx.com" target="_blank" rel="noopener" style="text-decoration:none;display:block;color:inherit">
         <div class="port-thumb">
           <div class="port-thumb-bg" style="background:linear-gradient(135deg,#0d1f35 0%,#0a1628 50%,#0d2040 100%);position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
             <div style="text-align:center"><div style="font-family:var(--cg);font-size:2.2rem;font-weight:900;color:#fff;letter-spacing:-1px;line-height:.9">BACK<span style="color:#3b82f6">NET</span></div><div style="font-size:.58rem;letter-spacing:3px;color:rgba(255,255,255,.35);margin-top:6px;text-transform:uppercase">Telecomunicaciones</div></div>
@@ -870,10 +870,10 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
           <div class="port-name">Backnet</div>
           <div class="port-desc">Infraestructura de redes, cableado estructurado y soluciones corporativas para industria y gobierno.</div>
         </div>
-      </div>
+      </a>
 
       <!-- Zenio Vision -->
-      <div class="port-card" onclick="window.open('https://zeniovision.com','_blank')">
+      <a class="port-card" href="https://zeniovision.com" target="_blank" rel="noopener" style="text-decoration:none;display:block;color:inherit">
         <div class="port-thumb">
           <div class="port-thumb-bg" style="background:linear-gradient(135deg,#050510 0%,#0a0a20 50%,#0d0d28 100%);position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
             <div style="text-align:center"><div style="font-family:var(--cg);font-size:2rem;font-weight:900;color:#fff;letter-spacing:-1px;line-height:.9">ZENIO<br><span style="color:#818cf8;font-style:italic">Vision</span></div><div style="font-size:.55rem;letter-spacing:3px;color:rgba(255,255,255,.35);margin-top:6px;text-transform:uppercase">Drones · Aerial</div></div>
@@ -886,7 +886,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
           <div class="port-name">Zenio Vision</div>
           <div class="port-desc">Fotografía y video aéreo con drones para eventos corporativos y bienes raíces en todo México.</div>
         </div>
-      </div>
+      </a>
       <!-- Tu negocio -->
       <div class="port-card" onclick="window.open('https://wa.me/528110496588','_blank')" style="cursor:pointer">
         <div class="port-thumb" style="background:var(--s2)">
