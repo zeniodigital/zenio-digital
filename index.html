@@ -319,6 +319,45 @@ nav.scrolled{background:rgba(15,15,15,.97)}
 .trust-ico{width:18px;height:18px;border-radius:50%;background:rgba(232,98,26,.08);border:1px solid rgba(232,98,26,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .trust-ico svg{width:8px;height:8px;stroke:var(--or);fill:none;stroke-width:2.5;stroke-linecap:round}
 
+/* ── SOLUCIÓN (fondo cálido) ── */
+.sol-sec{background:var(--w3);border-top:1px solid var(--bdk);border-bottom:1px solid var(--bdk)}
+.sol-sec .sh{color:var(--dk)}
+.sol-sec .sh em{color:var(--or)}
+.sol-sec .eyb{color:var(--or)}
+.sol-sec .eyb::before{background:var(--or)}
+.sol-sec .sol-visual{background:#fff;border:1px solid rgba(0,0,0,.09)}
+.sol-sec .sv-title{color:var(--dim)}
+.sol-sec .sv-head{color:var(--dk)}
+.sol-sec .sv-div{background:rgba(0,0,0,.08)}
+.sol-sec .sv-lbl{color:var(--mid)}
+.sol-sec .sv-track{background:rgba(0,0,0,.07)}
+.sol-sec .sol-promise{background:#fff;border:1px solid rgba(0,0,0,.09);border-left:2px solid var(--or)}
+.sol-sec .sol-promise-txt{color:var(--dk)}
+.sol-sec .sol-item{background:#fff;border:1px solid rgba(0,0,0,.09)}
+.sol-sec .sol-item:hover{background:var(--w1);border-color:rgba(232,98,26,.2)}
+.sol-sec .sol-t{color:var(--dk)}
+.sol-sec .sol-d{color:var(--mid)}
+
+/* ── FAQ (fondo cálido) ── */
+.faq-sec{background:var(--w1);border-top:1px solid var(--bdk);border-bottom:1px solid var(--bdk)}
+.faq-sec .sh{color:var(--dk)}
+.faq-sec .sh em{color:var(--or)}
+.faq-sec .eyb{color:var(--or)}
+.faq-sec .eyb::before{background:var(--or)}
+.faq-sec .faq-item{background:#fff;border:1px solid rgba(0,0,0,.09)}
+.faq-sec .faq-item.open{border-color:rgba(232,98,26,.25)}
+.faq-sec .faq-qt{color:var(--dk)}
+.faq-sec .faq-ico{color:var(--or)}
+.faq-sec .faq-at{color:var(--mid)}
+
+/* ── NOSOTROS (fondo cálido) ── */
+.nos-sec{background:var(--w2);border-top:1px solid var(--bdk);border-bottom:1px solid var(--bdk)}
+.nos-sec .sh{color:var(--dk)}
+.nos-sec .sh em{color:var(--or)}
+.nos-sec .eyb{color:var(--or)}
+.nos-sec .eyb::before{background:var(--or)}
+.nos-sec .sec-note{color:var(--mid)}
+
 /* ── PRECIOS ── */
 .tog-wrap{display:flex;align-items:center;gap:11px;margin-bottom:2.5rem}
 .tog-lbl{font-size:.78rem;color:var(--mu);font-weight:400}
@@ -624,7 +663,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 </section>
 
 <!-- 05 SOLUCIÓN -->
-<section id="solucion" class="sec-full">
+<section id="solucion" class="sec-full sol-sec">
   <div class="sec">
     <div class="rv">
       <div class="eyb">La solución Zenio</div>
@@ -1065,7 +1104,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 </section>
 
 <!-- 12 FAQ -->
-<section id="faq" class="sec-full">
+<section id="faq" class="sec-full faq-sec">
   <div class="sec">
     <div class="rv">
       <div class="eyb">Preguntas frecuentes</div>
@@ -1120,7 +1159,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 
 
 <!-- NOSOTROS -->
-<section id="nosotros" class="sec-full">
+<section id="nosotros" class="sec-full nos-sec">
   <div class="sec">
     <div class="rv">
       <div class="eyb">Nosotros</div>
@@ -1129,43 +1168,43 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
         <p class="sec-note">Monterrey, Nuevo León.<br>Trabajamos con todo México.</p>
       </div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:1px;background:var(--bd);border:1px solid var(--bd2)" class="rv">
+    <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:1px;background:rgba(0,0,0,.08);border:1px solid rgba(0,0,0,.1)" class="rv">
       <!-- Columna izquierda: quiénes somos -->
-      <div style="background:var(--s1);padding:3rem 2.8rem">
-        <div style="font-family:var(--cg);font-size:1.5rem;font-weight:900;color:var(--tx);letter-spacing:-.03em;line-height:1.1;margin-bottom:1.5rem">
+      <div style="background:#fff;padding:3rem 2.8rem">
+        <div style="font-family:var(--cg);font-size:1.5rem;font-weight:900;color:var(--dk);letter-spacing:-.03em;line-height:1.1;margin-bottom:1.5rem">
           Zenio no es una agencia de 50 personas.<br>
           <span style="color:var(--or);font-style:italic">Es mejor que eso.</span>
         </div>
-        <p style="font-size:.9rem;font-weight:300;color:var(--mu);line-height:1.85;margin-bottom:1.5rem">
+        <p style="font-size:.9rem;font-weight:300;color:var(--mid);line-height:1.85;margin-bottom:1.5rem">
           Somos un estudio especializado en Monterrey. Cada proyecto lo trabaja directamente quien lo diseña — sin capas de intermediarios, sin proyectos perdidos en una cola de producción.
         </p>
-        <p style="font-size:.9rem;font-weight:300;color:var(--mu);line-height:1.85;margin-bottom:2rem">
+        <p style="font-size:.9rem;font-weight:300;color:var(--mid);line-height:1.85;margin-bottom:2rem">
           Cuando contratas Zenio, hablas con José. Él diseña, él desarrolla, él entrega. Eso significa criterio visual consistente, comunicación directa y un resultado que realmente refleja tu negocio.
         </p>
-        <div style="display:flex;align-items:center;gap:1.2rem;padding-top:2rem;border-top:1px solid var(--bd)">
-          <div style="width:48px;height:48px;background:var(--or2);border:1px solid var(--or3);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--cg);font-size:1.2rem;font-weight:900;color:var(--or)">J</div>
+        <div style="display:flex;align-items:center;gap:1.2rem;padding-top:2rem;border-top:1px solid rgba(0,0,0,.08)">
+          <div style="width:48px;height:48px;background:rgba(232,98,26,.1);border:1px solid rgba(232,98,26,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--cg);font-size:1.2rem;font-weight:900;color:var(--or)">J</div>
           <div>
-            <div style="font-family:var(--cg);font-size:.95rem;font-weight:700;color:var(--tx)">José Treviño</div>
-            <div style="font-size:.76rem;font-weight:300;color:var(--mu)">Founder · Director Creativo · Zenio Digital</div>
+            <div style="font-family:var(--cg);font-size:.95rem;font-weight:700;color:var(--dk)">José Treviño</div>
+            <div style="font-size:.76rem;font-weight:300;color:var(--dim)">Founder · Director Creativo · Zenio Digital</div>
           </div>
         </div>
       </div>
       <!-- Columna derecha: valores -->
-      <div style="display:flex;flex-direction:column;gap:1px;background:var(--bd)">
-        <div style="background:var(--s1);padding:2rem 2.4rem;flex:1;transition:background .2s" onmouseenter="this.style.background='var(--s2)'" onmouseleave="this.style.background='var(--s1)'">
+      <div style="display:flex;flex-direction:column;gap:1px;background:rgba(0,0,0,.08)">
+        <div style="background:#fff;padding:2rem 2.4rem;flex:1;transition:background .2s" onmouseenter="this.style.background='var(--w3)'" onmouseleave="this.style.background='#fff'">
           <div style="font-family:var(--cg);font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:.6rem">Criterio</div>
-          <div style="font-family:var(--cg);font-size:1rem;font-weight:700;color:var(--tx);margin-bottom:.4rem">Diseño con intención</div>
-          <div style="font-size:.82rem;font-weight:300;color:var(--mu);line-height:1.7">Cada decisión visual tiene un porqué. No decoramos — comunicamos. Cada color, tipografía y espacio está pensado para generar confianza en tu cliente.</div>
+          <div style="font-family:var(--cg);font-size:1rem;font-weight:700;color:var(--dk);margin-bottom:.4rem">Diseño con intención</div>
+          <div style="font-size:.82rem;font-weight:300;color:var(--mid);line-height:1.7">Cada decisión visual tiene un porqué. No decoramos — comunicamos. Cada color, tipografía y espacio está pensado para generar confianza en tu cliente.</div>
         </div>
-        <div style="background:var(--s1);padding:2rem 2.4rem;flex:1;transition:background .2s" onmouseenter="this.style.background='var(--s2)'" onmouseleave="this.style.background='var(--s1)'">
+        <div style="background:#fff;padding:2rem 2.4rem;flex:1;transition:background .2s" onmouseenter="this.style.background='var(--w3)'" onmouseleave="this.style.background='#fff'">
           <div style="font-family:var(--cg);font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:.6rem">Velocidad</div>
-          <div style="font-family:var(--cg);font-size:1rem;font-weight:700;color:var(--tx);margin-bottom:.4rem">7 días, no 7 semanas</div>
-          <div style="font-size:.82rem;font-weight:300;color:var(--mu);line-height:1.7">Proceso probado que elimina los tiempos muertos. Mientras otras agencias tardan meses, tu sitio está en vivo esta semana y generando resultados desde el día uno.</div>
+          <div style="font-family:var(--cg);font-size:1rem;font-weight:700;color:var(--dk);margin-bottom:.4rem">7 días, no 7 semanas</div>
+          <div style="font-size:.82rem;font-weight:300;color:var(--mid);line-height:1.7">Proceso probado que elimina los tiempos muertos. Mientras otras agencias tardan meses, tu sitio está en vivo esta semana y generando resultados desde el día uno.</div>
         </div>
-        <div style="background:var(--s1);padding:2rem 2.4rem;flex:1;transition:background .2s" onmouseenter="this.style.background='var(--s2)'" onmouseleave="this.style.background='var(--s1)'">
+        <div style="background:#fff;padding:2rem 2.4rem;flex:1;transition:background .2s" onmouseenter="this.style.background='var(--w3)'" onmouseleave="this.style.background='#fff'">
           <div style="font-family:var(--cg);font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:.6rem">Transparencia</div>
-          <div style="font-family:var(--cg);font-size:1rem;font-weight:700;color:var(--tx);margin-bottom:.4rem">Precio claro desde el inicio</div>
-          <div style="font-size:.82rem;font-weight:300;color:var(--mu);line-height:1.7">Lo que cotizamos es lo que pagas. Sin sorpresas al final, sin extras escondidos. Si algo cambia, te avisamos antes — nunca después.</div>
+          <div style="font-family:var(--cg);font-size:1rem;font-weight:700;color:var(--dk);margin-bottom:.4rem">Precio claro desde el inicio</div>
+          <div style="font-size:.82rem;font-weight:300;color:var(--mid);line-height:1.7">Lo que cotizamos es lo que pagas. Sin sorpresas al final, sin extras escondidos. Si algo cambia, te avisamos antes — nunca después.</div>
         </div>
       </div>
     </div>
@@ -1282,6 +1321,26 @@ const rObs=new IntersectionObserver(entries=>{
   });
 },{threshold:.07});
 document.querySelectorAll('.rv').forEach(el=>rObs.observe(el));
+
+// STAGGER EN CARDS
+const staggerObs=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const children=[...entry.target.children];
+      children.forEach((child,i)=>{
+        child.style.opacity='0';
+        child.style.transform='translateY(22px)';
+        child.style.transition=`opacity .55s cubic-bezier(.16,1,.3,1) ${i*90}ms, transform .55s cubic-bezier(.16,1,.3,1) ${i*90}ms`;
+        setTimeout(()=>{
+          child.style.opacity='1';
+          child.style.transform='translateY(0)';
+        },50);
+      });
+      staggerObs.unobserve(entry.target);
+    }
+  });
+},{threshold:.08});
+document.querySelectorAll('.svc-grid,.dif-grid,.proc-list,.port-grid,.test-grid,.price-grid,.prob-grid').forEach(el=>staggerObs.observe(el));
 
 // COUNTERS
 const cObs=new IntersectionObserver(entries=>{
