@@ -325,6 +325,8 @@ nav.scrolled{background:rgba(15,15,15,.97)}
 .trust-ico{width:18px;height:18px;border-radius:50%;background:rgba(232,98,26,.08);border:1px solid rgba(232,98,26,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .trust-ico svg{width:8px;height:8px;stroke:var(--or);fill:none;stroke-width:2.5;stroke-linecap:round}
 
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.1)}
+
 /* ── SOLUCIÓN (fondo cálido) ── */
 .sol-sec{background:var(--w3);border-top:1px solid var(--bdk);border-bottom:1px solid var(--bdk)}
 .sol-sec .sh{color:var(--dk)}
@@ -501,9 +503,11 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
   .btn-wa,.btn-ghost{width:100%;justify-content:center}
   .cta-trust{flex-direction:column;align-items:flex-start;gap:.8rem}
   .ct-div{display:none}
-  .stats-strip{grid-template-columns:repeat(3,1fr)}
+  .stats-strip{grid-template-columns:repeat(2,1fr)}
+  .reviews-grid{grid-template-columns:1fr}
+  .logos-row{gap:0;flex-direction:column}
+  .logo-item{border-right:none;border-bottom:1px solid var(--bd);width:100%}
   .logos-sec{padding:2rem 1.5rem}
-  .logos-row{gap:1.5rem}
   .f-bot{flex-direction:column;align-items:flex-start;gap:.5rem}
   .proc-step{grid-template-columns:50px 1fr;gap:1rem;padding:1.8rem 1.5rem}
 }
@@ -1057,7 +1061,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
           Ver en Google Maps ↗
         </a>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.1)">
+      <div class="reviews-grid">
         <!-- Review 1 -->
         <div style="background:#fff;padding:1.8rem 2rem">
           <div style="display:flex;gap:3px;margin-bottom:.8rem">
