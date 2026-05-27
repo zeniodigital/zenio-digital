@@ -53,10 +53,7 @@
   /* Tipo */
   --cg:   'Cabinet Grotesk', sans-serif;
   --dm:   'DM Sans', sans-serif;
-  --rad:  3px;
-  --rad-md: 6px;
-  --shadow-card: 0 2px 12px rgba(0,0,0,.08);
-  --shadow-hover: 0 8px 28px rgba(0,0,0,.14);
+  --rad:  2px;
 }
 
 html{scroll-behavior:smooth}
@@ -231,9 +228,9 @@ nav.scrolled{background:rgba(15,15,15,.97)}
 .svc-sec .eyb{color:var(--or)}
 .svc-sec .eyb::before{background:var(--or)}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.1)}
-.svc{background:#fff;padding:2.4rem 2rem;position:relative;overflow:hidden;transition:background .3s, transform .25s cubic-bezier(.16,1,.3,1), box-shadow .25s;cursor:default}
+.svc{background:#fff;padding:2.4rem 2rem;position:relative;overflow:hidden;transition:background .3s;cursor:default}
 .svc::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 80% at 0% 0%,rgba(232,98,26,.05),transparent 70%);opacity:0;transition:opacity .4s}
-.svc:hover{background:#fdf9f6;transform:translateY(-3px);box-shadow:var(--shadow-hover)}.svc:hover::before{opacity:1}
+.svc:hover{background:#fdf9f6}.svc:hover::before{opacity:1}
 .svc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.6rem}
 .svc-n{font-size:.62rem;font-weight:600;letter-spacing:.12em;color:var(--dim);text-transform:uppercase}
 .svc-arr{width:24px;height:24px;border:1px solid rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:11px;transition:all .25s}
@@ -250,8 +247,7 @@ nav.scrolled{background:rgba(15,15,15,.97)}
 
 /* ── DIFERENCIADORES ── */
 .dif-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd2)}
-.dif{background:var(--s1);padding:2.5rem 2.2rem;position:relative;transition:background .25s, transform .25s cubic-bezier(.16,1,.3,1)}
-.dif:not(.full):hover{background:var(--s2);transform:translateY(-3px)}
+.dif{background:var(--s1);padding:2.5rem 2.2rem;position:relative}
 .dif.full{grid-column:span 3;background:var(--s2);display:flex;gap:3rem;align-items:center;padding:2.5rem 2.8rem}
 .dif-ico{width:36px;height:36px;background:var(--or2);border:1px solid var(--or3);display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem}
 .dif-ico svg{width:16px;height:16px;stroke:var(--or);fill:none;stroke-width:1.6;stroke-linecap:round}
@@ -270,9 +266,9 @@ nav.scrolled{background:rgba(15,15,15,.97)}
 
 /* ── PROCESO ── */
 .proc-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--bd);background:var(--bd)}
-.proc-step{background:var(--s1);padding:2.5rem 2.8rem;display:grid;grid-template-columns:80px 1fr;gap:2rem;align-items:start;border-bottom:1px solid var(--bd);transition:background .25s, border-left .25s;cursor:default;border-left:3px solid transparent}
+.proc-step{background:var(--s1);padding:2.5rem 2.8rem;display:grid;grid-template-columns:80px 1fr;gap:2rem;align-items:start;border-bottom:1px solid var(--bd);transition:background .25s;cursor:default}
 .proc-step:last-child{border-bottom:none}
-.proc-step:hover{background:var(--s2);border-left-color:var(--or)}
+.proc-step:hover{background:var(--s2)}
 .proc-num{font-family:var(--cg);font-size:3.5rem;font-weight:900;color:var(--or);opacity:.18;line-height:1;transition:opacity .3s}
 .proc-step:hover .proc-num{opacity:.35}
 .proc-tag{font-size:.58rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mu2);margin-bottom:.5rem}
@@ -307,8 +303,8 @@ nav.scrolled{background:rgba(15,15,15,.97)}
 .test-sec .eyb{color:var(--or)}
 .test-sec .eyb::before{background:var(--or)}
 .test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.1)}
-.tcard{background:#fff;padding:2.2rem;position:relative;overflow:hidden;transition:background .3s, transform .25s cubic-bezier(.16,1,.3,1), box-shadow .25s}
-.tcard:hover{background:var(--w3);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.tcard{background:#fff;padding:2.2rem;position:relative;overflow:hidden;transition:background .3s}
+.tcard:hover{background:var(--w3)}
 .tcard.feat{border-top:2px solid var(--or)}
 .tcard-stars{display:flex;gap:3px;margin-bottom:1.2rem}
 .tstar{width:11px;height:11px;fill:var(--or)}
@@ -400,8 +396,8 @@ nav.scrolled{background:rgba(15,15,15,.97)}
 .faq-qt{font-size:.9rem;font-weight:500;color:var(--tx);line-height:1.4;font-family:var(--cg)}
 .faq-ico{width:22px;height:22px;border:1px solid var(--bd2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px;color:var(--mu);transition:all .3s}
 .faq-item.open .faq-ico{background:var(--or);border-color:var(--or);color:#fff;transform:rotate(45deg)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.16,1,.3,1), opacity .3s ease}
-.faq-item.open .faq-a{max-height:260px}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.22,1,.36,1)}
+.faq-item.open .faq-a{max-height:220px}
 .faq-at{padding:0 2rem 1.5rem;font-size:.84rem;font-weight:300;color:var(--mu);line-height:1.8}
 
 /* ── CTA FINAL ── */
@@ -892,16 +888,12 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
             <div style="text-align:center"><div style="font-family:var(--cg);font-size:2.8rem;font-weight:900;color:#fff;letter-spacing:-2px;line-height:.9;text-shadow:0 0 40px rgba(212,0,26,.5)">GRM<br><span style="color:#D4001A">COLLISION</span></div></div>
           </div>
           <div class="port-overlay"></div>
-          <div style="position:absolute;top:10px;left:10px;background:rgba(15,15,15,.7);border:1px solid var(--bd2);font-size:.54rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx);padding:4px 9px;backdrop-filter:blur(8px)">Cliente activo</div>
+          <div style="position:absolute;top:10px;left:10px;background:rgba(15,15,15,.7);border:1px solid var(--bd2);font-size:.54rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx);padding:4px 9px;backdrop-filter:blur(8px)">Premium N2</div>
         </div>
         <div class="port-info">
           <div class="port-cat">Automotriz · Colisión · Monterrey</div>
           <div class="port-name">GRM Collision</div>
-          <div style="display:flex;flex-direction:column;gap:6px;margin-top:.5rem">
-            <div style="font-size:.72rem;color:var(--mu);line-height:1.5"><span style="color:var(--or);font-weight:600">Reto:</span> Solo tenían Facebook e Instagram. Sin presencia web profesional.</div>
-            <div style="font-size:.72rem;color:var(--mu);line-height:1.5"><span style="color:var(--or);font-weight:600">Solución:</span> Dark UI cinematográfica, videos 4K, 3 sucursales con WhatsApp individual.</div>
-            <div style="font-size:.72rem;color:var(--mu);line-height:1.5"><span style="color:var(--or);font-weight:600">Resultado:</span> Clientes satisfechos, presencia premium y relación continua de mantenimiento.</div>
-          </div>
+          <div class="port-desc">Dark UI cinematográfica, videos 4K, cursor personalizado. 3 sucursales con WhatsApp individual.</div>
         </div>
       </a>
       <!-- Backnet -->
@@ -911,18 +903,15 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
             <div style="text-align:center"><div style="font-family:var(--cg);font-size:2.2rem;font-weight:900;color:#fff;letter-spacing:-1px;line-height:.9">BACK<span style="color:#3b82f6">NET</span></div><div style="font-size:.58rem;letter-spacing:3px;color:rgba(255,255,255,.35);margin-top:6px;text-transform:uppercase">Telecomunicaciones</div></div>
           </div>
           <div class="port-overlay"></div>
-          <div style="position:absolute;top:10px;left:10px;background:rgba(15,15,15,.7);border:1px solid var(--bd2);font-size:.54rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx);padding:4px 9px;backdrop-filter:blur(8px)">Cliente activo</div>
+          <div style="position:absolute;top:10px;left:10px;background:rgba(15,15,15,.7);border:1px solid var(--bd2);font-size:.54rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx);padding:4px 9px;backdrop-filter:blur(8px)">Premium N2</div>
         </div>
         <div class="port-info">
           <div class="port-cat">Telecomunicaciones · Redes · NL</div>
           <div class="port-name">Backnet</div>
-          <div style="display:flex;flex-direction:column;gap:6px;margin-top:.5rem">
-            <div style="font-size:.72rem;color:var(--mu);line-height:1.5"><span style="color:var(--or);font-weight:600">Reto:</span> Sin página, sin redes, sin presencia digital. Solo referencias boca a boca.</div>
-            <div style="font-size:.72rem;color:var(--mu);line-height:1.5"><span style="color:var(--or);font-weight:600">Solución:</span> Sitio corporativo B2B + brochure informativo + tarjetas de presentación.</div>
-            <div style="font-size:.72rem;color:var(--mu);line-height:1.5"><span style="color:var(--or);font-weight:600">Resultado:</span> Presencia digital completa desde cero — web, impresión y marca unificada.</div>
-          </div>
+          <div class="port-desc">Infraestructura de redes, cableado estructurado y soluciones corporativas para industria y gobierno.</div>
         </div>
       </a>
+
       <!-- Zenio Vision -->
       <a class="port-card" href="https://zeniovision.com" target="_blank" rel="noopener" style="text-decoration:none;display:block;color:inherit">
         <div class="port-thumb">
@@ -931,15 +920,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
           </div>
           <div class="port-overlay"></div>
           <div style="position:absolute;top:10px;left:10px;background:rgba(15,15,15,.7);border:1px solid var(--bd2);font-size:.54rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx);padding:4px 9px;backdrop-filter:blur(8px)">Proyecto propio</div>
-        </div>
-        <div class="port-info">
-          <div class="port-cat">Tecnología · Drones · México</div>
-          <div class="port-name">Zenio Vision</div>
-          <div style="display:flex;flex-direction:column;gap:6px;margin-top:.5rem">
-            <div style="font-size:.72rem;color:var(--mu);line-height:1.5"><span style="color:var(--or);font-weight:600">Tipo:</span> Proyecto conceptual propio — showcase de capacidades Zenio.</div>
-            <div style="font-size:.72rem;color:var(--mu);line-height:1.5"><span style="color:var(--or);font-weight:600">Solución:</span> UI inmersiva para servicio de fotografía y video aéreo con drones.</div>
-            <div style="font-size:.72rem;color:var(--mu);line-height:1.5"><span style="color:var(--or);font-weight:600">Stack:</span> HTML · CSS · JS · Cloudflare Pages · Mobile-first.</div>
-          </div>
+          <div class="port-desc">Fotografía y video aéreo con drones para eventos corporativos y bienes raíces en todo México.</div>
         </div>
       </a>
       <!-- Tu negocio -->
@@ -1021,75 +1002,6 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
       <div class="trust-item"><div class="trust-ico"><svg viewBox="0 0 10 10"><polyline points="2 5 4.5 7.5 8 3"/></svg></div>Entrega garantizada en 7 días</div>
       <div class="trust-item"><div class="trust-ico"><svg viewBox="0 0 10 10"><polyline points="2 5 4.5 7.5 8 3"/></svg></div>Código fuente incluido</div>
       <div class="trust-item"><div class="trust-ico"><svg viewBox="0 0 10 10"><polyline points="2 5 4.5 7.5 8 3"/></svg></div>Sin costos escondidos</div>
-    </div>
-
-    <!-- Reviews reales Google -->
-    <div class="rv" style="margin-top:3.5rem">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem">
-        <div>
-          <div class="eyb" style="margin-bottom:.4rem">Verificado en Google</div>
-          <div style="font-family:var(--cg);font-size:1rem;font-weight:700;color:var(--dk)">Lo que dicen los clientes de <a href="https://grmcollision.com" target="_blank" style="color:var(--or)">GRM Collision</a> — diseñado por Zenio</div>
-        </div>
-        <a href="https://www.google.com/maps/place/GRM+COLLISION+LA+FAMA/@25.6748063,-100.4324305,17z" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--or);border:1px solid rgba(232,98,26,.25);padding:.5rem 1rem;border-radius:var(--rad);transition:all .2s" onmouseenter="this.style.background='rgba(232,98,26,.05)'" onmouseleave="this.style.background='transparent'">
-          Ver en Google Maps ↗
-        </a>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.1)">
-        <!-- Review 1 -->
-        <div style="background:#fff;padding:1.8rem 2rem">
-          <div style="display:flex;gap:3px;margin-bottom:.8rem">
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <div style="font-size:.86rem;font-weight:300;color:var(--mid);line-height:1.75;font-style:italic;margin-bottom:1.2rem">"Muy agradecido con todo el servicio, excelente trabajo, completamente satisfecho. 100% recomendables."</div>
-          <div style="display:flex;align-items:center;gap:.7rem;padding-top:.9rem;border-top:1px solid rgba(0,0,0,.07)">
-            <div style="width:30px;height:30px;background:rgba(232,98,26,.08);border:1px solid rgba(232,98,26,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--cg);font-size:.8rem;font-weight:800;color:var(--or);flex-shrink:0">I</div>
-            <div>
-              <div style="font-size:.78rem;font-weight:600;color:var(--dk);font-family:var(--cg)">Iván Colunga</div>
-              <div style="font-size:.67rem;font-weight:300;color:var(--dim)">Google · hace 6 meses</div>
-            </div>
-          </div>
-        </div>
-        <!-- Review 2 -->
-        <div style="background:#fff;padding:1.8rem 2rem">
-          <div style="display:flex;gap:3px;margin-bottom:.8rem">
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <div style="font-size:.86rem;font-weight:300;color:var(--mid);line-height:1.75;font-style:italic;margin-bottom:1.2rem">"Muy buena atención, recomendable ampliamente. Me gustó el trabajo y los tiempos de entrega fueron antes de lo programado."</div>
-          <div style="display:flex;align-items:center;gap:.7rem;padding-top:.9rem;border-top:1px solid rgba(0,0,0,.07)">
-            <div style="width:30px;height:30px;background:rgba(232,98,26,.08);border:1px solid rgba(232,98,26,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--cg);font-size:.8rem;font-weight:800;color:var(--or);flex-shrink:0">M</div>
-            <div>
-              <div style="font-size:.78rem;font-weight:600;color:var(--dk);font-family:var(--cg)">María de los Ángeles R.</div>
-              <div style="font-size:.67rem;font-weight:300;color:var(--dim)">Google · hace 3 meses</div>
-            </div>
-          </div>
-        </div>
-        <!-- Review 3 -->
-        <div style="background:#fff;padding:1.8rem 2rem">
-          <div style="display:flex;gap:3px;margin-bottom:.8rem">
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg style="width:11px;height:11px;fill:#E8621A" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <div style="font-size:.86rem;font-weight:300;color:var(--mid);line-height:1.75;font-style:italic;margin-bottom:1.2rem">"Muy recomendable. Me realizaron corrección de pintura y detallado, además me arreglaron un golpe. El día que dijeron que me lo entregaban, ese día me marcaron. 10/10."</div>
-          <div style="display:flex;align-items:center;gap:.7rem;padding-top:.9rem;border-top:1px solid rgba(0,0,0,.07)">
-            <div style="width:30px;height:30px;background:rgba(232,98,26,.08);border:1px solid rgba(232,98,26,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--cg);font-size:.8rem;font-weight:800;color:var(--or);flex-shrink:0">R</div>
-            <div>
-              <div style="font-size:.78rem;font-weight:600;color:var(--dk);font-family:var(--cg)">Raúl Ibarra</div>
-              <div style="font-size:.67rem;font-weight:300;color:var(--dim)">Google · hace 7 meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
