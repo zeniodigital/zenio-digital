@@ -517,7 +517,8 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
   .f-bot{flex-direction:column;align-items:flex-start;gap:.5rem}
   .proc-step{grid-template-columns:50px 1fr;gap:1rem;padding:1.8rem 1.5rem}
   .mq-sec{display:none}
-  #nosotros{display:none}
+  #nosotros .sec > div[style*="grid-template-columns:1fr 1.4fr"]{grid-template-columns:1fr!important}
+  #nosotros .sec > div[style*="grid-template-columns:1fr 1.4fr"] > div:first-child{padding:2rem 1.5rem!important}
   .proc-step:nth-child(3),.proc-step:nth-child(4){display:none}
 }
 </style>
@@ -555,7 +556,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
   <a href="index.html" class="active">Inicio</a>
   <a href="servicios.html">Servicios</a>
   <a href="portafolio.html">Portafolio</a>
-  <a href="#nosotros">Nosotros</a>
+  <a href="#nosotros" onclick="toggleMenu()">Nosotros</a>
   <a href="https://wa.me/528110496588" target="_blank" class="ncta-btn">Cotizar →</a>
 </div>
 
