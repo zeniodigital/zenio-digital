@@ -19,7 +19,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"></noscript>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -563,7 +565,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 
 <!-- 02 HERO -->
 <section id="hero">
-  <video class="hero-video" autoplay muted loop playsinline>
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="hero-poster.jpg">
     <source src="hero.mp4" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>
@@ -740,8 +742,8 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 
 <!-- VIDEO BANNER -->
 <div style="position:relative;height:380px;overflow:hidden;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)">
-  <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;opacity:.3">
-    <source src="banner1.mp4" type="video/mp4">
+  <video class="bnv" muted loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;opacity:.3">
+    <source data-src="banner1.mp4" type="video/mp4">
   </video>
   <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(15,15,15,.95) 0%,rgba(15,15,15,.8) 55%,rgba(15,15,15,.55) 100%);display:flex;align-items:center;padding:0 clamp(2rem,8%,120px)">
     <div style="max-width:540px">
@@ -1000,8 +1002,8 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 
 <!-- VIDEO BANNER 2 -->
 <div style="position:relative;height:400px;overflow:hidden;border-top:1px solid var(--bd)">
-  <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;opacity:.28">
-    <source src="banner2.mp4" type="video/mp4">
+  <video class="bnv" muted loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;opacity:.28">
+    <source data-src="banner2.mp4" type="video/mp4">
   </video>
   <div style="position:absolute;inset:0;background:rgba(15,15,15,.75);display:flex;align-items:center;justify-content:center">
     <div style="text-align:center;max-width:700px;padding:0 2rem">
@@ -1414,6 +1416,22 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 </footer>
 
 <script>
+// BANNERS DECORATIVOS: lazy en desktop, nunca en mobile (ahorro de payload en cel)
+(function(){
+  var vids=document.querySelectorAll('.bnv');
+  if(!vids.length)return;
+  if(window.matchMedia('(max-width:768px)').matches)return; // mobile: no cargar
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        var v=e.target,s=v.querySelector('source[data-src]');
+        if(s&&!s.src){s.src=s.dataset.src;v.load();v.play().catch(function(){});}
+        io.unobserve(v);
+      }
+    });
+  },{rootMargin:'200px'});
+  vids.forEach(function(v){io.observe(v);});
+})();
 // CURSOR
 let mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my;
 const ring=document.getElementById('cring'),dot=document.getElementById('cdot');
