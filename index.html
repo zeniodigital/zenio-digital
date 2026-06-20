@@ -72,8 +72,8 @@ img{max-width:100%;height:auto}
 a{text-decoration:none}
 
 /* ── CURSOR ── */
-#cring{position:fixed;width:28px;height:28px;border:1.5px solid rgba(232,98,26,.5);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;will-change:left,top}
-#cdot{position:fixed;width:4px;height:4px;background:var(--or);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);will-change:left,top}
+#cring{position:fixed;width:28px;height:28px;border:1.5px solid rgba(232,98,26,.5);border-radius:50%;pointer-events:none;z-index:9999;top:0;left:0;transition:width .25s,height .25s,border-color .25s;will-change:transform}
+#cdot{position:fixed;width:4px;height:4px;background:var(--or);border-radius:50%;pointer-events:none;z-index:9999;top:0;left:0;will-change:transform}
 
 /* ── FONDO GRID ── */
 .gbg{position:fixed;inset:0;z-index:-2;background-image:linear-gradient(rgba(255,255,255,.016) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.016) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 80% 60% at 50% 10%,black,transparent 80%)}
@@ -1435,7 +1435,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 let mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my;
 const ring=document.getElementById('cring'),dot=document.getElementById('cdot');
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
-(function anim(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';dot.style.left=mx+'px';dot.style.top=my+'px';requestAnimationFrame(anim)})();
+(function anim(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.transform='translate3d('+rx+'px,'+ry+'px,0) translate(-50%,-50%)';dot.style.transform='translate3d('+mx+'px,'+my+'px,0) translate(-50%,-50%)';requestAnimationFrame(anim)})();
 document.querySelectorAll('a,button,[onclick]').forEach(el=>{
   el.addEventListener('mouseenter',()=>{ring.style.width='44px';ring.style.height='44px';ring.style.borderColor='rgba(232,98,26,.8)'});
   el.addEventListener('mouseleave',()=>{ring.style.width='28px';ring.style.height='28px';ring.style.borderColor='rgba(232,98,26,.5)'});
