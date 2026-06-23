@@ -124,7 +124,7 @@ nav.scrolled{background:rgba(15,15,15,.97)}
 .hh1 .ln:nth-child(1) span{animation-delay:.08s}
 .hh1 .ln:nth-child(2) span{animation-delay:.18s}
 .hh1 .ln:nth-child(3) span{animation-delay:.28s}
-.hh1 em{font-style:italic;color:var(--or)}
+.hh1 em{font-style:italic;color:var(--or);display:inline-block;line-height:1.15;padding-bottom:.08em}
 
 .hsub{font-size:1.1rem;font-weight:300;color:var(--mu);line-height:1.8;max-width:460px;margin:0 auto 3rem;animation:fadeup .7s .42s ease both}
 
@@ -574,7 +574,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
     <h1 class="hh1">
       <span class="ln"><span>La primera impresión</span></span>
       <span class="ln"><span>que convierte visitas</span></span>
-      <span class="ln"><span>en <em>clientes reales.</em></span></span>
+      <span class="ln"><span>en <em id="rot-word">clientes reales.</em></span></span>
     </h1>
     <p class="hsub">Tu web es tu vendedor más barato. Diseño premium, entrega en 7 días y tecnología que funciona — para negocios que saben que su presencia digital importa.</p>
     <div class="hbtns">
@@ -1554,6 +1554,23 @@ function swMode(){
     ul.innerHTML=feats[i].map(f=>{const off=f.startsWith('off:'),t=off?f.slice(4):f;return`<li class="${off?'off':''}">${t}</li>`;}).join('');
   });
 }
+</script>
+<script>
+(function(){
+  var words = ["clientes reales.", "más ventas.", "negocio real.", "resultados reales."];
+  var i = 0;
+  var el = document.getElementById('rot-word');
+  if (!el) return;
+  el.style.transition = 'opacity .25s ease';
+  setInterval(function(){
+    i = (i + 1) % words.length;
+    el.style.opacity = 0;
+    setTimeout(function(){
+      el.textContent = words[i];
+      el.style.opacity = 1;
+    }, 250);
+  }, 2200);
+})();
 </script>
 </body>
 </html>
