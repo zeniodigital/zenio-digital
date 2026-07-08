@@ -55,23 +55,6 @@ nav.scrolled{background:rgba(6,6,6,.97)}
 .nmob a{font-size:.88rem;color:var(--mu);text-decoration:none;padding:.5rem 0;border-bottom:1px solid var(--bd);transition:color .2s}
 .nmob a:hover{color:var(--tx)}
 
-/* HERO PROBLEMA VISUAL */
-.hprob{width:100%;max-width:860px;margin:0 auto;animation:mrev 1s .7s cubic-bezier(.22,1,.36,1) both;display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--bd);border:1px solid var(--bd2);border-radius:6px;overflow:hidden}
-@keyframes mrev{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
-.hpc{background:var(--s1);padding:1.8rem 1.6rem;position:relative;overflow:hidden;text-align:left}
-.hpc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
-.hpc.bad::before{background:rgba(239,68,68,.5)}
-.hpc.mid::before{background:rgba(234,179,8,.5)}
-.hpc.good::before{background:var(--or)}
-.hpc-fill{height:100%;border-radius:2px;transition:width 1.5s cubic-bezier(.22,1,.36,1)}
-.hpc.bad .hpc-fill{width:18%;background:rgba(239,68,68,.6)}
-.hpc.mid .hpc-fill{width:55%;background:rgba(234,179,8,.6)}
-.hpc.good .hpc-fill{width:95%;background:var(--or)}
-
-/* SOLUCIÓN */
-.sol-visual{background:var(--s2);border:1px solid var(--bd2);padding:2rem;display:flex;flex-direction:column;gap:.8rem}
-.sv-fill{height:100%;border-radius:2px;background:var(--or);transition:width 1.8s cubic-bezier(.22,1,.36,1)}
-
 /* FOOTER */
 footer{background:var(--s1);border-top:1px solid var(--bd)}
 .fmain{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding:4rem 2.5rem 3rem}
@@ -117,7 +100,6 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 @media(max-width:960px){
   .nlinks{display:none}
   .nhm{display:flex}
-  .hprob{grid-template-columns:1fr}
   .prob-grid{grid-template-columns:1fr}
   .svc-grid{grid-template-columns:1fr}
   .dif-grid{grid-template-columns:1fr}
@@ -664,14 +646,11 @@ const bObs=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
     if(entry.isIntersecting){
       entry.target.querySelectorAll('.sv-fill').forEach(b=>{setTimeout(()=>{b.style.width=b.dataset.w},200)});
-      entry.target.querySelectorAll('.hpc-fill').forEach(b=>{setTimeout(()=>b.style.width=b.style.width,300)});
       bObs.unobserve(entry.target);
     }
   });
 },{threshold:.3});
-document.querySelectorAll('.sol-visual,.hprob').forEach(el=>bObs.observe(el));
-// trigger hero bars immediately
-setTimeout(()=>{document.querySelectorAll('.hpc-fill').forEach(b=>{b.style.transition='width 1.6s cubic-bezier(.22,1,.36,1)';b.style.width=b.style.width.replace('0%',b.closest('.hpc.bad')?'18%':b.closest('.hpc.mid')?'55%':'95%')})},900);
+document.querySelectorAll('.sol-visual').forEach(el=>bObs.observe(el));
 
 // FAQ
 function toggleFaq(btn){
