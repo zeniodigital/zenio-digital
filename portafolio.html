@@ -22,8 +22,8 @@
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Zenio Digital","description":"Agencia de diseño web en todo México especializada en sitios profesionales que convierten visitas en clientes.","url":"https://zeniodigital.com","telephone":"+528110496588","email":"hola@zeniodigital.com","address":{"@type":"PostalAddress","addressLocality":"México","addressRegion":"Nuevo León","addressCountry":"MX"},"areaServed":["México","San Pedro Garza García","San Nicolás","Guadalupe","Nuevo León","México"],"priceRange":"$$","openingHours":"Mo-Sa 09:00-20:00","sameAs":["https://wa.me/528110496588"]}
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:#0f0f0f;
   --s1:#141414;--s2:#1a1a1a;--s3:#111111;
@@ -32,95 +32,24 @@
   --or:#E8621A;--or2:rgba(232,98,26,.09);--or3:rgba(232,98,26,.18);
   --rad:2px;
 }
-html{scroll-behavior:smooth}
-section[id]{scroll-margin-top:80px}
 body{font-family:'DM Sans',sans-serif;font-size:1.0625rem;background:var(--bg);color:var(--tx);overflow-x:hidden;line-height:1.65;cursor:none}
-::-webkit-scrollbar{width:2px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--or);border-radius:2px}
-
-/* CURSOR */
-#cring{position:fixed;width:32px;height:32px;border:1px solid rgba(224,92,0,.45);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s;will-change:left,top}
-#cdot{position:fixed;width:4px;height:4px;background:var(--or);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);will-change:left,top}
 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:80px;background:rgba(6,6,6,.85);backdrop-filter:blur(24px);border-bottom:1px solid var(--bd);transition:background .3s;gap:2rem}
-nav.scrolled{background:rgba(6,6,6,.97)}
 .nlogo{font-family:'Cabinet Grotesk',sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-.02em;color:var(--tx);text-decoration:none;display:flex;align-items:center;gap:8px;letter-spacing:0;white-space:nowrap;flex-shrink:0}
-.nmark{width:22px;height:22px;background:var(--or);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);flex-shrink:0}
-.nlinks{display:flex;gap:1.8rem;list-style:none;flex-shrink:1}
-.nlinks a{font-size:.78rem;font-weight:400;letter-spacing:.05em;color:var(--mu);text-decoration:none;transition:color .2s}
-.nlinks a:hover{color:var(--tx)}
-.nhm{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
-.nhm span{width:20px;height:1.5px;background:var(--mu);transition:all .3s}
 .nmob{display:none;position:fixed;top:80px;left:0;right:0;background:rgba(6,6,6,.98);backdrop-filter:blur(24px);border-bottom:1px solid var(--bd);padding:1.5rem 2rem;z-index:199;flex-direction:column;gap:1rem}
-.nmob a{font-size:.88rem;color:var(--mu);text-decoration:none;padding:.5rem 0;border-bottom:1px solid var(--bd);transition:color .2s}
-.nmob a:hover{color:var(--tx)}
-
-/* FOOTER */
-footer{background:var(--s1);border-top:1px solid var(--bd)}
-.fmain{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding:4rem 2.5rem 3rem}
-.flogo{display:flex;align-items:center;gap:10px;margin-bottom:1rem;text-decoration:none}
-.flogo-mark{width:20px;height:20px;background:var(--or);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%)}
-.flogo-name{font-family:'DM Serif Display',serif;font-size:1.1rem;font-weight:400;color:var(--tx);letter-spacing:-.01em}
-.ftagline{font-size:.8rem;font-weight:300;color:var(--mu);line-height:1.75;max-width:230px;margin-bottom:1.5rem}
-.fcontact{display:flex;flex-direction:column;gap:8px}
-.fcontact a{display:flex;align-items:center;gap:8px;font-size:.76rem;font-weight:300;color:var(--mu);text-decoration:none;transition:color .2s}
-.fcontact a:hover{color:var(--tx)}
-.fcontact svg{width:13px;height:13px;stroke:var(--or);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
-.fcol-title{font-family:'DM Serif Display',serif;font-size:.72rem;font-weight:400;letter-spacing:.12em;color:var(--tx);text-transform:uppercase;margin-bottom:1.2rem}
-.flinks{list-style:none;display:flex;flex-direction:column;gap:.65rem}
-.flinks a{font-size:.78rem;font-weight:300;color:var(--mu);text-decoration:none;transition:color .2s;display:inline-flex;align-items:center;gap:4px}
-.flinks a:hover{color:var(--tx)}
-.ext{font-size:.58rem;color:var(--mu2)}
-.fsocial{display:flex;gap:8px;margin-top:1rem}
-.fsoc{width:30px;height:30px;border:1px solid var(--bd2);display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--mu);transition:all .2s}
-.fsoc:hover{background:var(--or);border-color:var(--or);color:#fff;transform:translateY(-2px)}
-.fsoc svg{width:13px;height:13px;fill:currentColor}
-.fbot{max-width:1100px;margin:0 auto;padding:1.5rem 2.5rem;border-top:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
-.fcopy{font-size:.66rem;font-weight:300;color:var(--mu2);letter-spacing:.04em}
-.fcredit{font-size:.66rem;font-weight:400;color:var(--mu2)}
-.fcredit span{color:var(--or)}
-
-/* WA FLOTANTE */
-.wa-float{position:fixed;bottom:2rem;right:2rem;z-index:300;width:52px;height:52px;background:var(--or);border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 6px 24px rgba(224,92,0,.4);transition:all .2s;animation:fup .7s 2s ease both}
-.wa-float:hover{transform:scale(1.1);box-shadow:0 10px 32px rgba(224,92,0,.5)}
-.wa-float svg{width:26px;height:26px;fill:#fff}
-
-/* ANIMACIONES */
-@keyframes fup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-@keyframes sup{from{transform:translateY(115%);opacity:0}to{transform:translateY(0);opacity:1}}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-.rv{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
-.rv.vis{opacity:1;transform:none}
 
 /* BTN */
 .bwa2{display:inline-flex;align-items:center;gap:8px;background:var(--or);color:#fff;padding:.75rem 1.6rem;border-radius:var(--rad);font-size:.82rem;font-weight:500;text-decoration:none;transition:all .2s}
 .bwa2:hover{background:#f06a00;transform:translateY(-1px);box-shadow:0 8px 24px rgba(224,92,0,.25)}
 
-/* RESPONSIVE */
+/* RESPONSIVE (parcial — el resto vive en base.css) */
 @media(max-width:960px){
-  .nlinks{display:none}
-  .nhm{display:flex}
-  .prob-grid{grid-template-columns:1fr}
   .svc-grid{grid-template-columns:1fr}
-  .dif-grid{grid-template-columns:1fr}
-  .dif.full{grid-template-columns:1fr;grid-column:span 1}
-  .auth-strip{grid-template-columns:repeat(2,1fr)}
   .test-grid{grid-template-columns:1fr}
-  .fmain{grid-template-columns:1fr 1fr;gap:2rem}
-  .sec{padding:5rem 1.5rem}
-  .cta-sec{padding:5rem 1.5rem}
-  nav{padding:0 1.5rem}
-  .prob-stat{grid-template-columns:1fr 1fr}
 }
 @media(max-width:600px){
-  .cta-acts{flex-direction:column}
-  .bwa,.bghost{width:100%;justify-content:center}
-  .cta-trust2{flex-direction:column;align-items:flex-start;gap:1rem}
-  .ct2-div{display:none}
-  .fmain{grid-template-columns:1fr}
   .trust-bar{flex-direction:column}
-  .auth-strip{grid-template-columns:repeat(2,1fr)}
-  .prob-stat{grid-template-columns:1fr}
 }
 </style>
 <style>
@@ -603,93 +532,6 @@ function filtrar(cat){
     <span class="fcredit">Diseñado por <span>Zenio Digital</span></span>
   </div>
 </footer>
-<script>
-// CURSOR
-let mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my;
-const ring=document.getElementById('cring'),dot=document.getElementById('cdot');
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
-(function anim(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';dot.style.left=mx+'px';dot.style.top=my+'px';requestAnimationFrame(anim)})();
-document.querySelectorAll('a,button,[onclick]').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{ring.style.width='46px';ring.style.height='46px';ring.style.borderColor='rgba(224,92,0,.75)'});
-  el.addEventListener('mouseleave',()=>{ring.style.width='32px';ring.style.height='32px';ring.style.borderColor='rgba(224,92,0,.45)'});
-});
-
-// NAV SCROLL
-const nav=document.getElementById('nav');
-window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
-
-// MENU MOBILE
-let mOpen=false;
-function toggleMenu(){mOpen=!mOpen;document.getElementById('nm').style.display=mOpen?'flex':'none'}
-
-// REVEAL
-const rObs=new IntersectionObserver(entries=>{
-  entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('vis'),i*70)});
-},{threshold:.07});
-document.querySelectorAll('.rv').forEach(el=>rObs.observe(el));
-
-// COUNTERS
-const cObs=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      const el=entry.target,target=parseInt(el.dataset.target);
-      let start=null;const dur=1400;
-      const step=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1),ease=1-Math.pow(1-p,3);el.textContent=Math.round(ease*target);if(p<1)requestAnimationFrame(step);else el.textContent=target};
-      requestAnimationFrame(step);cObs.unobserve(el);
-    }
-  });
-},{threshold:.5});
-document.querySelectorAll('.counter').forEach(c=>cObs.observe(c));
-
-// BARS VISUAL
-const bObs=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.querySelectorAll('.sv-fill').forEach(b=>{setTimeout(()=>{b.style.width=b.dataset.w},200)});
-      bObs.unobserve(entry.target);
-    }
-  });
-},{threshold:.3});
-document.querySelectorAll('.sol-visual').forEach(el=>bObs.observe(el));
-
-// FAQ
-function toggleFaq(btn){
-  const item=btn.parentElement;
-  const wasOpen=item.classList.contains('open');
-  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-  if(!wasOpen)item.classList.add('open');
-}
-
-// PRICING TOGGLE
-let isEco=false;
-function swMode(){
-  isEco=!isEco;
-  document.getElementById('tog').classList.toggle('active',isEco);
-  document.getElementById('tecobadge').style.opacity=isEco?'1':'0';
-  document.getElementById('lw').classList.toggle('on',!isEco);
-  document.getElementById('le').classList.toggle('on',isEco);
-  const names=isEco?['Básica','Estándar','Avanzada','Enterprise']:['Starter','Business','Pro','Premium'];
-  const prices=isEco?['18,500','28,500','45,000','Cotización']:['7,500','12,500','16,500','24,500'];
-  const notes=isEco?['MXN · pago único','MXN · pago único','MXN · cotización','según proyecto']:['MXN · pago único','MXN · pago único','MXN · pago único','MXN · pago único'];
-  const feats=isEco?[
-    ['Hasta 20 productos','Carrito de compras','Pasarela de pago','SSL incluido','Panel admin','SEO básico','Entrega en 10 días','off:Filtros avanzados'],
-    ['Hasta 100 productos','Filtros y categorías','Múltiples pasarelas','Gestión de envíos','Analytics','Capacitación','Entrega en 15 días','SEO avanzado'],
-    ['Catálogo sin límite','Integraciones CRM','Email marketing','Precios por cliente','Automatizaciones','Desarrollo a medida','Soporte premium','Tiempo según proyecto'],
-    ['Todo personalizado','Integraciones a medida','API y conectores','Escalabilidad total','SLA soporte','Documentación','Capacitación equipo','Cotización directa']
-  ]:[
-    ['1 página (landing)','Diseño personalizado','Mobile-first','Formulario de contacto','SEO básico','Entrega en 5 días','off:Blog o secciones extra','off:Identidad visual'],
-    ['Hasta 5 secciones','Diseño personalizado','Mobile-first','Formulario + WhatsApp','SEO completo','Google Analytics','Entrega en 7 días','off:Identidad visual'],
-    ['Secciones ilimitadas','Diseño personalizado','Mobile-first','Blog incluido','SEO avanzado','Google Analytics','Mantenimiento 1 mes','Entrega en 7 días'],
-    ['Todo lo del Pro','Identidad visual completa','Logo y branding','Fotografía de producto','SEO premium','Mantenimiento 3 meses','Soporte prioritario','Entrega en 10 días']
-  ];
-  [0,1,2,3].forEach(i=>{
-    document.getElementById('pt'+i).textContent=names[i];
-    document.getElementById('pv'+i).textContent=prices[i];
-    document.getElementById('pn'+i).textContent=notes[i];
-    const ul=document.getElementById('pf'+i);
-    ul.innerHTML=feats[i].map(f=>{const off=f.startsWith('off:'),t=off?f.slice(4):f;return`<li class="${off?'off':''}">${t}</li>`}).join('');
-  });
-}
-</script>
+<script src="base.js"></script>
 </body>
 </html>

@@ -1,0 +1,85 @@
+/* BASE COMPARTIDA — portafolio.html / servicios.html / contacto.html (index.html usa su propio CSS, no depende de este archivo) */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:80px}
+::-webkit-scrollbar{width:2px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--or);border-radius:2px}
+
+/* CURSOR */
+#cring{position:fixed;width:32px;height:32px;border:1px solid rgba(224,92,0,.45);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s;will-change:left,top}
+#cdot{position:fixed;width:4px;height:4px;background:var(--or);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);will-change:left,top}
+
+/* NAV (parcial — nav{} y .nlogo quedan inline por página, difieren en altura/tipografía) */
+nav.scrolled{background:rgba(6,6,6,.97)}
+.nmark{width:22px;height:22px;background:var(--or);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);flex-shrink:0}
+.nlinks{display:flex;gap:1.8rem;list-style:none;flex-shrink:1}
+.nlinks a{font-size:.78rem;font-weight:400;letter-spacing:.05em;color:var(--mu);text-decoration:none;transition:color .2s}
+.nlinks a:hover{color:var(--tx)}
+.nhm{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.nhm span{width:20px;height:1.5px;background:var(--mu);transition:all .3s}
+.nmob a{font-size:.88rem;color:var(--mu);text-decoration:none;padding:.5rem 0;border-bottom:1px solid var(--bd);transition:color .2s}
+.nmob a:hover{color:var(--tx)}
+
+/* FOOTER */
+footer{background:var(--s1);border-top:1px solid var(--bd)}
+.fmain{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding:4rem 2.5rem 3rem}
+.flogo{display:flex;align-items:center;gap:10px;margin-bottom:1rem;text-decoration:none}
+.flogo-mark{width:20px;height:20px;background:var(--or);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%)}
+.flogo-name{font-family:'DM Serif Display',serif;font-size:1.1rem;font-weight:400;color:var(--tx);letter-spacing:-.01em}
+.ftagline{font-size:.8rem;font-weight:300;color:var(--mu);line-height:1.75;max-width:230px;margin-bottom:1.5rem}
+.fcontact{display:flex;flex-direction:column;gap:8px}
+.fcontact a{display:flex;align-items:center;gap:8px;font-size:.76rem;font-weight:300;color:var(--mu);text-decoration:none;transition:color .2s}
+.fcontact a:hover{color:var(--tx)}
+.fcontact svg{width:13px;height:13px;stroke:var(--or);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.fcol-title{font-family:'DM Serif Display',serif;font-size:.72rem;font-weight:400;letter-spacing:.12em;color:var(--tx);text-transform:uppercase;margin-bottom:1.2rem}
+.flinks{list-style:none;display:flex;flex-direction:column;gap:.65rem}
+.flinks a{font-size:.78rem;font-weight:300;color:var(--mu);text-decoration:none;transition:color .2s;display:inline-flex;align-items:center;gap:4px}
+.flinks a:hover{color:var(--tx)}
+.ext{font-size:.58rem;color:var(--mu2)}
+.fsocial{display:flex;gap:8px;margin-top:1rem}
+.fsoc{width:30px;height:30px;border:1px solid var(--bd2);display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--mu);transition:all .2s}
+.fsoc:hover{background:var(--or);border-color:var(--or);color:#fff;transform:translateY(-2px)}
+.fsoc svg{width:13px;height:13px;fill:currentColor}
+.fbot{max-width:1100px;margin:0 auto;padding:1.5rem 2.5rem;border-top:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.fcopy{font-size:.66rem;font-weight:300;color:var(--mu2);letter-spacing:.04em}
+.fcredit{font-size:.66rem;font-weight:400;color:var(--mu2)}
+.fcredit span{color:var(--or)}
+
+/* WA FLOTANTE */
+.wa-float{position:fixed;bottom:2rem;right:2rem;z-index:300;width:52px;height:52px;background:var(--or);border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 6px 24px rgba(224,92,0,.4);transition:all .2s;animation:fup .7s 2s ease both}
+.wa-float:hover{transform:scale(1.1);box-shadow:0 10px 32px rgba(224,92,0,.5)}
+.wa-float svg{width:26px;height:26px;fill:#fff}
+
+/* ANIMACIONES */
+@keyframes fup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes sup{from{transform:translateY(115%);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+.rv.vis{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .nlinks{display:none}
+  .nhm{display:flex}
+  .prob-grid{grid-template-columns:1fr}
+  .dif-grid{grid-template-columns:1fr}
+  .dif.full{grid-template-columns:1fr;grid-column:span 1}
+  .auth-strip{grid-template-columns:repeat(2,1fr)}
+  .fmain{grid-template-columns:1fr 1fr;gap:2rem}
+  .sec{padding:5rem 1.5rem}
+  .cta-sec{padding:5rem 1.5rem}
+  nav{padding:0 1.5rem}
+  .prob-stat{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .cta-acts{flex-direction:column}
+  .bwa,.bghost{width:100%;justify-content:center}
+  .cta-trust2{flex-direction:column;align-items:flex-start;gap:1rem}
+  .ct2-div{display:none}
+  .fmain{grid-template-columns:1fr}
+  .auth-strip{grid-template-columns:repeat(2,1fr)}
+  .prob-stat{grid-template-columns:1fr}
+  body{cursor:auto}
+  #cring,#cdot{display:none}
+  .o1,.o2{display:none}
+  .sec{padding:4rem 1.5rem}
+}
