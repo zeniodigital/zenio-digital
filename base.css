@@ -38,7 +38,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 .ext{font-size:.58rem;color:var(--mu2)}
 .fsocial{display:flex;gap:8px;margin-top:1rem}
 .fsoc{width:30px;height:30px;border:1px solid var(--bd2);display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--mu);transition:all .2s}
-.fsoc:hover{background:var(--or);border-color:var(--or);color:#fff;transform:translateY(-2px)}
+.fsoc:hover{background:var(--or);border-color:var(--or);color:#1a1a1a;transform:translateY(-2px)}
 .fsoc svg{width:13px;height:13px;fill:currentColor}
 .fbot{max-width:1100px;margin:0 auto;padding:1.5rem 2.5rem;border-top:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
 .fcopy{font-size:.66rem;font-weight:300;color:var(--mu2);letter-spacing:.04em}
