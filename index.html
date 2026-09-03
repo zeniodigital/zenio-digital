@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-    <link rel="icon" type="image/jpeg" href="icono.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Agencia de diseño web en Monterrey y San Pedro GG. Sitios profesionales desde $7,500 MXN. Entrega en 7 días, mobile-first y SEO incluido. Solicita tu cotización.">
 <meta name="keywords" content="diseño web Monterrey, agencia web Nuevo León, páginas web profesionales México, desarrollo web PyMEs Monterrey">
@@ -17,6 +16,13 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_MX">
 <link rel="canonical" href="https://zeniodigital.com/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
 <title>Diseño Web en Monterrey | Zenio Digital — Sitios que Convierten</title>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Zenio Digital","description":"Agencia de diseño web en Monterrey especializada en sitios premium que convierten.","url":"https://zeniodigital.com","telephone":"+528110496588","email":"hola@zeniodigital.com","address":{"@type":"PostalAddress","addressLocality":"Monterrey","addressRegion":"Nuevo León","addressCountry":"MX"},"areaServed":["Monterrey","Nuevo León","México"],"priceRange":"$$","openingHours":"Mo-Sa 09:00-20:00","sameAs":["https://wa.me/528110496588"]}
@@ -53,10 +59,15 @@
   --mid:  #555555;
   --dim:  #888888;
   /* Naranja */
-  --or:   #E8621A;
-  --or2:  rgba(232,98,26,.09);
-  --or3:  rgba(232,98,26,.18);
+  --or:   #fb8112;
+  --or2:  rgba(251,129,18,.09);
+  --or3:  rgba(251,129,18,.18);
   --orh:  #D95A0B;
+  /* Paleta de marca (logo oficial) */
+  --zenio-naranja-base:   #fb8112;
+  --zenio-naranja-medio:  #fba04d;
+  --zenio-crema-claro:    #fdd7aa;
+  --zenio-naranja-oscuro: #d03b03;
   /* Tipo */
   --cg:   'Cabinet Grotesk', sans-serif;
   --dm:   'DM Sans', sans-serif;
@@ -94,7 +105,7 @@ a{text-decoration:none}
 nav{position:fixed;top:0;left:0;right:0;z-index:500;height:80px;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;background:rgba(15,15,15,.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);transition:background .3s}
 nav.scrolled{background:rgba(15,15,15,.97)}
 .nlogo{font-family:var(--cg);font-size:1.25rem;font-weight:800;color:var(--tx);display:flex;align-items:center;gap:9px;letter-spacing:-.025em;flex-shrink:0}
-.nmark{width:20px;height:20px;background:var(--or);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);flex-shrink:0;transition:transform .3s}
+.nmark{width:20px;height:20px;object-fit:contain;flex-shrink:0;transition:transform .3s}
 .nlogo:hover .nmark{transform:rotate(45deg)}
 .nlinks{display:flex;gap:2rem;list-style:none}
 .nlinks a{font-size:.78rem;font-weight:400;letter-spacing:.04em;color:var(--mu);transition:color .2s}
@@ -446,7 +457,7 @@ nav.scrolled{background:rgba(15,15,15,.97)}
 footer{background:var(--s1);border-top:1px solid var(--bd)}
 .f-main{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding:4.5rem 3rem 3rem}
 .f-logo{display:flex;align-items:center;gap:9px;margin-bottom:1rem}
-.f-logo-mark{width:18px;height:18px;background:var(--or);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%)}
+.f-logo-mark{width:18px;height:18px;object-fit:contain}
 .f-logo-name{font-family:var(--cg);font-size:1.15rem;font-weight:800;color:var(--tx);letter-spacing:-.02em}
 .f-tag{font-size:.8rem;font-weight:300;color:var(--mu);line-height:1.75;max-width:220px;margin-bottom:1.5rem}
 .f-contact{display:flex;flex-direction:column;gap:8px}
@@ -548,7 +559,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 <!-- 01 HEADER -->
 <nav id="nav">
   <a href="/" class="nlogo">
-    <div class="nmark"></div>Zenio Digital
+    <img src="/logo-zenio-original.png" alt="Zenio Digital" class="nmark">Zenio Digital
   </a>
   <ul class="nlinks">
     <li><a href="/" class="active">Inicio</a></li>
@@ -1397,7 +1408,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd)}
 <footer>
   <div class="f-main">
     <div class="rv">
-      <a href="/" class="f-logo"><div class="f-logo-mark"></div><span class="f-logo-name">Zenio Digital</span></a>
+      <a href="/" class="f-logo"><img src="/logo-zenio-original.png" alt="Zenio Digital" class="f-logo-mark"><span class="f-logo-name">Zenio Digital</span></a>
       <p class="f-tag">Diseño web premium para negocios que quieren destacar en Monterrey y todo México.</p>
       <div class="f-contact">
         <a href="https://wa.me/528110496588" target="_blank"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 11a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.9 2H6.9a2 2 0 0 1 2 1.72"/></svg>+52 811 049 6588</a>
